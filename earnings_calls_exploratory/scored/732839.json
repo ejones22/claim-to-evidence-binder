@@ -1,0 +1,25 @@
+{
+  "event_id": "732839",
+  "ticker": "VUZI",
+  "company": "Vuzix Corporation",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Grant Russell",
+      "start_sec": 1414.7,
+      "sentence": "The net loss for Q3 2026 was $8.4 million, or $0.10 per share, compared to a net loss of $7.4 million, or $0.09 per share for the same period a year ago.",
+      "concept": "net_income",
+      "claimed_value": -8400000.0,
+      "filed_value": -8386188,
+      "relative_error": 0.0016,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1463972/000110465926126205/0001104659-26-126205-index.htm"
+      }
+    }
+  ]
+}

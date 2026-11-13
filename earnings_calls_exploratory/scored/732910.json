@@ -1,0 +1,115 @@
+{
+  "event_id": "732910",
+  "ticker": "KLC",
+  "company": "KinderCare Learning Companies, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 7,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Tom Wyatt",
+      "start_sec": 109.2,
+      "sentence": "Third quarter revenue was $665 million, as enrollment pressure in the KinderCare brand was partially offset by continued growth in Champions, which delivered its fifth consecutive quarter of double-digit revenue growth.",
+      "concept": "revenue",
+      "claimed_value": 665000000.0,
+      "filed_value": 665336000,
+      "relative_error": 0.0005,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312526458658/0001193125-26-458658-index.htm"
+      }
+    },
+    {
+      "speaker": "Tony Amandi",
+      "start_sec": 792.3,
+      "sentence": "Third quarter revenue was $665 million, a decline of 1.7% from $677 million last year.",
+      "concept": "revenue",
+      "claimed_value": 665000000.0,
+      "filed_value": 665336000,
+      "relative_error": 0.0005,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312526458658/0001193125-26-458658-index.htm"
+      }
+    },
+    {
+      "speaker": "Tony Amandi",
+      "start_sec": 837.8,
+      "sentence": "These decreases were partially offset by approximately $13 million in revenue from newer and acquired centers entering the same-center cohort.",
+      "concept": "revenue",
+      "claimed_value": 13000000.0,
+      "filed_value": 665336000,
+      "relative_error": 0.9805,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312526458658/0001193125-26-458658-index.htm"
+      }
+    },
+    {
+      "speaker": "Tony Amandi",
+      "start_sec": 877.2,
+      "sentence": "Turning to other components of our revenue performance, Champions contributed approximately $8 million in year-over-year revenue growth.",
+      "concept": "revenue",
+      "claimed_value": 8000000.0,
+      "filed_value": 665336000,
+      "relative_error": 0.988,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312526458658/0001193125-26-458658-index.htm"
+      }
+    },
+    {
+      "speaker": "Tony Amandi",
+      "start_sec": 926.5,
+      "sentence": "New and acquired centers have contributed approximately $20 million in revenue so far this year.",
+      "concept": "revenue",
+      "claimed_value": 20000000.0,
+      "filed_value": 665336000,
+      "relative_error": 0.9699,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312526458658/0001193125-26-458658-index.htm"
+      }
+    },
+    {
+      "speaker": "Tony Amandi",
+      "start_sec": 931.5,
+      "sentence": "Turning to the financial impact of our footprint optimization, we estimate that center closures will result in revenue headwind of approximately $32 million for 2026.",
+      "concept": "revenue",
+      "claimed_value": 32000000.0,
+      "filed_value": 665336000,
+      "relative_error": 0.9519,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312526458658/0001193125-26-458658-index.htm"
+      }
+    },
+    {
+      "speaker": "Tony Amandi",
+      "start_sec": 1005.6,
+      "sentence": "Turning to profitability, we reported a net loss of $85 million, or $0.71 per share, compared to net income of $5 million, or $0.04 per share, in the prior year quarter.",
+      "concept": "net_income",
+      "claimed_value": -85000000.0,
+      "filed_value": -84971000,
+      "relative_error": 0.0003,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1873529/000119312526458658/0001193125-26-458658-index.htm"
+      }
+    }
+  ]
+}

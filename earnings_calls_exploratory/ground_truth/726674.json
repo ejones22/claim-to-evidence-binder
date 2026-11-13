@@ -1,0 +1,70 @@
+{
+  "event_id": "726674",
+  "ticker": "LCTX",
+  "cik": "876343",
+  "company": "Lineage Cell Therapeutics, Inc.",
+  "quarter_label": "Q3 2026",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "revenue": {
+      "value": 1434000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458487",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526458487/0001193125-26-458487-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Revenues"
+    },
+    "net_income": {
+      "value": 4232000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458487",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526458487/0001193125-26-458487-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "eps_diluted": {
+      "value": -0.03,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458487",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526458487/0001193125-26-458487-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:EarningsPerShareDiluted"
+    },
+    "operating_income": {
+      "value": -7314000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458487",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526458487/0001193125-26-458487-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 100110000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458487",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526458487/0001193125-26-458487-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

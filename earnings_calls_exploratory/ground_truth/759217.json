@@ -1,0 +1,70 @@
+{
+  "event_id": "759217",
+  "ticker": "LGCY",
+  "cik": "1836754",
+  "company": "Legacy Education Inc.",
+  "quarter_label": "Q1 2027",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "revenue": {
+      "value": 20002919,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051374",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    "net_income": {
+      "value": 868710,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051374",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "eps_diluted": {
+      "value": 0.06,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051374",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:EarningsPerShareDiluted"
+    },
+    "operating_income": {
+      "value": 880963,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051374",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 86942346,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051374",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "event_id": "729210",
+  "ticker": "SHIM",
+  "company": "Shimmick Corporation",
+  "quarter_label": "Q3 2026",
+  "n_claims": 6,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Todd Yoder",
+      "start_sec": 710.6,
+      "sentence": "To begin with revenue, Shimmick GAAP revenue for Q3 was $136 million, compared to $107 million in Q3 of 2025.",
+      "concept": "revenue",
+      "claimed_value": 136000000.0,
+      "filed_value": 135798000,
+      "relative_error": 0.0015,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1887944/000119312526458353/0001193125-26-458353-index.htm"
+      }
+    },
+    {
+      "speaker": "Todd Yoder",
+      "start_sec": 727.5,
+      "sentence": "The increase was driven by $69 million of revenue growth from new projects ramping up, offset by $26 million of lower burn on a mix of projects that are winding down, and a $14 million impact related to the completion of a lower margin O&M project.",
+      "concept": "revenue",
+      "claimed_value": 69000000.0,
+      "filed_value": 135798000,
+      "relative_error": 0.4919,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1887944/000119312526458353/0001193125-26-458353-index.htm"
+      }
+    },
+    {
+      "speaker": "Todd Yoder",
+      "start_sec": 757.7,
+      "sentence": "This brings our total revenue, including work put in place, to $146 million for the quarter.",
+      "concept": "revenue",
+      "claimed_value": 146000000.0,
+      "filed_value": 135798000,
+      "relative_error": 0.0751,
+      "verdict": "close_but_off",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1887944/000119312526458353/0001193125-26-458353-index.htm"
+      }
+    },
+    {
+      "speaker": "Todd Yoder",
+      "start_sec": 816.0,
+      "sentence": "Net income was $1 million, or $0.02 of earnings per diluted share.",
+      "concept": "net_income",
+      "claimed_value": 1000000.0,
+      "filed_value": 848000,
+      "relative_error": 0.1792,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1887944/000119312526458353/0001193125-26-458353-index.htm"
+      }
+    },
+    {
+      "speaker": "Todd Yoder",
+      "start_sec": 822.0,
+      "sentence": "This is compared to a net loss of $4 million, or $0.12 per diluted share in Q3 of 2025.",
+      "concept": "net_income",
+      "claimed_value": -4000000.0,
+      "filed_value": 848000,
+      "relative_error": 5.717,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1887944/000119312526458353/0001193125-26-458353-index.htm"
+      }
+    },
+    {
+      "speaker": "Todd Yoder",
+      "start_sec": 831.0,
+      "sentence": "The $5 million year-over-year improvement in net income was driven by a $6 million increase in gross margin and a $1 million improvement in equity earnings from unconsolidated joint ventures.",
+      "concept": "net_income",
+      "claimed_value": 5000000.0,
+      "filed_value": 848000,
+      "relative_error": 4.8962,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1887944/000119312526458353/0001193125-26-458353-index.htm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "event_id": "732797",
+  "ticker": "PMN",
+  "company": "ProMIS Neurosciences, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Neil Warma",
+      "start_sec": 905.6,
+      "sentence": "Net loss overall for the quarter was $8.2 million, or $0.89 per share, and that's compared with $11.6 million, or $5.93 per share from a year ago.",
+      "concept": "net_income",
+      "claimed_value": -8199999.999999999,
+      "filed_value": -8161868,
+      "relative_error": 0.0047,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1374339/000110465926126263/0001104659-26-126263-index.htm"
+      }
+    }
+  ]
+}

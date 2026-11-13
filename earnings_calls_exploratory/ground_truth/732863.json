@@ -1,0 +1,70 @@
+{
+  "event_id": "732863",
+  "ticker": "HTFL",
+  "cik": "1464521",
+  "company": "HeartFlow, Inc.",
+  "quarter_label": "Q3 2026",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "revenue": {
+      "value": 72857000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001464521-26-000173",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    "net_income": {
+      "value": -11505000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001464521-26-000173",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "eps_diluted": {
+      "value": -0.13,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001464521-26-000173",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:EarningsPerShareDiluted"
+    },
+    "operating_income": {
+      "value": -13846000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001464521-26-000173",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 355339000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001464521-26-000173",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

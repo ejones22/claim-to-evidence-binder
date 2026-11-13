@@ -1,0 +1,25 @@
+{
+  "event_id": "731632",
+  "ticker": "CRWS",
+  "company": "Crown Crafts, Inc.",
+  "quarter_label": "Q2 2027",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Olivia Elliott",
+      "start_sec": 325.6,
+      "sentence": "In terms of bottom line performance, our GAAP net income of $1.3 million for the quarter was up slightly over the past year, and GAAP earnings per share of $0.12 was up from $0.11.",
+      "concept": "net_income",
+      "claimed_value": 1300000.0,
+      "filed_value": 1317000,
+      "relative_error": 0.0129,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/25895/000143774926036590/0001437749-26-036590-index.htm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "event_id": "732856",
+  "ticker": "BEAT",
+  "cik": "1779372",
+  "company": "HeartBeam, Inc.",
+  "quarter_label": "Q3 2026",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "net_income": {
+      "value": -3010000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458296",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1779372/000119312526458296/0001193125-26-458296-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "eps_diluted": {
+      "value": -0.05,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458296",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1779372/000119312526458296/0001193125-26-458296-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:EarningsPerShareDiluted"
+    },
+    "operating_income": {
+      "value": -3457000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458296",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1779372/000119312526458296/0001193125-26-458296-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 7872000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001193125-26-458296",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1779372/000119312526458296/0001193125-26-458296-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

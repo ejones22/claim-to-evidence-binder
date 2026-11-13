@@ -1,0 +1,70 @@
+{
+  "event_id": "732863",
+  "ticker": "HTFL",
+  "company": "HeartFlow, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 4,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "John Farquhar",
+      "start_sec": 126.7,
+      "sentence": "In the third quarter, total revenue was $72.9 million, up 57% year-over-year, with U.S. revenue up 60%, our fastest U.S. growth in 11 quarters.",
+      "concept": "revenue",
+      "claimed_value": 72900000.0,
+      "filed_value": 72857000,
+      "relative_error": 0.0006,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm"
+      }
+    },
+    {
+      "speaker": "Vikram Verghese",
+      "start_sec": 860.1,
+      "sentence": "Total revenue was $72.9 million, up 57.4%.",
+      "concept": "revenue",
+      "claimed_value": 72900000.0,
+      "filed_value": 72857000,
+      "relative_error": 0.0006,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm"
+      }
+    },
+    {
+      "speaker": "Vikram Verghese",
+      "start_sec": 865.6,
+      "sentence": "U.S. revenue grew to $67.9 million, up 60%, including $11.8 million of Plaque Analysis revenue.",
+      "concept": "revenue",
+      "claimed_value": 67900000.0,
+      "filed_value": 72857000,
+      "relative_error": 0.068,
+      "verdict": "close_but_off",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm"
+      }
+    },
+    {
+      "speaker": "Vikram Verghese",
+      "start_sec": 1077.5,
+      "sentence": "On a GAAP basis, net loss was $11.5 million, or $0.13 per share.",
+      "concept": "net_income",
+      "claimed_value": -11500000.0,
+      "filed_value": -11505000,
+      "relative_error": 0.0004,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1464521/000146452126000173/0001464521-26-000173-index.htm"
+      }
+    }
+  ]
+}

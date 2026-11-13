@@ -1,0 +1,55 @@
+{
+  "event_id": "732838",
+  "ticker": "NMAX",
+  "company": "Newsmax Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 3,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Darryle Burnham",
+      "start_sec": 775.6,
+      "sentence": "Second, our digital segment now includes a licensing line for the first time, reflecting $0.6 million of revenue from our media and AI content agreements.",
+      "concept": "revenue",
+      "claimed_value": 600000.0,
+      "filed_value": 69032750,
+      "relative_error": 0.9913,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2026478/000202647826000072/0002026478-26-000072-index.htm"
+      }
+    },
+    {
+      "speaker": "Darryle Burnham",
+      "start_sec": 837.4,
+      "sentence": "In the third quarter, we delivered $69 million in total revenues, representing a 52.5% increase year-over-year.",
+      "concept": "revenue",
+      "claimed_value": 69000000.0,
+      "filed_value": 69032750,
+      "relative_error": 0.0005,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2026478/000202647826000072/0002026478-26-000072-index.htm"
+      }
+    },
+    {
+      "speaker": "Darryle Burnham",
+      "start_sec": 977.4,
+      "sentence": "We reported quarterly net income of $15.2 million, or $0.12 per share, compared to a net loss of $4.1 million, or $0.03 per share, in the prior year quarter.",
+      "concept": "net_income",
+      "claimed_value": 15200000.0,
+      "filed_value": 15229634,
+      "relative_error": 0.0019,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2026478/000202647826000072/0002026478-26-000072-index.htm"
+      }
+    }
+  ]
+}

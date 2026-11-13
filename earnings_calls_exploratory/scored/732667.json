@@ -1,0 +1,55 @@
+{
+  "event_id": "732667",
+  "ticker": "MPTI",
+  "company": "M-tron Industries, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 3,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Cameron Pforr",
+      "start_sec": 195.7,
+      "sentence": "Total revenues for the third quarter were $15.7 million, an 11.1% increase over the $14.2 million of revenue we reported in the third quarter of 2025.",
+      "concept": "revenue",
+      "claimed_value": 15700000.0,
+      "filed_value": 15741000,
+      "relative_error": 0.0026,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1902314/000143774926036399/0001437749-26-036399-index.htm"
+      }
+    },
+    {
+      "speaker": "Cameron Pforr",
+      "start_sec": 240.5,
+      "sentence": "Net income was $3 million, or $0.70 per diluted share, for the three months ended September 30, 2026, compared with $1.8 million, or $0.60 per diluted share, for the three months ended September 30, 2025.",
+      "concept": "net_income",
+      "claimed_value": 3000000.0,
+      "filed_value": 3049000,
+      "relative_error": 0.0161,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1902314/000143774926036399/0001437749-26-036399-index.htm"
+      }
+    },
+    {
+      "speaker": "Cameron Pforr",
+      "start_sec": 1066.7,
+      "sentence": "It was over $4 million, so it is probably roughly 7%-8% of revenue, which is about double of what we have been doing over the past couple years.",
+      "concept": "revenue",
+      "claimed_value": 4000000.0,
+      "filed_value": 15741000,
+      "relative_error": 0.7459,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1902314/000143774926036399/0001437749-26-036399-index.htm"
+      }
+    }
+  ]
+}

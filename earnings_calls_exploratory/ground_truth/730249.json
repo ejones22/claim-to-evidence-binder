@@ -1,0 +1,58 @@
+{
+  "event_id": "730249",
+  "ticker": "SNAL",
+  "cik": "1886894",
+  "company": "Snail, Inc.",
+  "quarter_label": "Q3 2026",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "revenue": {
+      "value": 33061435,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051501",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    "net_income": {
+      "value": 6671003,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051501",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "operating_income": {
+      "value": 7172961,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051501",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 51492033,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051501",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

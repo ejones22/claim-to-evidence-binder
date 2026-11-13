@@ -1,0 +1,70 @@
+{
+  "event_id": "732833",
+  "ticker": "CBUS",
+  "cik": "0001705843",
+  "company": "Cibus, Inc.",
+  "quarter_label": "Q3 2026",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "revenue": {
+      "value": 800000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001628280-26-073448",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026073448/0001628280-26-073448-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    "net_income": {
+      "value": -21941000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001628280-26-073448",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026073448/0001628280-26-073448-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "eps_diluted": {
+      "value": -0.29,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001628280-26-073448",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026073448/0001628280-26-073448-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:EarningsPerShareDiluted"
+    },
+    "operating_income": {
+      "value": -12506000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001628280-26-073448",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026073448/0001628280-26-073448-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 301483000,
+      "fiscal_year": 2026,
+      "fiscal_period": "Q3",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001628280-26-073448",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026073448/0001628280-26-073448-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

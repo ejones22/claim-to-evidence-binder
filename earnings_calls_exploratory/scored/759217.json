@@ -1,0 +1,100 @@
+{
+  "event_id": "759217",
+  "ticker": "LGCY",
+  "company": "Legacy Education Inc.",
+  "quarter_label": "Q1 2027",
+  "n_claims": 6,
+  "n_bound": 6,
+  "claims": [
+    {
+      "speaker": "LeeAnn Rohmann",
+      "start_sec": 286.0,
+      "sentence": "Revenue grew 3.1% to $20 million.",
+      "concept": "revenue",
+      "claimed_value": 20000000.0,
+      "filed_value": 20002919,
+      "relative_error": 0.0001,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm"
+      }
+    },
+    {
+      "speaker": "Brandon Pope",
+      "start_sec": 1064.4,
+      "sentence": "Beginning with the first quarter of fiscal 2027 results, revenue for the three months ended September 30th, 2026, increased 3.1% to $20 million from $19.4 million in the prior year quarter, an increase of $602,000.",
+      "concept": "revenue",
+      "claimed_value": 20000000.0,
+      "filed_value": 20002919,
+      "relative_error": 0.0001,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm"
+      }
+    },
+    {
+      "speaker": "Brandon Pope",
+      "start_sec": 1089.5,
+      "sentence": "Operating income was $0.9 million compared to $2.7 million in the prior year quarter.",
+      "concept": "operating_income",
+      "claimed_value": 900000.0,
+      "filed_value": 880963,
+      "relative_error": 0.0216,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm"
+      }
+    },
+    {
+      "speaker": "Brandon Pope",
+      "start_sec": 1166.6,
+      "sentence": "Net income was $0.9 million in the quarter.",
+      "concept": "net_income",
+      "claimed_value": 900000.0,
+      "filed_value": 868710,
+      "relative_error": 0.036,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm"
+      }
+    },
+    {
+      "speaker": "Brandon Pope",
+      "start_sec": 1179.1,
+      "sentence": "Diluted earnings per share was $0.06.",
+      "concept": "eps_diluted",
+      "claimed_value": 0.06,
+      "filed_value": 0.06,
+      "relative_error": 0.0,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm"
+      }
+    },
+    {
+      "speaker": "Brandon Pope",
+      "start_sec": 1306.9,
+      "sentence": "Total assets were $86.9 million, stockholders' equity was $54 million, and debt was minimal.",
+      "concept": "total_assets",
+      "claimed_value": 86900000.0,
+      "filed_value": 86942346,
+      "relative_error": 0.0005,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1836754/000149315226051374/0001493152-26-051374-index.htm"
+      }
+    }
+  ]
+}

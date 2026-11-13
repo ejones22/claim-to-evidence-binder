@@ -1,0 +1,100 @@
+{
+  "event_id": "732864",
+  "ticker": "VTSI",
+  "company": "VirTra, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 6,
+  "n_bound": 5,
+  "claims": [
+    {
+      "speaker": "John Givens",
+      "start_sec": 88.6,
+      "sentence": "We delivered a strong quarter with revenue at $7.6 million, bookings of $10.3 million, and net income of $2.2 million, or $0.19 per diluted share.",
+      "concept": "revenue",
+      "claimed_value": 7600000.0,
+      "filed_value": 7623319,
+      "relative_error": 0.0031,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1085243/000143774926036549/0001437749-26-036549-index.htm"
+      }
+    },
+    {
+      "speaker": "John Givens",
+      "start_sec": 88.6,
+      "sentence": "We delivered a strong quarter with revenue at $7.6 million, bookings of $10.3 million, and net income of $2.2 million, or $0.19 per diluted share.",
+      "concept": "net_income",
+      "claimed_value": 2200000.0,
+      "filed_value": 2162841,
+      "relative_error": 0.0172,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1085243/000143774926036549/0001437749-26-036549-index.htm"
+      }
+    },
+    {
+      "speaker": "John Givens",
+      "start_sec": 123.4,
+      "sentence": "Gross margins increased to 70%, while disciplined cost management contributed to $2 million of operating income compared to the operating loss in the prior year quarter.",
+      "concept": "operating_income",
+      "claimed_value": 2000000.0,
+      "filed_value": 2007486,
+      "relative_error": 0.0037,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1085243/000143774926036549/0001437749-26-036549-index.htm"
+      }
+    },
+    {
+      "speaker": "Alanna Boudreau",
+      "start_sec": 558.7,
+      "sentence": "Our total revenue for the third quarter was $7.6 million compared to $5.3 million in the prior year period.",
+      "concept": "revenue",
+      "claimed_value": 7600000.0,
+      "filed_value": 7623319,
+      "relative_error": 0.0031,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1085243/000143774926036549/0001437749-26-036549-index.htm"
+      }
+    },
+    {
+      "speaker": "Alanna Boudreau",
+      "start_sec": 611.2,
+      "sentence": "Our gross profit for the third quarter was $5.3 million or 70% of total revenue compared to $3.5 million or 66% of total revenue in the prior year period.",
+      "concept": "revenue",
+      "claimed_value": 5300000.0,
+      "filed_value": 7623319,
+      "relative_error": 0.3048,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1085243/000143774926036549/0001437749-26-036549-index.htm"
+      }
+    },
+    {
+      "speaker": "Alanna Boudreau",
+      "start_sec": 690.3,
+      "sentence": "Net income for the third quarter was $2.2 million or $0.19 per diluted share compared to the net loss of $0.4 million or negative $0.03 per diluted share in the prior year period.",
+      "concept": "net_income",
+      "claimed_value": 2200000.0,
+      "filed_value": 2162841,
+      "relative_error": 0.0172,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1085243/000143774926036549/0001437749-26-036549-index.htm"
+      }
+    }
+  ]
+}

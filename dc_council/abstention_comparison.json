@@ -1,0 +1,16 @@
+{
+  "abstaining": {
+    "coverage": 0.6333333333333333,
+    "error_rate": 0.11842105263157894,
+    "n_covered": 76,
+    "n_errors": 9
+  },
+  "forced": {
+    "coverage": 1.0,
+    "error_rate": 0.36666666666666664,
+    "n_covered": 120,
+    "n_errors": 44,
+    "errors_on_unverifiable": 22,
+    "errors_on_wrong_side": 22
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "event_id": "732800",
+  "ticker": "WYY",
+  "company": "WidePoint Corporation",
+  "quarter_label": "Q3 2026",
+  "n_claims": 3,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Robert George",
+      "start_sec": 520.6,
+      "sentence": "Total revenue for the quarter increased 27% to $45.1 million from $35.5 million in the same period last year.",
+      "concept": "revenue",
+      "claimed_value": 45100000.0,
+      "filed_value": 45066908,
+      "relative_error": 0.0007,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1034760/000165495426009733/0001654954-26-009733-index.htm"
+      }
+    },
+    {
+      "speaker": "Robert George",
+      "start_sec": 672.6,
+      "sentence": "Gross profit for the quarter increased by $900,000- $6.2 million, or 14% of revenues, from $5.3 million, or 15% of revenues, in the same period last year.",
+      "concept": "revenue",
+      "claimed_value": 6200000.0,
+      "filed_value": 45066908,
+      "relative_error": 0.8624,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1034760/000165495426009733/0001654954-26-009733-index.htm"
+      }
+    },
+    {
+      "speaker": "Robert George",
+      "start_sec": 757.9,
+      "sentence": "General administrative expenses during the quarter were $5.6 million, or 12% of revenues, compared to $4.8 million, or 14% of revenues in the same period last year.",
+      "concept": "revenue",
+      "claimed_value": 5600000.0,
+      "filed_value": 45066908,
+      "relative_error": 0.8757,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1034760/000165495426009733/0001654954-26-009733-index.htm"
+      }
+    }
+  ]
+}

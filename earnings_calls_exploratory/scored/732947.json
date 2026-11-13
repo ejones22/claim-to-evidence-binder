@@ -1,0 +1,25 @@
+{
+  "event_id": "732947",
+  "ticker": "AVX",
+  "company": "Avax One Technology Ltd.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Stephanie Brady",
+      "start_sec": 818.6,
+      "sentence": "Net income for the third quarter of 2026 increased materially to $49.9 million, or $6.11 per diluted share, compared to a net loss of $8.4 million, or $66.81 per diluted share in the third quarter of 2025.",
+      "concept": "net_income",
+      "claimed_value": 49900000.0,
+      "filed_value": 49892000,
+      "relative_error": 0.0002,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1826397/000149315226051431/0001493152-26-051431-index.htm"
+      }
+    }
+  ]
+}

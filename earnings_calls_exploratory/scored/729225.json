@@ -1,0 +1,25 @@
+{
+  "event_id": "729225",
+  "ticker": "GCTS",
+  "company": "GCT Semiconductor Holding, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 0,
+  "claims": [
+    {
+      "speaker": "Edmond Cheng",
+      "start_sec": 636.3,
+      "sentence": "Net loss for the third quarter of 2026 included a $6.2 million gain from the change in fair value common stock warrant liabilities, driven by decreases in the market price of our publicly traded warrants and common stock during the quarter, and a $5.4 million loss on foreign currency transactions as the Korean won appreciated against the USD, affecting the remeasurement of our Korean won-denominated term loans.",
+      "concept": "net_income",
+      "claimed_value": -6200000.0,
+      "filed_value": -7388000,
+      "relative_error": 0.1608,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1851961/000119312526458474/0001193125-26-458474-index.htm"
+      }
+    }
+  ]
+}

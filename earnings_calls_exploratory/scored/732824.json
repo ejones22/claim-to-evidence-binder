@@ -1,0 +1,70 @@
+{
+  "event_id": "732824",
+  "ticker": "XOS",
+  "company": "Xos, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 4,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Dakota Semler",
+      "start_sec": 217.6,
+      "sentence": "We delivered 33 units in the third quarter and generated $5.5 million in revenue, up 17% sequentially.",
+      "concept": "revenue",
+      "claimed_value": 5500000.0,
+      "filed_value": 5546000,
+      "relative_error": 0.0083,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1819493/000181949326000061/0001819493-26-000061-index.htm"
+      }
+    },
+    {
+      "speaker": "Liana Pogosyan",
+      "start_sec": 927.4,
+      "sentence": "For Q3 2026, our revenue was $5.5 million on 33 units, down from $16.5 million on 130 units in Q3 2025, but up sequentially from $4.7 million on 30 units in Q2 2026.",
+      "concept": "revenue",
+      "claimed_value": 5500000.0,
+      "filed_value": 5546000,
+      "relative_error": 0.0083,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1819493/000181949326000061/0001819493-26-000061-index.htm"
+      }
+    },
+    {
+      "speaker": "Liana Pogosyan",
+      "start_sec": 1152.8,
+      "sentence": "Operating loss for the third quarter of 2026 improved sequentially to $7.5 million compared to $7.9 million in the second quarter of 2026, driven by higher gross profit and lower operating expenses.",
+      "concept": "operating_income",
+      "claimed_value": -7500000.0,
+      "filed_value": -7460000,
+      "relative_error": 0.0054,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1819493/000181949326000061/0001819493-26-000061-index.htm"
+      }
+    },
+    {
+      "speaker": "Liana Pogosyan",
+      "start_sec": 1167.9,
+      "sentence": "This compares to an operating loss of $7 million in the third quarter of 2025.",
+      "concept": "operating_income",
+      "claimed_value": -7000000.0,
+      "filed_value": -7460000,
+      "relative_error": 0.0617,
+      "verdict": "close_but_off",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1819493/000181949326000061/0001819493-26-000061-index.htm"
+      }
+    }
+  ]
+}

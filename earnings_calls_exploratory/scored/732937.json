@@ -1,0 +1,55 @@
+{
+  "event_id": "732937",
+  "ticker": "JCAP",
+  "company": "Jefferson Capital, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 3,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Christo Realov",
+      "start_sec": 763.4,
+      "sentence": "Taking a closer look at the financial details for the third quarter, revenue was $186 million, up 23% year-over-year, driven by continued strong deployment and higher yields.",
+      "concept": "revenue",
+      "claimed_value": 186000000.0,
+      "filed_value": 185514000,
+      "relative_error": 0.0026,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2046042/000110465926126267/0001104659-26-126267-index.htm"
+      }
+    },
+    {
+      "speaker": "Christo Realov",
+      "start_sec": 847.2,
+      "sentence": "Finally, for the third quarter, Jefferson Capital recognized portfolio revenue of $13.4 million and net operating income of $10.3 million related to the Bluestem portfolio purchase.",
+      "concept": "operating_income",
+      "claimed_value": 10300000.0,
+      "filed_value": 86514000,
+      "relative_error": 0.8809,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2046042/000110465926126267/0001104659-26-126267-index.htm"
+      }
+    },
+    {
+      "speaker": "John Hecht",
+      "start_sec": 1422.0,
+      "sentence": "I was specifically referring to the $3.1 million expense, not the operating profit contribution.",
+      "concept": "operating_income",
+      "claimed_value": 3100000.0,
+      "filed_value": 86514000,
+      "relative_error": 0.9642,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2046042/000110465926126267/0001104659-26-126267-index.htm"
+      }
+    }
+  ]
+}

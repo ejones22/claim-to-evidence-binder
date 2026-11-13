@@ -1,0 +1,46 @@
+{
+  "event_id": "731632",
+  "ticker": "CRWS",
+  "cik": "0000025895",
+  "company": "Crown Crafts, Inc.",
+  "quarter_label": "Q2 2027",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "net_income": {
+      "value": 1317000,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q2",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001437749-26-036590",
+      "period_end": "2026-09-27",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/25895/000143774926036590/0001437749-26-036590-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "operating_income": {
+      "value": 1564000,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q2",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001437749-26-036590",
+      "period_end": "2026-09-27",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/25895/000143774926036590/0001437749-26-036590-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 65977000,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q2",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001437749-26-036590",
+      "period_end": "2026-09-27",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/25895/000143774926036590/0001437749-26-036590-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

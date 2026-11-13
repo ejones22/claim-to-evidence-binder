@@ -1,0 +1,25 @@
+{
+  "event_id": "732862",
+  "ticker": "REKR",
+  "company": "Rekor Systems, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Joseph Nalepa",
+      "start_sec": 347.0,
+      "sentence": "Net loss for the quarter narrowed to $2.9 million, or $0.02 per share, from $4.1 million, or $0.03 per share.",
+      "concept": "net_income",
+      "claimed_value": -2900000.0,
+      "filed_value": -2857000,
+      "relative_error": 0.0151,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1697851/000143774926036581/0001437749-26-036581-index.htm"
+      }
+    }
+  ]
+}

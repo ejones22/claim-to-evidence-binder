@@ -1,0 +1,28 @@
+{
+  "n": 120,
+  "confusion_matrix": {
+    "tp": 34,
+    "fp": 3,
+    "fn": 27,
+    "tn": 56
+  },
+  "precision": 0.918918918918919,
+  "recall": 0.5573770491803278,
+  "not_found_root_causes": {
+    "unidentified_garble": 6,
+    "genuine_old_period": 6,
+    "truncated_midword": 1,
+    "impossible_period": 7
+  },
+  "llm_judge": {
+    "model": "qwen2.5:7b",
+    "confusion_matrix": {
+      "tp": 40,
+      "fp": 1,
+      "fn": 21,
+      "tn": 58
+    },
+    "precision": 0.975609756097561,
+    "recall": 0.6557377049180327
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "event_id": "732833",
+  "ticker": "CBUS",
+  "company": "Cibus, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Carlo Broos",
+      "start_sec": 1302.1,
+      "sentence": "Revenue was $0.8 million for the quarter, compared to $0.6 million in the year-ago period.",
+      "concept": "revenue",
+      "claimed_value": 800000.0,
+      "filed_value": 800000,
+      "relative_error": 0.0,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026073448/0001628280-26-073448-index.htm"
+      }
+    },
+    {
+      "speaker": "Carlo Broos",
+      "start_sec": 1401.5,
+      "sentence": "Net loss was $21.9 million for the quarter, compared to $24.3 million in the year-ago period.",
+      "concept": "net_income",
+      "claimed_value": -21900000.0,
+      "filed_value": -21941000,
+      "relative_error": 0.0019,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026073448/0001628280-26-073448-index.htm"
+      }
+    }
+  ]
+}

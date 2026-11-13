@@ -1,0 +1,145 @@
+{
+  "event_id": "731649",
+  "ticker": "ANDG",
+  "company": "Andersen Group Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 9,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Mark Vorsatz",
+      "start_sec": 150.7,
+      "sentence": "Our revenue for the third quarter was about $337 million, which was about an 18.7% growth rate, or up about $53 million.",
+      "concept": "revenue",
+      "claimed_value": 337000000.0,
+      "filed_value": 337318000,
+      "relative_error": 0.0009,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Neal Livingston",
+      "start_sec": 563.4,
+      "sentence": "In terms of our GAAP net income results, net income for 3Q was $68 million.",
+      "concept": "net_income",
+      "claimed_value": 68000000.0,
+      "filed_value": -8981000,
+      "relative_error": 8.5715,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Neal Livingston",
+      "start_sec": 575.3,
+      "sentence": "There was a net loss attributable to the Andersen Group of $9 million, or - $0.55 per basic and diluted share of Class A common stock.",
+      "concept": "net_income",
+      "claimed_value": -9000000.0,
+      "filed_value": -8981000,
+      "relative_error": 0.0021,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Neal Livingston",
+      "start_sec": 589.6,
+      "sentence": "The net income attributable to the non-controlling interest was $76.9 million.",
+      "concept": "net_income",
+      "claimed_value": 76900000.0,
+      "filed_value": -8981000,
+      "relative_error": 9.5625,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Neal Livingston",
+      "start_sec": 639.4,
+      "sentence": "On operating expense, operating expenses were $234.9 million for the third quarter, or 69.6% of revenue.",
+      "concept": "revenue",
+      "claimed_value": 234900000.0,
+      "filed_value": 337318000,
+      "relative_error": 0.3036,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Neal Livingston",
+      "start_sec": 788.7,
+      "sentence": "These eight transactions contributed $16.2 million of revenue.",
+      "concept": "revenue",
+      "claimed_value": 16200000.0,
+      "filed_value": 337318000,
+      "relative_error": 0.952,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Mark Vorsatz",
+      "start_sec": 1940.8,
+      "sentence": "Last year, our growth in net income was 48%, even though we lost $22 million in global mobility and consulting.",
+      "concept": "net_income",
+      "claimed_value": 22000000.0,
+      "filed_value": -8981000,
+      "relative_error": 3.4496,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Mark Vorsatz",
+      "start_sec": 2200.8,
+      "sentence": "When I started discussions with the partners in New Zealand, who I call my Kiwi brothers, they were doing about $5.5 million of revenue.",
+      "concept": "revenue",
+      "claimed_value": 5500000.0,
+      "filed_value": 337318000,
+      "relative_error": 0.9837,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    },
+    {
+      "speaker": "Mark Vorsatz",
+      "start_sec": 2213.7,
+      "sentence": "They added, from the time we started conversations until the time we closed with them, they had added two groups that added about another $3 million of revenue, so they were up to about $8.5 million.",
+      "concept": "revenue",
+      "claimed_value": 3000000.0,
+      "filed_value": 337318000,
+      "relative_error": 0.9911,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2065708/000206570826000009/0002065708-26-000009-index.htm"
+      }
+    }
+  ]
+}

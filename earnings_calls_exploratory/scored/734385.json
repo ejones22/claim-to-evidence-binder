@@ -1,0 +1,25 @@
+{
+  "event_id": "734385",
+  "ticker": "MSGM",
+  "company": "Motorsport Games Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 0,
+  "claims": [
+    {
+      "speaker": "Peter Hansen-Chambers",
+      "start_sec": 966.8,
+      "sentence": "The result is net income of $0.7 million for the quarter, our seventh consecutive profitable quarter.",
+      "concept": "net_income",
+      "claimed_value": 700000.0,
+      "filed_value": 328388,
+      "relative_error": 1.1316,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1821175/000149315226051464/0001493152-26-051464-index.htm"
+      }
+    }
+  ]
+}

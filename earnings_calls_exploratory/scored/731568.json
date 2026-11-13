@@ -1,0 +1,55 @@
+{
+  "event_id": "731568",
+  "ticker": "DERM",
+  "company": "Journey Medical Corporation",
+  "quarter_label": "Q3 2026",
+  "n_claims": 3,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Joseph Benesch",
+      "start_sec": 652.8,
+      "sentence": "Total revenue for the quarter was $19 million, compared to $15 million in the third quarter of 2025, an 8% increase from period to period.",
+      "concept": "revenue",
+      "claimed_value": 19000000.0,
+      "filed_value": 18967000,
+      "relative_error": 0.0017,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1867066/000110465926126285/0001104659-26-126285-index.htm"
+      }
+    },
+    {
+      "speaker": "Joseph Benesch",
+      "start_sec": 664.1,
+      "sentence": "This growth was primarily driven by the continued commercial demand for Emrosi, which generated $9 million in net revenue for the quarter.",
+      "concept": "revenue",
+      "claimed_value": 9000000.0,
+      "filed_value": 18967000,
+      "relative_error": 0.5255,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1867066/000110465926126285/0001104659-26-126285-index.htm"
+      }
+    },
+    {
+      "speaker": "Joseph Benesch",
+      "start_sec": 713.5,
+      "sentence": "Our GAAP net loss narrowed to $1.3 million, or $0.05 per share basic and diluted, compared to a net loss of $3.9 million, or $0.14 per share basic and diluted, for 3Q 2025.",
+      "concept": "net_income",
+      "claimed_value": -1300000.0,
+      "filed_value": -1315000,
+      "relative_error": 0.0114,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1867066/000110465926126285/0001104659-26-126285-index.htm"
+      }
+    }
+  ]
+}

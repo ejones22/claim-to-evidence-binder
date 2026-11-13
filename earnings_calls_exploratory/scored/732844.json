@@ -1,0 +1,40 @@
+{
+  "event_id": "732844",
+  "ticker": "CV",
+  "company": "CapsoVision, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "David Garcia",
+      "start_sec": 740.6,
+      "sentence": "Third quarter revenue was $3.6 million, compared with $3.5 million in the third quarter of 2025, a change of 1%, and average selling price was stable year-over-year.",
+      "concept": "revenue",
+      "claimed_value": 3600000.0,
+      "filed_value": 3568000,
+      "relative_error": 0.009,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1378325/000137832526000056/0001378325-26-000056-index.htm"
+      }
+    },
+    {
+      "speaker": "David Garcia",
+      "start_sec": 810.4,
+      "sentence": "Net loss was $7.3 million, or $0.15 a share, compared with a net loss of $7.9 million, or $0.17 per share, in the prior year period.",
+      "concept": "net_income",
+      "claimed_value": -7300000.0,
+      "filed_value": -7339000,
+      "relative_error": 0.0053,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1378325/000137832526000056/0001378325-26-000056-index.htm"
+      }
+    }
+  ]
+}

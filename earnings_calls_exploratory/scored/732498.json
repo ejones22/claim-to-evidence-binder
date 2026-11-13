@@ -1,0 +1,25 @@
+{
+  "event_id": "732498",
+  "ticker": "LWAY",
+  "company": "Lifeway Foods, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Julie Smolyansky",
+      "start_sec": 527.4,
+      "sentence": "Net income was $0.3 million or $0.02 per basic and diluted share in third quarter compared with $3.5 million or $0.23 per share last year.",
+      "concept": "net_income",
+      "claimed_value": 300000.0,
+      "filed_value": 260000,
+      "relative_error": 0.1538,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/814586/000168316826008609/0001683168-26-008609-index.htm"
+      }
+    }
+  ]
+}

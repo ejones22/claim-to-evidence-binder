@@ -1,0 +1,40 @@
+{
+  "event_id": "726674",
+  "ticker": "LCTX",
+  "company": "Lineage Cell Therapeutics, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Jill Howe",
+      "start_sec": 2048.1,
+      "sentence": "Total revenues for the three months were approximately $1.5 million, a net decrease of $2.2 million as compared to $3.7 million for the same period in 2025.",
+      "concept": "revenue",
+      "claimed_value": 1500000.0,
+      "filed_value": 1434000,
+      "relative_error": 0.046,
+      "verdict": "close_but_off",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526458487/0001193125-26-458487-index.htm"
+      }
+    },
+    {
+      "speaker": "Jill Howe",
+      "start_sec": 2158.3,
+      "sentence": "The net income was $4.2 million or $0.02 per share basic and $0.03 loss per share diluted, compared to a net loss of $28 million or $0.13 per share of both basic and diluted for the same period in 2025.",
+      "concept": "net_income",
+      "claimed_value": 4200000.0,
+      "filed_value": 4232000,
+      "relative_error": 0.0076,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526458487/0001193125-26-458487-index.htm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "event_id": "749570",
+  "ticker": "AENT",
+  "company": "Alliance Entertainment Holding Corporation",
+  "quarter_label": "Q1 2027",
+  "n_claims": 4,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Jeff Walker",
+      "start_sec": 150.1,
+      "sentence": "GAAP net income increased 56% to $7.6 million, and diluted earnings per share increased 50% to $0.15.",
+      "concept": "net_income",
+      "claimed_value": 7600000.0,
+      "filed_value": 7621000,
+      "relative_error": 0.0028,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm"
+      }
+    },
+    {
+      "speaker": "Amanda Gnecco",
+      "start_sec": 878.3,
+      "sentence": "Operating income was $10.6 million compared with $10.5 million.",
+      "concept": "operating_income",
+      "claimed_value": 10600000.0,
+      "filed_value": 10624000,
+      "relative_error": 0.0023,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm"
+      }
+    },
+    {
+      "speaker": "Amanda Gnecco",
+      "start_sec": 908.5,
+      "sentence": "GAAP net income increased 56% to $7.6 million from $4.9 million, and diluted earnings per share increased 50% to $0.15 per share.",
+      "concept": "net_income",
+      "claimed_value": 7600000.0,
+      "filed_value": 7621000,
+      "relative_error": 0.0028,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm"
+      }
+    },
+    {
+      "speaker": "Jeff Walker",
+      "start_sec": 2582.6,
+      "sentence": "Because it is an operating lease, you are going to see a $3 million pickup annually on our net income, or pre-tax income without that lease payment.",
+      "concept": "net_income",
+      "claimed_value": 3000000.0,
+      "filed_value": 7621000,
+      "relative_error": 0.6064,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm"
+      }
+    }
+  ]
+}

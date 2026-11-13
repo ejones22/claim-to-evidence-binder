@@ -1,0 +1,25 @@
+{
+  "event_id": "731554",
+  "ticker": "BCDA",
+  "company": "BioCardia, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "David McClung",
+      "start_sec": 815.9,
+      "sentence": "Our net loss was $1.8 million in Q3 2026, compared to $1.5 million in Q3 2025.",
+      "concept": "net_income",
+      "claimed_value": -1800000.0,
+      "filed_value": -1817000,
+      "relative_error": 0.0094,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/925741/000143774926036559/0001437749-26-036559-index.htm"
+      }
+    }
+  ]
+}

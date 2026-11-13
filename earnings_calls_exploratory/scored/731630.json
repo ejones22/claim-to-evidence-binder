@@ -1,0 +1,40 @@
+{
+  "event_id": "731630",
+  "ticker": "LVLU",
+  "company": "Lulu's Fashion Lounge Holdings, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Heidi Crane",
+      "start_sec": 1228.9,
+      "sentence": "In the third quarter, net revenue was $58.6 million, a decrease of 20% year-over-year, driven by a decrease in total orders placed and the impact of higher return rates, partially offset by an increase in wholesale revenue.",
+      "concept": "revenue",
+      "claimed_value": 58600000.0,
+      "filed_value": 58602000,
+      "relative_error": 0.0,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1780201/000110465926126280/0001104659-26-126280-index.htm"
+      }
+    },
+    {
+      "speaker": "Heidi Crane",
+      "start_sec": 1317.2,
+      "sentence": "Our net loss for the third quarter was $4.3 million compared to a net loss of $2.3 million in the same period last year.",
+      "concept": "net_income",
+      "claimed_value": -4300000.0,
+      "filed_value": -4265000,
+      "relative_error": 0.0082,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1780201/000110465926126280/0001104659-26-126280-index.htm"
+      }
+    }
+  ]
+}

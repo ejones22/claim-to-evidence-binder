@@ -1,0 +1,25 @@
+{
+  "event_id": "730332",
+  "ticker": "IZEA",
+  "company": "IZEA Worldwide, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Peter Biere",
+      "start_sec": 805.2,
+      "sentence": "For the quarter, we reported a net loss of $0.4 million compared to net income of $0.1 million in the prior- year- period.",
+      "concept": "net_income",
+      "claimed_value": -400000.0,
+      "filed_value": -443940,
+      "relative_error": 0.099,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1495231/000149523126000033/0001495231-26-000033-index.htm"
+      }
+    }
+  ]
+}

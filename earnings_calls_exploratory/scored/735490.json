@@ -1,0 +1,70 @@
+{
+  "event_id": "735490",
+  "ticker": "STEX",
+  "company": "Streamex Corp.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 4,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Christine Plummer",
+      "start_sec": 626.0,
+      "sentence": "Net loss was $17.5 million, or $0.09 a share, against $0.08 in Q2.",
+      "concept": "net_income",
+      "claimed_value": -17500000.0,
+      "filed_value": -17463000,
+      "relative_error": 0.0021,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1530766/000149315226051398/0001493152-26-051398-index.htm"
+      }
+    },
+    {
+      "speaker": "Christine Plummer",
+      "start_sec": 686.9,
+      "sentence": "Net loss widened by $2.9 million to $17.5 million.",
+      "concept": "net_income",
+      "claimed_value": -17500000.0,
+      "filed_value": -17463000,
+      "relative_error": 0.0021,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1530766/000149315226051398/0001493152-26-051398-index.htm"
+      }
+    },
+    {
+      "speaker": "Christine Plummer",
+      "start_sec": 718.5,
+      "sentence": "That is about $61 million in total, so the cash cost of running the business is much lower than the net loss suggests.",
+      "concept": "net_income",
+      "claimed_value": -61000000.0,
+      "filed_value": -17463000,
+      "relative_error": 2.4931,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1530766/000149315226051398/0001493152-26-051398-index.htm"
+      }
+    },
+    {
+      "speaker": "Christine Plummer",
+      "start_sec": 729.8,
+      "sentence": "Total assets were $150 million, liabilities $13.5 million, and stockholders' equity $136.4 million.",
+      "concept": "total_assets",
+      "claimed_value": 150000000.0,
+      "filed_value": 150021000,
+      "relative_error": 0.0001,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1530766/000149315226051398/0001493152-26-051398-index.htm"
+      }
+    }
+  ]
+}

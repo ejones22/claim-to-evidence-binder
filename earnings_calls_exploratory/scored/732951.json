@@ -1,0 +1,85 @@
+{
+  "event_id": "732951",
+  "ticker": "AMPG",
+  "company": "AmpliTech Group, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 5,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Louisa Sanfratello",
+      "start_sec": 953.9,
+      "sentence": "The third quarter net loss was $1.89 million, or $0.07 per basic and diluted share.",
+      "concept": "net_income",
+      "claimed_value": -1890000.0,
+      "filed_value": -1887142,
+      "relative_error": 0.0015,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1518461/000149315226051385/0001493152-26-051385-index.htm"
+      }
+    },
+    {
+      "speaker": "Louisa Sanfratello",
+      "start_sec": 962.8,
+      "sentence": "That compares with a net loss of approximately $3.09 million in the second quarter of 2026, reflecting a sequential narrowing of the quarterly loss.",
+      "concept": "net_income",
+      "claimed_value": -3090000.0,
+      "filed_value": -1887142,
+      "relative_error": 0.6374,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1518461/000149315226051385/0001493152-26-051385-index.htm"
+      }
+    },
+    {
+      "speaker": "Louisa Sanfratello",
+      "start_sec": 1048.0,
+      "sentence": "Total assets were $76.13 million.",
+      "concept": "total_assets",
+      "claimed_value": 76130000.0,
+      "filed_value": 76132104,
+      "relative_error": 0.0,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1518461/000149315226051385/0001493152-26-051385-index.htm"
+      }
+    },
+    {
+      "speaker": "Louisa Sanfratello",
+      "start_sec": 1051.9,
+      "sentence": "Total stockholders' equity was $65.72 million, compared with $51.48 million of total assets and $32.86 million of stockholders' equity at December 31st, 2025.",
+      "concept": "total_assets",
+      "claimed_value": 32860000.0,
+      "filed_value": 76132104,
+      "relative_error": 0.5684,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1518461/000149315226051385/0001493152-26-051385-index.htm"
+      }
+    },
+    {
+      "speaker": "Jorge Flores",
+      "start_sec": 1675.7,
+      "sentence": "The third quarter net loss narrowed sequentially to $1.89 million from approximately $3.09 million in the second quarter.",
+      "concept": "net_income",
+      "claimed_value": -1890000.0,
+      "filed_value": -1887142,
+      "relative_error": 0.0015,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1518461/000149315226051385/0001493152-26-051385-index.htm"
+      }
+    }
+  ]
+}

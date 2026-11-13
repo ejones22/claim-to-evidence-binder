@@ -1,0 +1,25 @@
+{
+  "event_id": "730233",
+  "ticker": "CDXS",
+  "company": "Codexis, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Georgia Erbez",
+      "start_sec": 969.7,
+      "sentence": "Net loss for the third quarter of 2026 was $8.1 million, compared to a loss of $19.6 million for the third quarter of 2025.",
+      "concept": "net_income",
+      "claimed_value": -8100000.0,
+      "filed_value": -8128000,
+      "relative_error": 0.0034,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1200375/000120037526000026/0001200375-26-000026-index.htm"
+      }
+    }
+  ]
+}

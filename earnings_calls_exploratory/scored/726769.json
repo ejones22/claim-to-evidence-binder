@@ -1,0 +1,70 @@
+{
+  "event_id": "726769",
+  "ticker": "VATE",
+  "company": "INNOVATE Corp.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 4,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Mike Sena",
+      "start_sec": 940.8,
+      "sentence": "Consolidated total revenue for the third quarter of 2026 was $495.5 million, an increase of 42.8% compared to $347.1 million in the prior year period.",
+      "concept": "revenue",
+      "claimed_value": 495500000.0,
+      "filed_value": 495500000,
+      "relative_error": 0.0,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1006837/000100683726000129/0001006837-26-000129-index.htm"
+      }
+    },
+    {
+      "speaker": "Mike Sena",
+      "start_sec": 963.0,
+      "sentence": "Net income attributable to common stockholders and participating preferred stockholders for the third quarter of 2026 was $15.8 million, or $1.10 per fully diluted share, compared to a net loss of $9.4 million, or $0.71 per fully diluted share in the prior year period.",
+      "concept": "net_income",
+      "claimed_value": -9400000.0,
+      "filed_value": 26500000,
+      "relative_error": 1.3547,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1006837/000100683726000129/0001006837-26-000129-index.htm"
+      }
+    },
+    {
+      "speaker": "Mike Sena",
+      "start_sec": 1004.9,
+      "sentence": "At infrastructure, revenue increased 45% to $490.6 million from $338.4 million in the prior year quarter.",
+      "concept": "revenue",
+      "claimed_value": 490600000.0,
+      "filed_value": 495500000,
+      "relative_error": 0.0099,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1006837/000100683726000129/0001006837-26-000129-index.htm"
+      }
+    },
+    {
+      "speaker": "Mike Sena",
+      "start_sec": 1125.7,
+      "sentence": "At Life Sciences, revenue decreased 61.3% to $1.2 million from $3.1 million in the prior year quarter.",
+      "concept": "revenue",
+      "claimed_value": 1200000.0,
+      "filed_value": 495500000,
+      "relative_error": 0.9976,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1006837/000100683726000129/0001006837-26-000129-index.htm"
+      }
+    }
+  ]
+}

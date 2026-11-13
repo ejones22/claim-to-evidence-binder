@@ -1,0 +1,85 @@
+{
+  "event_id": "729203",
+  "ticker": "FLNT",
+  "company": "Fluent, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 5,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Don Patrick",
+      "start_sec": 413.6,
+      "sentence": "Revenue of $53.6 million.",
+      "concept": "revenue",
+      "claimed_value": 53600000.0,
+      "filed_value": 53642000,
+      "relative_error": 0.0008,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1460329/000143774926036593/0001437749-26-036593-index.htm"
+      }
+    },
+    {
+      "speaker": "Ryan Perfit",
+      "start_sec": 734.7,
+      "sentence": "Total consolidated revenue was $53.6 million in the third quarter of 2026, compared with $47 million in the prior year period, an increase of 14%.",
+      "concept": "revenue",
+      "claimed_value": 53600000.0,
+      "filed_value": 53642000,
+      "relative_error": 0.0008,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1460329/000143774926036593/0001437749-26-036593-index.htm"
+      }
+    },
+    {
+      "speaker": "Ryan Perfit",
+      "start_sec": 881.1,
+      "sentence": "Commerce Media Solutions media margin in the third quarter of 2026 increased 189% to $13.3 million, or 36% of Commerce Media Solutions revenue, compared with $4.6 million or 25% of revenue in the third quarter of 2025.",
+      "concept": "revenue",
+      "claimed_value": 4600000.0,
+      "filed_value": 53642000,
+      "relative_error": 0.9142,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1460329/000143774926036593/0001437749-26-036593-index.htm"
+      }
+    },
+    {
+      "speaker": "Ryan Perfit",
+      "start_sec": 901.6,
+      "sentence": "Consolidated gross profit, exclusive of depreciation and amortization, increased 41% to $15.3 million, representing 28% of revenue.",
+      "concept": "revenue",
+      "claimed_value": 15300000.0,
+      "filed_value": 53642000,
+      "relative_error": 0.7148,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1460329/000143774926036593/0001437749-26-036593-index.htm"
+      }
+    },
+    {
+      "speaker": "Ryan Perfit",
+      "start_sec": 1027.9,
+      "sentence": "We reported a net loss of $3.1 million, or $0.10 per basic share, and $0.12 per diluted share in the third quarter of 2026, compared with a net loss of $7.6 million, or $0.27 per share in the prior year period, a 59% reduction in net loss.",
+      "concept": "net_income",
+      "claimed_value": -3100000.0,
+      "filed_value": -3125000,
+      "relative_error": 0.008,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1460329/000143774926036593/0001437749-26-036593-index.htm"
+      }
+    }
+  ]
+}

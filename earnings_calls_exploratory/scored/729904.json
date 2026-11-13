@@ -1,0 +1,40 @@
+{
+  "event_id": "729904",
+  "ticker": "NPCE",
+  "company": "NeuroPace, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Joel Becker",
+      "start_sec": 184.7,
+      "sentence": "Total revenue in the third quarter was $23.1 million, including RNS System revenue of $22.9 million, representing RNS growth of approximately 1% year-over-year.",
+      "concept": "revenue",
+      "claimed_value": 23100000.0,
+      "filed_value": 23104000,
+      "relative_error": 0.0002,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1528287/000152828726000039/0001528287-26-000039-index.htm"
+      }
+    },
+    {
+      "speaker": "Patrick Williams",
+      "start_sec": 1203.3,
+      "sentence": "Total revenue in the third quarter was $23.1 million, a decrease of 1.1% compared with $23.4 million in the prior-year period.",
+      "concept": "revenue",
+      "claimed_value": 23100000.0,
+      "filed_value": 23104000,
+      "relative_error": 0.0002,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1528287/000152828726000039/0001528287-26-000039-index.htm"
+      }
+    }
+  ]
+}

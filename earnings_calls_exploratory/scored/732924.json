@@ -1,0 +1,40 @@
+{
+  "event_id": "732924",
+  "ticker": "INV",
+  "company": "Innventure, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Eric Stober",
+      "start_sec": 1013.3,
+      "sentence": "For the third quarter, consolidated revenue was $1.48 million, compared with $0.53 million for the third quarter of 2025 and $0.95 million in the second quarter of 2026.",
+      "concept": "revenue",
+      "claimed_value": 1480000.0,
+      "filed_value": 1481000,
+      "relative_error": 0.0007,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2001557/000200155726000207/0002001557-26-000207-index.htm"
+      }
+    },
+    {
+      "speaker": "Eric Stober",
+      "start_sec": 1067.0,
+      "sentence": "Net loss for the quarter was $333.84 million.",
+      "concept": "net_income",
+      "claimed_value": -333840000.0,
+      "filed_value": -202372000,
+      "relative_error": 0.6496,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/2001557/000200155726000207/0002001557-26-000207-index.htm"
+      }
+    }
+  ]
+}

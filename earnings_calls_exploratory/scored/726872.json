@@ -1,0 +1,25 @@
+{
+  "event_id": "726872",
+  "ticker": "OFRM",
+  "company": "Once Upon A Farm, PBC",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Larry Waldman",
+      "start_sec": 972.6,
+      "sentence": "Net loss improved to $3.8 million from $11.3 million in the prior year period, primarily reflecting the absence of the prior year non-cash change in fair value of a derivative liability.",
+      "concept": "net_income",
+      "claimed_value": -3800000.0,
+      "filed_value": -3813000,
+      "relative_error": 0.0034,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1696556/000169655626000033/0001696556-26-000033-index.htm"
+      }
+    }
+  ]
+}

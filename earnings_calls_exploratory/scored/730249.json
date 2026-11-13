@@ -1,0 +1,70 @@
+{
+  "event_id": "730249",
+  "ticker": "SNAL",
+  "company": "Snail, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 4,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Heidy Chow",
+      "start_sec": 856.2,
+      "sentence": "Net revenue for the quarter increased to $33.1 million compared to $13.8 million in the same period last year.",
+      "concept": "revenue",
+      "claimed_value": 33100000.0,
+      "filed_value": 33061435,
+      "relative_error": 0.0012,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm"
+      }
+    },
+    {
+      "speaker": "Heidy Chow",
+      "start_sec": 971.1,
+      "sentence": "Net income for the quarter was $6.7 million compared to a net loss of $7.9 million in the same period last year.",
+      "concept": "net_income",
+      "claimed_value": 6700000.0,
+      "filed_value": 6671003,
+      "relative_error": 0.0043,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm"
+      }
+    },
+    {
+      "speaker": "Heidy Chow",
+      "start_sec": 1001.8,
+      "sentence": "The improvement was primarily due to an increase in revenue of $23.9 million, a decrease in provision of income taxes of $10.4 million, a decrease in cost of revenue of $300,000, partially offset by an increase in total operating expenses of $1.9 million and total other expenses of $600,000.",
+      "concept": "revenue",
+      "claimed_value": 23900000.0,
+      "filed_value": 33061435,
+      "relative_error": 0.2771,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm"
+      }
+    },
+    {
+      "speaker": "Heidy Chow",
+      "start_sec": 1070.3,
+      "sentence": "The increase was primarily due to an increase in net income of $32.1 million, partially offset by a decrease in provision of income taxes of $10.4 million.",
+      "concept": "net_income",
+      "claimed_value": 32100000.0,
+      "filed_value": 6671003,
+      "relative_error": 3.8119,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1886894/000149315226051501/0001493152-26-051501-index.htm"
+      }
+    }
+  ]
+}

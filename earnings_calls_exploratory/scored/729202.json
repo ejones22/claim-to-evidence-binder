@@ -1,0 +1,25 @@
+{
+  "event_id": "729202",
+  "ticker": "GUTS",
+  "company": "Fractyl Health, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Lara Smith Weber",
+      "start_sec": 1093.6,
+      "sentence": "We reported a net loss of $14.2 million for the third quarter of 2026, compared with a net loss of $45.6 million for the same period in 2025.",
+      "concept": "net_income",
+      "claimed_value": -14200000.0,
+      "filed_value": -14150000,
+      "relative_error": 0.0035,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1572616/000119312526458318/0001193125-26-458318-index.htm"
+      }
+    }
+  ]
+}

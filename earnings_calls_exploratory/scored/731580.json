@@ -1,0 +1,100 @@
+{
+  "event_id": "731580",
+  "ticker": "KSCP",
+  "company": "Knightscope, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 6,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Bill Santana Li",
+      "start_sec": 127.1,
+      "sentence": "Third quarter revenue was $8.7 million, up 177% YoY.",
+      "concept": "revenue",
+      "claimed_value": 8700000.0,
+      "filed_value": 8678000,
+      "relative_error": 0.0025,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926126206/0001104659-26-126206-index.htm"
+      }
+    },
+    {
+      "speaker": "Apoorv Dwivedi",
+      "start_sec": 289.2,
+      "sentence": "Total revenue was $8.7 million, up 177% from the $3.1 million in the prior year period.",
+      "concept": "revenue",
+      "claimed_value": 8700000.0,
+      "filed_value": 8678000,
+      "relative_error": 0.0025,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926126206/0001104659-26-126206-index.htm"
+      }
+    },
+    {
+      "speaker": "Apoorv Dwivedi",
+      "start_sec": 345.3,
+      "sentence": "Gross margin was positive $0.4 million, or 5% of revenue, compared with a gross loss of $1.6 million in the prior year period, an improvement of $2 million YoY.",
+      "concept": "revenue",
+      "claimed_value": 400000.0,
+      "filed_value": 8678000,
+      "relative_error": 0.9539,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926126206/0001104659-26-126206-index.htm"
+      }
+    },
+    {
+      "speaker": "Apoorv Dwivedi",
+      "start_sec": 359.0,
+      "sentence": "Services gross margin was $0.7 million, or 8% of revenue, compared with the services gross loss of $1.6 million in the third quarter of 2025.",
+      "concept": "revenue",
+      "claimed_value": 700000.0,
+      "filed_value": 8678000,
+      "relative_error": 0.9193,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926126206/0001104659-26-126206-index.htm"
+      }
+    },
+    {
+      "speaker": "Apoorv Dwivedi",
+      "start_sec": 382.5,
+      "sentence": "Total operating expenses were $12 million, or 138% of revenue, compared with $7.9 million, or 254% of revenue in the prior year period.",
+      "concept": "revenue",
+      "claimed_value": 12000000.0,
+      "filed_value": 8678000,
+      "relative_error": 0.3828,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926126206/0001104659-26-126206-index.htm"
+      }
+    },
+    {
+      "speaker": "Apoorv Dwivedi",
+      "start_sec": 463.9,
+      "sentence": "Net loss was $11.8 million, or $0.50 per share, as compared with a net loss of $9.5 million, or $0.98 per share in the third quarter of 2025.",
+      "concept": "net_income",
+      "claimed_value": -11800000.0,
+      "filed_value": -11784000,
+      "relative_error": 0.0014,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1600983/000110465926126206/0001104659-26-126206-index.htm"
+      }
+    }
+  ]
+}

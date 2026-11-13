@@ -1,0 +1,55 @@
+{
+  "event_id": "732914",
+  "ticker": "PED",
+  "company": "PEDEVCO Corp.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 3,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Bobby Long",
+      "start_sec": 682.8,
+      "sentence": "Total operating expenses were approximately $31.4 million, resulting in operating income of $8.9 million, including a $4.7 million net gain on the sale of oil and gas properties.",
+      "concept": "operating_income",
+      "claimed_value": 8900000.0,
+      "filed_value": 8916000,
+      "relative_error": 0.0018,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1141197/000143774926036567/0001437749-26-036567-index.htm"
+      }
+    },
+    {
+      "speaker": "Bobby Long",
+      "start_sec": 757.8,
+      "sentence": "Below the operating line, the most significant item was $16.6 million of net loss on derivative contracts.",
+      "concept": "net_income",
+      "claimed_value": -16600000.000000002,
+      "filed_value": -9242000,
+      "relative_error": 0.7961,
+      "verdict": "mismatch",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1141197/000143774926036567/0001437749-26-036567-index.htm"
+      }
+    },
+    {
+      "speaker": "Bobby Long",
+      "start_sec": 854.5,
+      "sentence": "GAAP net loss was $9.2 million, or $0.70 per share, compared to a net loss of $0.3 million in the third quarter of 2025, as higher operating income, including the net gain on property sales, was offset by derivative losses and higher interest expense.",
+      "concept": "net_income",
+      "claimed_value": -9200000.0,
+      "filed_value": -9242000,
+      "relative_error": 0.0045,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1141197/000143774926036567/0001437749-26-036567-index.htm"
+      }
+    }
+  ]
+}

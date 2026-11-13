@@ -1,0 +1,25 @@
+{
+  "event_id": "732856",
+  "ticker": "BEAT",
+  "company": "HeartBeam, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Tim Cruickshank",
+      "start_sec": 2095.3,
+      "sentence": "Net loss for the quarter, $3 million compared to the $5.3 million in the prior third quarter of 2025, and then $5 million in Q2.",
+      "concept": "net_income",
+      "claimed_value": -3000000.0,
+      "filed_value": -3010000,
+      "relative_error": 0.0033,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1779372/000119312526458296/0001193125-26-458296-index.htm"
+      }
+    }
+  ]
+}

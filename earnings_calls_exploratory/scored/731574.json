@@ -1,0 +1,40 @@
+{
+  "event_id": "731574",
+  "ticker": "INLX",
+  "company": "Intellinetics, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Joe Spain",
+      "start_sec": 536.6,
+      "sentence": "Net loss for Q3 was $0.2 million compared to net loss of $0.4 million for the same period last year.",
+      "concept": "net_income",
+      "claimed_value": -200000.0,
+      "filed_value": -239163,
+      "relative_error": 0.1638,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1081745/000149315226051371/0001493152-26-051371-index.htm"
+      }
+    },
+    {
+      "speaker": "Joe Spain",
+      "start_sec": 738.0,
+      "sentence": "Our total assets were $16.7 million, including $8.4 million in intangible assets and goodwill as part of acquisitions made since 2020.",
+      "concept": "total_assets",
+      "claimed_value": 16700000.0,
+      "filed_value": 16710023,
+      "relative_error": 0.0006,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1081745/000149315226051371/0001493152-26-051371-index.htm"
+      }
+    }
+  ]
+}

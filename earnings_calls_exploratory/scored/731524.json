@@ -1,0 +1,55 @@
+{
+  "event_id": "731524",
+  "ticker": "XTIA",
+  "company": "XTI Aerospace, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 3,
+  "n_bound": 3,
+  "claims": [
+    {
+      "speaker": "Brooke Turk",
+      "start_sec": 537.8,
+      "sentence": "Starting with revenue, third-quarter revenue was $35.3 million, up approximately 9% from $32.4 million in the second quarter.",
+      "concept": "revenue",
+      "claimed_value": 35300000.0,
+      "filed_value": 35314000,
+      "relative_error": 0.0004,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1529113/000162828026073407/0001628280-26-073407-index.htm"
+      }
+    },
+    {
+      "speaker": "Brooke Turk",
+      "start_sec": 729.6,
+      "sentence": "This resulted in net income for the third quarter of $26.6 million, compared to a net loss of $2.5 million in the second quarter.",
+      "concept": "net_income",
+      "claimed_value": 26600000.0,
+      "filed_value": 26002000,
+      "relative_error": 0.023,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1529113/000162828026073407/0001628280-26-073407-index.htm"
+      }
+    },
+    {
+      "speaker": "Jeremy Schneiderman",
+      "start_sec": 872.1,
+      "sentence": "We have repositioned the company to focus on our core business, and we grew quarterly revenue sequentially again to $35.3 million, while taking corporate and development spending down sharply and continuing to work through the balance sheet and liquidity matters with our creditors and warrant holders.",
+      "concept": "revenue",
+      "claimed_value": 35300000.0,
+      "filed_value": 35314000,
+      "relative_error": 0.0004,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1529113/000162828026073407/0001628280-26-073407-index.htm"
+      }
+    }
+  ]
+}

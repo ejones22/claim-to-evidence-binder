@@ -1,0 +1,58 @@
+{
+  "event_id": "749570",
+  "ticker": "AENT",
+  "cik": "1823584",
+  "company": "Alliance Entertainment Holding Corporation",
+  "quarter_label": "Q1 2027",
+  "taxonomy": "us-gaap",
+  "figures": {
+    "net_income": {
+      "value": 7621000,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051226",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:NetIncomeLoss"
+    },
+    "eps_diluted": {
+      "value": 0.15,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051226",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:EarningsPerShareDiluted"
+    },
+    "operating_income": {
+      "value": 10624000,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051226",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:OperatingIncomeLoss"
+    },
+    "total_assets": {
+      "value": 428085000,
+      "fiscal_year": 2027,
+      "fiscal_period": "Q1",
+      "form": "10-Q",
+      "filed": "2026-11-12",
+      "accession": "0001493152-26-051226",
+      "period_end": "2026-09-30",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1823584/000149315226051226/0001493152-26-051226-index.htm",
+      "n_filings_reporting_this_figure": 1,
+      "concept": "us-gaap:Assets"
+    }
+  }
+}

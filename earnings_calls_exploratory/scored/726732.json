@@ -1,0 +1,25 @@
+{
+  "event_id": "726732",
+  "ticker": "RLMD",
+  "company": "Relmada Therapeutics, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Maged Shenouda",
+      "start_sec": 707.5,
+      "sentence": "The net loss for the quarter was $13.9 million, or $0.12 per basic and diluted share, compared with a net loss of $10.1 million, or $0.30 per basic and diluted share for the third quarter of 2025.",
+      "concept": "net_income",
+      "claimed_value": -13900000.0,
+      "filed_value": -13862188,
+      "relative_error": 0.0027,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1553643/000121390026118916/0001213900-26-118916-index.htm"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "event_id": "731561",
+  "ticker": "NSYS",
+  "company": "Nortech Systems Incorporated",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Jay Miller",
+      "start_sec": 181.8,
+      "sentence": "Gross margin improved 130 basis points to 17.8%, and operating income increased to $1.4 million from $945,000 a year earlier.",
+      "concept": "operating_income",
+      "claimed_value": 1400000.0,
+      "filed_value": 1414000,
+      "relative_error": 0.0099,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/722313/000149315226051240/0001493152-26-051240-index.htm"
+      }
+    },
+    {
+      "speaker": "Andrew LaFrence",
+      "start_sec": 767.8,
+      "sentence": "Third quarter operating income increased $469,000 or 49.6% to $1.4 million compared with $945,000 in the prior year period, and operating margin improved to 4.3% from 3.1%.",
+      "concept": "operating_income",
+      "claimed_value": 1400000.0,
+      "filed_value": 1414000,
+      "relative_error": 0.0099,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/722313/000149315226051240/0001493152-26-051240-index.htm"
+      }
+    }
+  ]
+}

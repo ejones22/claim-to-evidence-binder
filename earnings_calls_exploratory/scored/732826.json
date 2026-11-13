@@ -1,0 +1,25 @@
+{
+  "event_id": "732826",
+  "ticker": "TMC",
+  "company": "TMC the metals company Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 1,
+  "n_bound": 1,
+  "claims": [
+    {
+      "speaker": "Craig Shesky",
+      "start_sec": 1176.7,
+      "sentence": "In the third quarter of 2026, TMC reported a net loss of approximately $28.4 million, or $0.06 per share, compared to a net loss of $185 million, or $0.46 per share, for the same period in 2025.",
+      "concept": "net_income",
+      "claimed_value": -28400000.0,
+      "filed_value": -28361000,
+      "relative_error": 0.0014,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1798562/000162828026073463/0001628280-26-073463-index.htm"
+      }
+    }
+  ]
+}

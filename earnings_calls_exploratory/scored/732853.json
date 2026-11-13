@@ -1,0 +1,40 @@
+{
+  "event_id": "732853",
+  "ticker": "SMSI",
+  "company": "Smith Micro Software, Inc.",
+  "quarter_label": "Q3 2026",
+  "n_claims": 2,
+  "n_bound": 2,
+  "claims": [
+    {
+      "speaker": "Bethany Braund",
+      "start_sec": 439.5,
+      "sentence": "We recognized revenue of $5.0 million for the third quarter of 2026, compared to $4.3 million for the same quarter of 2025, an increase of 15%.",
+      "concept": "revenue",
+      "claimed_value": 5000000.0,
+      "filed_value": 5017000,
+      "relative_error": 0.0034,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/948708/000143774926036614/0001437749-26-036614-index.htm"
+      }
+    },
+    {
+      "speaker": "Bethany Braund",
+      "start_sec": 787.8,
+      "sentence": "The GAAP net loss attributable to common stockholders for the third quarter of 2026 was $1.7 million, or a $0.30 loss per share, compared to the net loss attributable to common stockholders of $5.2 million, or a $1.23 loss per share in the third quarter of 2025.",
+      "concept": "net_income",
+      "claimed_value": -1700000.0,
+      "filed_value": -1698000,
+      "relative_error": 0.0012,
+      "verdict": "bound",
+      "filing": {
+        "form": "10-Q",
+        "filed": "2026-11-12",
+        "filing_index_url": "https://www.sec.gov/Archives/edgar/data/948708/000143774926036614/0001437749-26-036614-index.htm"
+      }
+    }
+  ]
+}
