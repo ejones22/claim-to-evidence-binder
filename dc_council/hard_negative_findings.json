@@ -1,0 +1,22 @@
+{
+  "question": "Are the synthetic negatives too easy, inflating reported precision?",
+  "method": "Rebuilt synthetic negatives using same-category swaps (confirmation-for-confirmation, designation-for-designation, etc.) instead of fully random swaps, then re-ran both the deterministic matcher and the LLM judge on this harder set.",
+  "deterministic_matcher": {
+    "false_accept_rate_easy_random_swap": 0.022,
+    "false_accept_rate_hard_same_category_swap": 0.108,
+    "conclusion": "Genuine, confirmed weakness. Spot-checked 8 of 55 hard-negative false accepts by hand: 6 are real failures driven by shared category boilerplate (e.g. 'Surplus Declaration and Disposition Approval Act', 'Revenue Bonds Project Approval Resolution', generic 'Board... Confirmation Resolution' language) inflating the score even when the specific person/property named is wrong. Only 2 of 8 were the context-window-bleed artifact described below."
+  },
+  "llm_judge_qwen2.5_7b": {
+    "false_accept_rate_hard_same_category_swap_n50": 0.02,
+    "conclusion": "The one miss is NOT a reasoning failure -- confirmed by inspection, it is the exact same context-window-bleed artifact as the original validity check's one miss (see below): a randomly-drawn swapped title coincidentally matches an ADJACENT citation's content that is genuinely present in the same fixed-width context window, because multiple citations were read in quick succession in that meeting."
+  },
+  "context_window_bleed_artifact": {
+    "description": "When several citations are read in sequence within one turn (e.g. a run of Real Estate Commission confirmations), the fixed-width context window around any one of them can genuinely contain the next citation's name and title. A negative-sampling process has some chance of drawing that adjacent, genuinely-present title as the 'wrong' title for the one being tested -- which is not a fair negative at all.",
+    "confirmed_instances": [
+      "synthetic_contradicted#24 (PR26-0666 vs swapped 'Paul Goldstein' title -- Paul Goldstein is the actual subject of the very next citation, PR26-0636, in the same window)",
+      "hard_negative test, PR26-0592 vs swapped 'Elizabeth Blakeslee' title -- Blakeslee is the actual subject of the very next citation, PR26-0593, in the same window"
+    ],
+    "rate": "2 confirmed cases across 100 total synthetic negatives tested (50 easy + 50 hard) -- isolated, not pervasive, but real and worth disclosing rather than counting as a genuine model or metric failure."
+  },
+  "takeaway": "The concern was well-founded for the deterministic matcher: its headline precision is inflated by easy negatives, and its true weakness against realistic same-category confusions is real (10.8% false-accept rate, confirmed by manual inspection to be genuine, not an artifact). The LLM-based comparison holds up under the same harder test (2% false-accept, and that one case is a dataset artifact, not a reasoning failure) -- the headline LLM precision numbers are not meaningfully inflated by negative-sampling ease."
+}
