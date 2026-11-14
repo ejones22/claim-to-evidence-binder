@@ -39,11 +39,14 @@ digit substitution, consistent with one stenographer's typing habit), and most o
 a previously-unexplained "period 20" anomaly (8 of 10 cases) was resolved by cross-
 referencing transcript content directly against LIMS.
 
-**Open:** the benchmark has so far been labeled by one person (with an LLM's
-disagreements triggering some double-checks, not independent review). A blind
-30-case sample and scorer are ready in `ivan_review_form.txt` /
-`score_ivan_review.py` for a second person to establish real inter-rater agreement
-before the report can honestly call this "manually validated."
+**Inter-rater check:** a second person independently labeled a blind 30-case
+sample (`ivan_review_form.txt`, with the sampling-pool ids redacted so the pool
+couldn't hint at the answer). Agreement with the original gold labels: 21/30 (70%),
+Cohen's kappa 0.46 (moderate). All 9 disagreements go the same way: the original
+labeling said "supported" and the second reviewer said "unverifiable" (8) or
+"contradicted" (1), so the original gold labels are more generous toward
+"supported" than an independent reader. Kappa is 0.44 (20/29) if the one case with
+an original "uncertain" label is excluded instead of being treated as "unverifiable".
 
 **Secondary exploration (`earnings_calls_exploratory/`):** an earlier, smaller pass
 at the same idea applied to a different domain -- checking numeric claims on
@@ -68,7 +71,7 @@ in `dc_council/` below is new work from this weekend, with one exception called 
 | `run_second_model.py`, `compare_second_model.py` | New (third-model robustness check) |
 | `reconcile_root_causes.py` | New (final root-cause breakdown of unresolved citations) |
 | `error_taxonomy.json` | New (qualitative breakdown of the abstaining judge's remaining mistakes) |
-| `ivan_review_form.txt`, `score_ivan_review.py` | New (independent inter-rater review materials) |
+| `ivan_review_form.txt`, `parse_ivan_review_form.py`, `score_ivan_review.py` | New (independent inter-rater review materials, parser and scorer) |
 | `regenerate_from_backup.py` | New (one-off migration script, kept for provenance) |
 | `*.json`, `*.jsonl`, `*.png` | New (this sprint's generated results and figures) |
 
@@ -112,10 +115,15 @@ python3 hard_negative_check.py           # stress test: same-category negatives 
 python3 make_figures.py
 ```
 
-To run the independent review scoring once a second person's labels come back:
+To score the independent inter-rater review from the filled-in form:
 ```
-python3 score_ivan_review.py             # needs ivans_labels.json (not included -- fill it in)
+python3 parse_ivan_review_form.py        # ivan_review_form.txt -> ivans_labels.json + my_labels_for_ivan_sample.json
+python3 score_ivan_review.py             # raw agreement, Cohen's kappa, list of disagreements
 ```
+The form's ids are redacted and repeat, so the parser matches answers to cases by
+order (CASE n -> entry n in `ivan_blind_sample.json`) and checks each case's context
+text to confirm the match. It maps the one "uncertain" gold label (`no_context_1`)
+to "unverifiable", as `significance_test.py` does.
 
 `run_second_model.py` is set to `qwen3.5:9b`, a "thinking" model that defaults to
 ~26-54s/call; it passes Ollama's native `"think": false` request field to suppress
