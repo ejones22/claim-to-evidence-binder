@@ -79,8 +79,17 @@ def main():
 
     n01 = n10 = n00 = n11 = 0  # [abstaining_correct][forced_correct]
     for i in covered_idx:
-        a_correct = abstaining[i]["llm_label"] == abstaining[i]["gold"]
-        f_correct = forced[i]["llm_label"] == forced[i]["gold"]
+        # "uncertain" is a gold label, never a model output (the model can
+        # only say supported/contradicted/unverifiable) -- an exact-string
+        # match would always mark it wrong even when the model answered
+        # "unverifiable", the closest correct response. Had zero effect on
+        # any reported number here (the one "uncertain" case happened to be
+        # abstained on, so it's excluded from covered_idx anyway), but
+        # fixed defensively in case a future rerun lands differently.
+        a_gold = "unverifiable" if abstaining[i]["gold"] == "uncertain" else abstaining[i]["gold"]
+        f_gold = "unverifiable" if forced[i]["gold"] == "uncertain" else forced[i]["gold"]
+        a_correct = abstaining[i]["llm_label"] == a_gold
+        f_correct = forced[i]["llm_label"] == f_gold
         if a_correct and f_correct:
             n11 += 1
         elif a_correct and not f_correct:
