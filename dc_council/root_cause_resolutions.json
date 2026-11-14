@@ -1,0 +1,24 @@
+{
+  "method": "Cross-referenced each unresolved citation's surrounding transcript content (names, acronyms, topics) directly against LIMS titles, rather than guessing a single digit-transformation rule.",
+  "period_20_anomaly_resolved": {
+    "PR20-0064": "PR26-0432 / PR26-0433 (Amy Laitinen / Albert Cacozza, Board of Trustees UDC)",
+    "PR20-2641": "PR26-0481 (Dr. Sean Morgan, Fire/EMS Medical Director)",
+    "B20-0062": "B26-0243 (Automatic Enrollment for Utility Affordability Programs Act)",
+    "PR20-0404": "PR26-0404 (Francisco Diaz, Chief Medical Examiner -- suffix unchanged, only the period digit was wrong)",
+    "B20-6546": "B26-0546 (E911 Modernization Amendment Act)",
+    "B20-0604": "B26-0495 (Condominium Insurance Amendment Act)",
+    "PR20-0654": "PR26-0554 (Dr. Kami Cooper, Board of Nursing)",
+    "B20-0659": "B26-0595, tentative (\"the TRUE Act\" = Transparent Rates and Utility Expenses)"
+  },
+  "period_20_anomaly_unresolved": ["B20-0661 (no content given)", "B20-0066 (ambiguous cannabis-bill content)"],
+  "garbled_digits_resolved": {
+    "B26-2271": "B26-0227 (One Front Door Act)",
+    "B26-6659": "B26-0659 (Fiscal Year 2027 Local Budget Act)",
+    "B26-5466": "B26-0466 (St. Elizabeths East Parcel 13 Term Sheet Amendment Act)",
+    "B26-5425": "B26-0425 (St. Elizabeths East Parcels 7, 8, and 9 Surplus Declaration)",
+    "B26-5330": "B26-0530 (St. Elizabeths East Parcel 6 Surplus Declaration)",
+    "B26-5121": "B26-0121 (St. Elizabeths East Parcel 13 Extension -- same bill cited correctly elsewhere in the same meeting)"
+  },
+  "garbled_digits_unresolved": ["PR26-6441 (Kerry Robinson, Housing Finance Agency -- no matching LIMS record found)"],
+  "note": "The four St. Elizabeths East bills all show the same pattern (the bill suffix's leading '0' rendered as '5': 0466->5466, 0425->5425, 0121->5121, with 0530->5330 close but not an exact match of that rule), consistent with one stenographer's typing habit across a batch of bills read in quick succession in the same meeting -- not a pipeline bug, and not a single universal rule across all categories."
+}
