@@ -15,181 +15,181 @@ Don't overthink it -- go with your first honest read. Send this file
 back with the blanks filled in.
 
 ----------------------------------------------------------------------
-CASE 1 (id: supported_1)
+CASE 1 (id: redacted_1)
 CONTEXT: RS ENTERTAINMENT ON BILL 26-0656, THE INTERNET GAMING AND CONSUMER PROTECTION ACT OF 2026. MY NAME IS RICARDO CORNEJO RIVAS, AND I SERVE AS VICE PRESIDENT OF ONLINE GAMING FOR CAESARS ENTERTAI
 OFFICIAL TITLE: Internet Gaming and Consumer Protection Act of 2026
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 2 (id: no_context_1)
+CASE 2 (id: redacted_1)
 CONTEXT: O TESTIFY REGARDING BILL 26-227. I AM THE WARD SIX RESIDENTS. A LONGTIME CONTRIBUTOR AND CURRENT ACTIVE CHAIR. A SINGLE STAIR BUILDING CAN IMPROVE OVERALL SAFETY. ALREADY FOUND THROUGHOUT HIS
 OFFICIAL TITLE: One Front Door Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 3 (id: weak_37)
+CASE 3 (id: redacted_37)
 CONTEXT:  MELVIN McLEAN. AND PR26-728 TAMIKA BRUCE. AS NOTE, CELESTE SANTIFER WAS WITHDRAWN AFTER THE COMMITTEE NOTICED THIS HEARING. THAT RESOLUTION WILL NOT BE CONSIDERED TODAY. THE RESOLUTION-- 
 OFFICIAL TITLE: Commission on Re-Entry and Returning Citizen Affairs Tamika Bruce Confirmation Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 4 (id: supported_8)
+CASE 4 (id: redacted_8)
 CONTEXT: K YOU. I INTRODUCED BILL 26-523 ON DECEMBER 1, 20 25, ALONG WITH COUNCILMEMBERS ALLEN, BONDS, FOR MEN, PARKER, -- FRUMIN, PARKER, WHITE. IF A PROVIDER WANTS TO SERVE PATIENTS IN THE MEDICAID 
 OFFICIAL TITLE: Streamlining Medicaid Credentialing Amendment Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 5 (id: weak_16)
+CASE 5 (id: redacted_16)
 CONTEXT:  RELIEF TO TENANTS. BILL 26-493 ADDRESSES MANY GAPS AND DEFICIENCIES. STRENGTHENING THE ABILITY OF THE DISTRICT THROUGH THE OFFICE OF THE ATTORNEY GENERAL TO SECURE AND PROVIDE RELIEF. THE BI
 OFFICIAL TITLE: Strengthening Tenant Receivership and Oversight for Neighborhood Growth (STRONG) Homes Amendment Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 6 (id: weak_1)
+CASE 6 (id: redacted_1)
 CONTEXT: ITION TO THE BOARD. PR 26-667 WAS INTRODUCED ON APRIL 13TH. NO. APRIL 3RD OF THIS YEAR AND PR 26-667 WAS INTRODUCED ON APRIL 21ST OF THIS YEAR, BOTH AT THE REQUEST OF THE MAYOR. THE COMMITT
 OFFICIAL TITLE: Board of Zoning Adjustment Michelle Pourciau Confirmation Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 7 (id: weak_38)
+CASE 7 (id: redacted_38)
 CONTEXT: IMONY IN SUPPORT OF PR26 -674. IS THERE A DISCUSSION OF THIS CONFIRMATION RESOLUTION? HEARING NONE. THE PROPOSED RESOLUTION OF 26-674 AND LEAVE FOR STAFF TO MAKE CHANGES. ALL THOSE IN FAVOR
 OFFICIAL TITLE: Alcoholic Beverage and Cannabis Board James Turner Confirmation Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 8 (id: no_context_44)
+CASE 8 (id: redacted_44)
 CONTEXT: S GOING TO FOCUS ON BILL 26-58. COMMONLY REFERRED TO AS THE BOTTLE BILL. SINCE THE ORIGINAL PUBLIC HEARING ON THE BILL WAS HEAD ON OCTOBER 1ST, 2025, AS WELL AS IN CONVERSATION OF STAKEHOLDE
 OFFICIAL TITLE: Recycling Refund and Litter Reduction Amendment Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 9 (id: no_context_26)
+CASE 9 (id: redacted_26)
 CONTEXT: MOVE THE UNDERLYING BILL. 26-785. IS THERE DISCUSSION? ALL THOSE IF FAVOR, SAY AYE. [CHORUS OF "AYES"]
 OFFICIAL TITLE: Peer-to-Peer Car Sharing Rental Vehicle Sales Tax Clarification Emergency Amendment Act of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 10 (id: supported_43)
+CASE 10 (id: redacted_43)
 CONTEXT: AT ONE TIME. FIRST, BILL 26-698, THE PROPOSED LEGISLATION WOULD DESIGNATE THE SCHOOL BUILDING ON MISSISSIPPI AVENUE COMMONLY REFERRED TO AS MALCOLM X ELEMENTARY SCHOOL AT GREEN SIMPLY AS MALC
 OFFICIAL TITLE: Malcolm X Elementary School Designation Act of 2026
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 11 (id: weak_5)
+CASE 11 (id: redacted_5)
 CONTEXT: ENT ACT OF 2025 AND B26-0707. BOTH MEASURES ATTEMPT TO IMPROVE HOW WE AS A GOVERNMENT HELP PREVENT AND MANAGE RODENT INFESTATIONS. I APPRECIATE THAT MANY OF OUR WITNESSES ARE HERE TO ADVOC
 OFFICIAL TITLE: Rodent Education and Management Yields ("REMY") Results Amendment Act of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 12 (id: no_context_12)
+CASE 12 (id: redacted_12)
 CONTEXT: LINGNESS TO LISTEN. B26-545 IS MEASURED, TARGETED, AND TIME-LIMITED. BUT FOR DISPLACED HOMEOWNERS, IT REPRESENTS THE DIFFERENCE BETWEEN SURVIVING DISPLACEMENT AND RECOVERING FROM IT. I UR
 OFFICIAL TITLE: River East at Grandview Homeownership Relief and Restoration Amendment Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 13 (id: no_context_14)
+CASE 13 (id: redacted_14)
 CONTEXT: RINT AND REPORT FOR PR 26-708. ALL THOSE IN FAVOR SAYAYE.
 OFFICIAL TITLE: District of Columbia Uniform Law Commission Janene D. Jackson Appointment Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 14 (id: weak_13)
+CASE 14 (id: redacted_13)
 CONTEXT: NERS. THAT WOULD BE PR 26-537. CONFIRMING CHRISTOPHER MURPHY, PR 26-538, CONFIRMING. DENISE BLACKSON, PR 26-540, CONFIRMING. LEROY CLAY, THE THIRD. PR 26-42, CONFIRMING. RAYMOND SKINNER AND
 OFFICIAL TITLE: District of Columbia Housing Authority Board of Commissioners Christopher Murphy Confirmation Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 15 (id: supported_7)
+CASE 15 (id: redacted_7)
 CONTEXT: IR. WE WILL TURN TO BILL 26-642. MR. COHEN DOES NOT GET TO LEAVE. CLOSING OF A PORTION OF A PUBLIC ALLEY. THE WITNESS IS CHRISTOPHER COHEN. I CANNOT FIT EVERYBODY AT THE TABLE. CHAPMAN TODD. 
 OFFICIAL TITLE: Closing of Portions of a Public Alley in Square 571, S.O. 25-01939, Act of 2026
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 16 (id: supported_47)
+CASE 16 (id: redacted_47)
 CONTEXT: IFY FOR THE OCFO ON BILL 26-771. THE TAX SALE EQUITY AMENDMENT ACT OF 2026. THE TAX SALE IS A HIGHLY EFFECTIVE TOOL FOR THE COLLECTION OF REAL PROPERTY TAXES AND HAS BEEN UTILIZED BY THE DIST
 OFFICIAL TITLE: Tax Sale Equity Amendment Act of 2026
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 17 (id: no_context_38)
+CASE 17 (id: redacted_38)
 CONTEXT: EPORT AND PRINT FOR PR 26-6 HUNDRED IN BLOCK WITH LEAVE FOR STAFF TO MAKE ANY TECHNICAL CHANGES. ALL IN FAVOR, PLEASE SAY AYE. AYE. GREAT. LET THE RECORD REFLECT THAT. THE AYES HAVE IT AN
 OFFICIAL TITLE: Working Conditions and Compensation Agreement between the District of Columbia Public Schools and the Washington Teachers’ Union, Local #6 of the American Federation of Teachers Approval Emergency Declaration Resolution of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 18 (id: supported_14)
+CASE 18 (id: redacted_14)
 CONTEXT: YOU. 'RE TURNING TO PR 26-677, WHICH IS PRG. WONDER PLAZA PROPERTIES INC REVENUE BONDS, PROJECT APPROVAL RESOLUTIONAND I HAVECASH. WE'RE. JAMIE BOYD, CHRIS HICKS AND DARREN GLYMPH. AND YOU 
 OFFICIAL TITLE: PRG Wonder Plaza Properties Inc. Revenue Bonds Project Approval Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 19 (id: supported_17)
+CASE 19 (id: redacted_17)
 CONTEXT: ECTION ACT OF 2025. BILL 26 243. THE AUTOMATIC ENROLLMENT FOR UTILITY AFFORDABILITY PROGRAMS ACT OF 2025, BILL 26 443. THE DC WATER BILLING AND DISCONNECTION MODERNIZATION AMENDMENT ACT OF 20
 OFFICIAL TITLE: Automatic Enrollment for Utility Affordability Programs Act of 2025
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 20 (id: no_context_34)
+CASE 20 (id: redacted_34)
 CONTEXT: COMMITTEE TO OPPOSE BILL 26- 0596. THANK YOU FOR ALLOWING ME TO SPEAK TODAY.
 OFFICIAL TITLE: Utility Rates and Ratemaking Amendment Act of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 21 (id: weak_34)
+CASE 21 (id: redacted_34)
 CONTEXT: CHRISTOPHER MURPHY, PR 26-538, CONFIRMING. DENISE BLACKSON, PR 26-540, CONFIRMING. LEROY CLAY, THE THIRD. PR 26-42, CONFIRMING. RAYMOND SKINNER AND PR 26-543, CONFIRMING. TERESA, THAT LOOKS
 OFFICIAL TITLE: District of Columbia Housing Authority Board of Commissioners Denise Blackson Confirmation Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 22 (id: weak_27)
+CASE 22 (id: redacted_27)
 CONTEXT: RGETOWN UNIVERSITY. BILL 26-772 APPROXIMATELY 7426 SQUARE FEET OF 25TH STREET RUNNING BETWEEN WATER STREET AND THE POTOMAC RIVER BENEATH THE FRANCIS SCOTT KEY BRIDGE. THE BILL WOULD APPROVE T
 OFFICIAL TITLE: Closing of the Unimproved Portion of 35th Street N.W., Abutting Squares 1178 and 1179, S.O. 26-01008, Act of 2026
-YOUR LABEL: 
+YOUR LABEL: CONTRADICTED
 
 ----------------------------------------------------------------------
-CASE 23 (id: no_context_35)
+CASE 23 (id: redacted_35)
 CONTEXT: AVE IT UNANIMOUSLY. BILL 26-5 61, COUNCILMEMBER PINTO?
 OFFICIAL TITLE: Residential Tranquility Congressional Review Emergency Amendment Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 24 (id: supported_15)
+CASE 24 (id: redacted_15)
 CONTEXT: ASURE FOR MARKUP IS BILL 26-331, ENTITLED HARMONY PARK DESIGNATION ACT OF 2026. BILL 26-231 WOULD OFFICIALLY DESIGNATE THE TRIANGLE PARK AND RESERVATION 160 AS HARMONY PARK. THE LOCATION IS N
 OFFICIAL TITLE: Harmony Park Designation Act of 2025
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 25 (id: no_context_45)
+CASE 25 (id: redacted_45)
 CONTEXT: 43, BILL 20 6-4 43, BILL 26 595, AND BILL 26, X602. I WANT TO THANK EVERYONE AGAIN WHO PROVIDED TESTIMONY. THE RECORD FOR TODAY'S HEARING IS GOING TO CLOSE ON APRIL 9TH, 2026, AND YOU CAN SUB
 OFFICIAL TITLE: Transparent Rates and Utility Expenses Amendment Act of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 26 (id: supported_40)
+CASE 26 (id: redacted_40)
 CONTEXT:  COMMITTEE PRINT OF BILL 26-554, THE COMMERCIAL DRIVERS LICENSE AMENDMENT ACT OF 2025 WITH LEE FOR STAFF TO MAKE TECHNICAL AND CONFORMING CHANGES. ALL OF THOSE IN FAVOR SAY AYE. THE AYES HAVE
 OFFICIAL TITLE: Commercial Driver’s License Amendment Act of 2025
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 27 (id: no_context_41)
+CASE 27 (id: redacted_41)
 CONTEXT: ON THE DECLARATION. PR 26-646. ALL THOSE IN FAVOR, SAY AYE. I I. ARE THERE ANY OPPOSED? HEARING NONE, THE AYES HAVE IT UNANIMOUS. JUST FOR THE RECORD. SORRY. THE AYES HAVE IT UNANIMOUSLY. W
 OFFICIAL TITLE: Certified Business Enterprise Program Compliance and Enforcement Support Emergency Declaration Resolution of 2026
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 28 (id: supported_6)
+CASE 28 (id: redacted_6)
 CONTEXT: OLUTION OF 2026 AND PR 26 477. HOUSING PRODUCTION TRUST FUND BOARD STACEY BERNBACH CONFIRMATION RESOLUTION OF 2026, ALL REPORTED OUT OF THE COMMITTEE ON HOUSING COUNCILMEMBER WHITE. THANK Y
 OFFICIAL TITLE: Housing Production Trust Fund Board Stacie Birenbach Confirmation Resolution of 2025
-YOUR LABEL: 
+YOUR LABEL: SUPPORTED
 
 ----------------------------------------------------------------------
-CASE 29 (id: weak_14)
+CASE 29 (id: redacted_14)
 CONTEXT: NCES. AND WE DO SEE BILL 26 443 AS A POTENTIAL AVENUE THERE. UNLIKE THE PRIOR BILL, IT ONLY RELATES TO DELINQUENT WATER BILLS. WE THEREFORE SEE IT AS A PROMISING APPROACH. AND IN ADDITION TO 
 OFFICIAL TITLE: DC Water Billing and Disconnection Modernization Amendment Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
 
 ----------------------------------------------------------------------
-CASE 30 (id: weak_2)
+CASE 30 (id: redacted_2)
 CONTEXT: ONS. THESE HOWEVER, B26-259 AND B26-654 EXPAND THE VARIETY OF CANNABIS PRODUCTS AVAILABLE - INCLUDING PRODUCTS THAT CLOSELY RESEMBLE FOODS AND BEVERAGES - CREATING ADDITIONAL OPPORTUNITIE
 OFFICIAL TITLE: Medical Cannabis Retailer Craft Preparation Endorsement Act of 2025
-YOUR LABEL: 
+YOUR LABEL: UNVERIFIABLE
