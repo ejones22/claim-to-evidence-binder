@@ -19,6 +19,32 @@ finding: most of the headline gap is the model correctly routing away from its
 hardest cases (a real, useful behavior), not sharper reasoning on the cases it does
 judge either way (p=0.125, not significant on the cases both systems judge in common).
 
+**Stress-testing the evaluation itself:** the original validity check used random
+title swaps as negative examples, which mostly produce wildly off-topic pairings --
+an easy target. Rebuilt as same-category swaps (wrong confirmation resolution, not
+just a random unrelated bill) to test the realistic failure mode: the deterministic
+matcher's false-accept rate nearly quintuples (2.2% -> 10.8%), confirmed by hand to
+be a genuine weakness (shared category boilerplate language inflates the score even
+when the named person/property is wrong). The LLM judge holds up under the same
+harder test (2% false-accept), and that one miss is a confirmed dataset artifact
+(adjacent citations read in sequence bleeding into the fixed-width context window),
+not a reasoning failure -- the same artifact independently explains the only other
+LLM miss found anywhere in the project.
+
+**Root-cause rigor:** of 39 distinct citations that never resolved to a LIMS record,
+most are now individually explained rather than left as an aggregate percentage --
+38% are genuine references to a council period our data snapshot doesn't cover, 18%
+trace to a specific, narrow mechanism (one batch of bills shows the same leading-
+digit substitution, consistent with one stenographer's typing habit), and most of
+a previously-unexplained "period 20" anomaly (8 of 10 cases) was resolved by cross-
+referencing transcript content directly against LIMS.
+
+**Open:** the benchmark has so far been labeled by one person (with an LLM's
+disagreements triggering some double-checks, not independent review). A blind
+30-case sample and scorer are ready in `ivan_review_form.txt` /
+`score_ivan_review.py` for a second person to establish real inter-rater agreement
+before the report can honestly call this "manually validated."
+
 **Secondary exploration (`earnings_calls_exploratory/`):** an earlier, smaller pass
 at the same idea applied to a different domain -- checking numeric claims on
 corporate earnings calls against SEC XBRL filings. Kept for context, not part of
@@ -35,10 +61,16 @@ in `dc_council/` below is new work from this weekend, with one exception called 
 | `fetch_captions.py` | **Modified.** The file (caption scraping/parsing) predates the sprint; `dedupe_caption_text()` is new. See "The caption bug" below. |
 | `score_citations.py` | New |
 | `validate_citation_binding.py` | New |
+| `hard_negative_check.py` | New (stress test: same-category negatives, not just random swaps) |
 | `benchmark_gold_labels.py`, `compute_benchmark_metrics.py` | New |
 | `llm_judge_baseline.py`, `llm_forced_baseline.py`, `compare_abstention.py` | New |
+| `significance_test.py` | New (McNemar's exact test + bootstrap CIs) |
+| `run_second_model.py`, `compare_second_model.py` | New (third-model robustness check) |
+| `reconcile_root_causes.py` | New (final root-cause breakdown of unresolved citations) |
+| `error_taxonomy.json` | New (qualitative breakdown of the abstaining judge's remaining mistakes) |
+| `ivan_review_form.txt`, `score_ivan_review.py` | New (independent inter-rater review materials) |
 | `regenerate_from_backup.py` | New (one-off migration script, kept for provenance) |
-| `*.json`, `*.jsonl` | New (this sprint's generated results) |
+| `*.json`, `*.jsonl`, `*.png` | New (this sprint's generated results and figures) |
 
 `earnings_calls_exploratory/` is entirely new this sprint, built and then set aside
 in favor of the DC Council direction.
@@ -76,7 +108,13 @@ python3 significance_test.py             # McNemar's exact test + bootstrap CIs
 python3 run_second_model.py              # robustness check against a different model
 python3 compare_second_model.py
 python3 reconcile_root_causes.py         # final root-cause breakdown of unresolved citations
+python3 hard_negative_check.py           # stress test: same-category negatives vs. random ones
 python3 make_figures.py
+```
+
+To run the independent review scoring once a second person's labels come back:
+```
+python3 score_ivan_review.py             # needs ivans_labels.json (not included -- fill it in)
 ```
 
 `run_second_model.py` is set to `qwen3.5:9b`, a "thinking" model that defaults to
