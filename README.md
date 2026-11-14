@@ -7,11 +7,17 @@ often it's wrong? Built over the AI x Epistemics Research Sprint (Nov 13-15, 202
 **Primary result (`dc_council/`):** across 302 real DC Council meetings, we score
 whether a spoken bill/resolution citation (a) resolves to a real legislative record
 and (b) is actually discussed consistently with what that record says. On a
-120-case hand-reviewed benchmark, an LLM judge allowed to abstain on weak evidence
-cuts its error rate from **36.7% to 11.8%** compared to the same model forced to
-always answer -- at the cost of giving up confident judgment on about a third of
-cases. Half of the forced model's errors were it confidently answering a case with
-no real evidence to go on.
+200-case hand-reviewed benchmark, an LLM judge allowed to abstain on weak evidence
+cuts its error rate roughly in half to two-thirds compared to the same model forced
+to always answer -- at the cost of giving up confident judgment on a third to 40% of
+cases, depending on the model. Tested across three models (qwen2.5:3b, qwen2.5:7b,
+qwen3.5:9b): **the benefit tracks model capability, not size alone** -- the smallest
+model barely uses the abstain option at all (96.7% coverage, no real error
+improvement), while both larger models use it meaningfully. A paired significance
+test (McNemar's, n=120 covered cases) shows the honest, more precise version of this
+finding: most of the headline gap is the model correctly routing away from its
+hardest cases (a real, useful behavior), not sharper reasoning on the cases it does
+judge either way (p=0.125, not significant on the cases both systems judge in common).
 
 **Secondary exploration (`earnings_calls_exploratory/`):** an earlier, smaller pass
 at the same idea applied to a different domain -- checking numeric claims on
@@ -66,7 +72,17 @@ python3 llm_judge_baseline.py            # needs Ollama running locally with qwe
 python3 llm_forced_baseline.py
 python3 compute_benchmark_metrics.py
 python3 compare_abstention.py            # the headline abstention-vs-forced result
+python3 significance_test.py             # McNemar's exact test + bootstrap CIs
+python3 run_second_model.py              # robustness check against a different model
+python3 compare_second_model.py
+python3 reconcile_root_causes.py         # final root-cause breakdown of unresolved citations
+python3 make_figures.py
 ```
+
+`run_second_model.py` is set to `qwen3.5:9b`, a "thinking" model that defaults to
+~26-54s/call; it passes Ollama's native `"think": false` request field to suppress
+that reasoning pass, which is what makes 400 calls in one run practical (~3s/call
+instead). Without that flag the same run would take 3+ hours.
 
 ## Limitations and Dual-Use / Ethical Considerations
 

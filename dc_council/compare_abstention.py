@@ -68,7 +68,7 @@ def main():
     a_cov, a_err, a_n, a_errs = score_abstaining(abstaining)
     f_cov, f_err, f_n, f_errs = score_forced(forced)
 
-    print("Same model (qwen2.5:7b), same 120 cases, same context+title inputs.\n")
+    print(f"Same model (qwen2.5:7b), same {len(forced)} cases, same context+title inputs.\n")
     print(f"{'':25} {'coverage':>10} {'error rate':>12} {'errors/covered':>16}")
     print(f"{'Abstaining (3-way)':25} {a_cov:>10.1%} {a_err:>12.1%} {a_errs:>8}/{a_n}")
     print(f"{'Forced (2-way)':25} {f_cov:>10.1%} {f_err:>12.1%} {f_errs:>8}/{f_n}")

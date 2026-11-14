@@ -5,20 +5,25 @@ automated topic_overlap score. This is deliberately a SEPARATE read, not a
 re-run of score_citations.py's own logic, so it can actually catch that
 logic's mistakes rather than just confirming them.
 
-supported pool (35): spot-checked 12/35 directly; the LLM baseline's 9
-disagreements on the remaining 23 prompted checking those too. 8 were the
-LLM being wrong (overly literal about a one-year date slip, or missing an
-exact-phrase match buried among witness names) -- real matches, kept as
-"supported". Index 30 was genuinely wrong: the deterministic matcher's
-0.5 overlap came entirely from generic institutional words ("real property
-tax", "confirmation resolution"), while the actual person named
-("Cliftine Jones") doesn't match the record's ("May Chan") -- a real false
-positive this benchmark's own spot-check missed, caught only because a
-second, independent method (the LLM) disagreed and got checked by hand.
-Index 27 is a genuine edge case, not a clean error either way: the speaker
-says the bill is "now entitled" a different name than LIMS has on file,
-consistent with a mid-session rename our LIMS snapshot predates -- kept as
-"supported" (same bill) but flagged.
+supported pool (35): now individually read and verified in full (not just
+spot-checked). First pass: 12/35 read directly. Second pass: the LLM
+baseline's 9 disagreements on the remaining 23 prompted checking those.
+Third pass: the final 17 never individually read were checked too, once
+the first two passes had established this pool wasn't as reliable as
+"overlap >= 0.3" alone would suggest. Of all 35: 34 are genuine matches
+(including several only verified by catching a benign CART-caption
+variant -- "Bernbach"/"Birenbach", "Blakesley"/"Blakeslee" -- or a stray
+one-year date slip while reading a title verbatim). Index 30 is the one
+real error: the deterministic matcher's 0.5 overlap came entirely from
+generic institutional words ("real property tax", "confirmation
+resolution"), while the actual person named ("Cliftine Jones") doesn't
+match the record's ("May Chan") -- a false positive the first spot-check
+missed, caught only because a second, independent method (the LLM)
+disagreed and got checked by hand. Index 27 is a genuine edge case, not a
+clean error either way: the speaker says the bill is "now entitled" a
+different name than LIMS has on file, consistent with a mid-session
+rename our LIMS snapshot predates -- kept as "supported" (same bill) but
+flagged.
 
 no_context and weak pools: labeled in full (55 cases) -- this is where the
 automated system's fixed 0.3 threshold and exact-token overlap metric
@@ -40,6 +45,11 @@ WEAK_GOLD = {
                          # certainly PR26-0477 ("PR 26-4 77"), a digit-split
                          # the existing tail-check guard doesn't catch
                          # (space-separated, not hyphen-separated)
+    # cases 25-39 added in the benchmark expansion
+    25: "supported", 26: "supported", 27: "supported", 28: "contradicted",
+    29: "supported", 30: "supported", 31: "unverifiable", 32: "unverifiable",
+    33: "supported", 34: "supported", 35: "supported", 36: "supported",
+    37: "supported", 38: "unverifiable", 39: "supported",
 }
 
 # index -> gold label, for d['no_context'] (30 cases)
@@ -68,15 +78,55 @@ NO_CONTEXT_GOLD = {
                          # knowledge a word-overlap metric can't have
     25: "supported",     # "assessments"/"appeal cycle" vs "Assessment and Appeals"
     26: "unverifiable", 27: "supported", 28: "unverifiable", 29: "unverifiable",
+    # cases 30-54 added in the benchmark expansion
+    30: "unverifiable", 31: "unverifiable", 32: "unverifiable",
+    33: "contradicted",  # "BILL 26-3 98" -> real number almost certainly
+                         # B26-0398; same digit-split pattern, resolved to
+                         # the wrong record (B26-0003)
+    34: "unverifiable",
+    35: "unverifiable",
+    36: "contradicted",  # genuine natural contradiction, not a parsing bug:
+                         # content clearly describes "Harmony Park" (the
+                         # same park as B26-0331, confirmed elsewhere), but
+                         # resolves to a real, different, valid record (a
+                         # contract approval) under B26-0231
+    37: "unverifiable",  # window-boundary issue: this citation's own title
+                         # precedes what the fixed-width window captured;
+                         # the text shown is the adjacent bills' names
+    38: "unverifiable",
+    39: "unverifiable",
+    40: "supported",     # "BSA" -- the standard abbreviation for "Budget
+                         # Support Act," a domain-knowledge acronym match
+    41: "unverifiable", 42: "unverifiable", 43: "unverifiable",
+    44: "supported",     # "Bottle Bill" -- the common nickname for
+                         # container-deposit/recycling-refund legislation
+    45: "unverifiable", 46: "unverifiable", 47: "unverifiable",
+    48: "supported",     # content (ballot access process, Board of
+                         # Elections, petition evaluation) matches the real
+                         # subject even without sharing the title's exact words
+    49: "unverifiable",
+    50: "contradicted",  # "BILL 26-22 FOR..." ("FOR" = "FOUR" spoken) --
+                         # the same B26-0224/B26-0022 digit-split bug,
+                         # recurring independently; corroborates it as a
+                         # real, repeatable pattern rather than a one-off
+    51: "unverifiable", 52: "unverifiable", 53: "unverifiable",
+    54: "supported",     # same bill (B26-0403) confirmed elsewhere with a
+                         # clear match; this mention alone is generic but
+                         # consistent, not contradictory
 }
 
-# index -> gold label, for d['supported'] (35 cases); only entries that
-# differ from the pool's default "supported" assumption are listed
+# index -> gold label, for d['supported'] (now 55 cases after the
+# benchmark expansion); only entries that differ from the pool's default
+# "supported" assumption are listed. All 55 are now individually read.
 SUPPORTED_POOL_OVERRIDES = {
     30: "contradicted",  # Cliftine Jones named in the transcript; the
                          # record this resolved to confirms May Chan --
                          # a different person. High overlap came entirely
                          # from generic institutional words.
+    51: "unverifiable",  # confirms the institution (Board of Trustees of
+                         # UDC) but never names the person (Marc Battle) --
+                         # same boilerplate-overlap failure mode as index
+                         # 30, just caught this time before being trusted.
 }
 
 NOT_FOUND_ROOT_CAUSE = {

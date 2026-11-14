@@ -1,0 +1,31 @@
+{
+  "mcnemar": {
+    "n10_abstain_right_forced_wrong": 4,
+    "n01_abstain_wrong_forced_right": 0,
+    "n_discordant": 4,
+    "p_value": 0.125
+  },
+  "bootstrap": {
+    "abstaining_covered": {
+      "mean": 0.13353297361646357,
+      "ci95": [
+        0.075,
+        0.19672131147540983
+      ]
+    },
+    "forced_all_120": {
+      "mean": 0.41504900000000733,
+      "ci95": [
+        0.35,
+        0.485
+      ]
+    },
+    "forced_same_76": {
+      "mean": 0.16731166666664807,
+      "ci95": [
+        0.1,
+        0.23333333333333334
+      ]
+    }
+  }
+}

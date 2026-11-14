@@ -210,6 +210,126 @@
     "llm_label": "supported"
   },
   {
+    "context": "STATED PURPOSE OF BILL 26-626 IS TOO SYMBOLIC HE DESIGNATE THE 100 BLOCK OF 49TH STREET'S NORTH EAST AS DR. WILLIAM KEELAN COLLINS SENIOR WAY FOR VISUALIZATION PURPOSES, I HAVE ATTACHED A C",
+    "title": "Dr. William Keelan Collins, Sr. Way Designation Act of 2026",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "ION RESOLUTION 2026 PR 26 458. HOUSING PRODUCTION TRUST FUND BOARD. SASHA ANGUS CONFIRMATION RESOLUTION OF 2026 PR 20 SIX 459. HOUSING TRUST FUND BOARD PATRICK MCINERNEY. CONFIRMATION RESOL",
+    "title": "Housing Production Trust Fund Board Sasha-Gaye Angus Confirmation Resolution of 2025",
+    "pool": "supported_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "HE FOLLOWING BILLS. B26-0121, ST. ELIZABETHS EAST PARCEL 13 EXTENSION OF DISPOSITION AUTHORITY AMENDMENT ACT 2025. B26-5466, ST. ELIZABETHS EAST PARCEL 13. B26-5425, ST. ELIZABETHS EAST PA",
+    "title": "St. Elizabeths East Parcel 13 Extension of Disposition Authority Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": " ON THE RESALE ACT. BILL 26-224. THE TECHNICAL NAME IS RESTRICTING EGREGIOUS SCALPING AGAINST LIVE ENTERTAINMENT AMENDMENT ACT 2026. COUNCILMEMBER NADEAU. COUNCILMEMBER PINTO.",
+    "title": "Restricting Egregious Scalping Against Live Entertainment (RESALE) Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "-- THE NEXT BILL IS B26-0484 - FAIRNESS AND ACCURACY IN REAL PROPERTY TAX ASSESSMENTS AMENDMENT ACT OF 2025. INTRODUCED BY COUNCILMEMBER BROOKE PINTO, ITS PURPOSE IS TO AMEND D.C. OFFICIAL",
+    "title": "Fairness and Accuracy in Real Property Tax Assessments Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": " COMMITTEE PRINT OF BILL 26-554, THE COMMERCIAL DRIVERS LICENSE AMENDMENT ACT OF 2025 WITH LEE FOR STAFF TO MAKE TECHNICAL AND CONFORMING CHANGES. ALL OF THOSE IN FAVOR SAY AYE. THE AYES HAVE",
+    "title": "Commercial Driver\u2019s License Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": " OFFER TESTIMONY ON BILL 26-403, THE EDUCATION CONTINUITY FOR STUDENTS IN THE CARE OF D.C. AMENDMENT ACT OF 2025. FIRST, I WANT TO THANK YOU FOR HOLDING A HEARING ON THIS IMPORTANT TOPIC AND ",
+    "title": "Education Continuity for Students in the Care of D.C. Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "105. B26 FOR 43 AND B26 124, EACH OF WHICH WILL HELP ITS CLIENTS FULFILL THEIR UTILITY OBLIGATIONS. THANK YOU FOR YOUR TIME, AND I WELCOME ANY QUESTIONS THE COMMITTEE MAY HAVE. EXCELLENT.",
+    "title": "Utility Disconnection Protection Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "AT ONE TIME. FIRST, BILL 26-698, THE PROPOSED LEGISLATION WOULD DESIGNATE THE SCHOOL BUILDING ON MISSISSIPPI AVENUE COMMONLY REFERRED TO AS MALCOLM X ELEMENTARY SCHOOL AT GREEN SIMPLY AS MALC",
+    "title": "Malcolm X Elementary School Designation Act of 2026",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "RT OF ERIC'S ID LAW B26-0619. I MET ERIC AND HIS MOTHER WHILE AT THE MARTIN LUTHER KING AWARDS BREAKFAST IN JANUARY. I REACHED OUT TO THEM VIA EMAIL BECAUSE ERIC'S STORY CAPTURED MY HEART.",
+    "title": "Eric\u2019s ID Amendment Act of 2026",
+    "pool": "supported_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "KET VALUE IN COURT. BILL 26-771 WILL RESULT IN ENORMOUS LOSSES OF HOME EXWE I-- EQUITY ON THE PART OF HOMEOWNERS. WINDFALLS TO TAX LIEN INVESTORS, LITIGATION OVER ITS CONSTITUTIONALITY AND GR",
+    "title": "Tax Sale Equity Amendment Act of 2026",
+    "pool": "supported_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "XT ON THE AGENDA IS PR 26 536, WHICH NOMINATES DOCTOR LEE TENKU FOR REAPPOINTMENT TO THE HEALTH BENEFIT EXCHANGE BOARD FOR A TERM ENDING JULY 6TH, 2029. SINCE THE COMMITTEE HELD A ROUNDTABL",
+    "title": "Health Benefit Exchange Authority Executive Board Leighton Ku Confirmation Resolution of 2026",
+    "pool": "supported_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "IFY FOR THE OCFO ON BILL 26-771. THE TAX SALE EQUITY AMENDMENT ACT OF 2026. THE TAX SALE IS A HIGHLY EFFECTIVE TOOL FOR THE COLLECTION OF REAL PROPERTY TAXES AND HAS BEEN UTILIZED BY THE DIST",
+    "title": "Tax Sale Equity Amendment Act of 2026",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "RESOLUTION OF 2026. PR 26-542. DISTRICT OF COLUMBIA HOUSING AUTHORITY BOARD OF COMMISSIONERS RAYMOND SKINNER, CONFIRMATION RESOLUTION OF 2026 AND PR 26-543. DISTRICT OF COLUMBIA HOUSING AUT",
+    "title": "District of Columbia Housing Authority Board of Commissioners Raymond Skinner Confirmation Resolution of 2026",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": " HERE IN SUPPORT OF B 26 495. THE CONDOMINIUM INSURANCE AMENDMENT ACT OF 2025. TODAY IN THE DISTRICT, A HOMEOWNER CAN DO EVERYTHING RIGHT AND STILL GET HIT WITH A MULTI-THOUSAND DOLLAR CHA",
+    "title": "Condominium Insurance Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "TEE DOES FULLY FUND BILL 26-356. THE PRENATAL AND POSTPARTUM REMOTE PATIENT MONITORING CLARIFICATION AMENDMENT ACT OF 2025, WHICH PROVIDES REMOTE BLOOD PRESSURE AND GLUCOSE MONITORING DURING ",
+    "title": "Prenatal and Postpartum Remote Patient Monitoring Clarification Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "EM 5. AT THE BOTTOM PR26-741. BOARD OF TRUSTEES, DISTRICT COLUMBIA. SO MOVED. IS THERE A DISCUSSION?",
+    "title": "Board of Trustees of the University of the District of Columbia Marc Battle Confirmation Resolution of 2026",
+    "pool": "supported_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " RESOLUTION OF 2025 PR 26 442. THE BOARD OF DIRECTORS OF THE DISTRICT OF COLUMBIA HOUSING FINANCE AGENCY, JOHANNS FULLER CONFIRMATION RESOLUTION OF 2025 PR 26 457. THE HOUSING PRODUCTION TR",
+    "title": "Board of Directors of the District of Columbia Housing Finance Agency Yohance Fuller Confirmation Resolution of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": ". THE NEXT MEASURE, BILL 26-100, I AM NOT MOVING TODAY. THIS IS THE DEFERRED RETIREMENT OPTION PROGRAM AMENDMENT ACT OF 2026. I THOUGHT WE WERE ON THE VERGE OF GETTING FISCAL IMPACT STATEMENT",
+    "title": "Deferred Retirement Option Program Amendment Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "NATION ACT OF 2026, BILL. 26-431 WOULD OFFICIALLY DESIGNATE THE BASKETBALL COURT AT THE MARVIN GAYE RECREATION CENTER, LOCATED AT 61ST STREET NORTHEAST AS RODNEY, RIGHT, BASKETBALL COURT. THE ",
+    "title": "Rodney Wright Basketball Court Designation Act of 2025",
+    "pool": "supported_pool",
+    "llm_label": "supported"
+  },
+  {
     "context": "ON RESOLUTION 2026. PR26-779, SO MOVED. THE UNDERLYING BILL DOES THREE THINGS. ALL OF WHICH ARE TO CONTINUE EMERGENCY AND TEMPORARY LEGISLATION PREVIOUSLY ADOPTED. RELATED TO MEDICAL CANNA",
     "title": "Medical Cannabis Licensing and Unlicensed Establishment Enforcement Clarification Emergency Declaration Resolution of 2026",
     "pool": "weak_pool",
@@ -356,6 +476,96 @@
   {
     "context": "R SASHA JAKE ANGUS. PR 26-4 77, HOUSING PRODUCTION TRUST FUND BOARD, STACY BYRNE --, CONFIRMATION RESOLUTION OF 2025. PR26-0441 - BOARD OF DIRECTORS OF THE DISTRICT OF COLUMBIA HOUSING FI",
     "title": "Budget Director to the Council of the District of Columbia Jennifer Budoff Reappointment Resolution of 2025",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "BUDGET ACT OF 2026, BILL 26-659. THIS IS A FINAL READING AND I'LL NOTE NOW, AND IF I REMEMBER, FOR EACH OF THE BUDGET BILLS, I'M MOVING THESE WITH LEAVE FOR STAFF TO MAKE TECHNICAL CONFORMING",
+    "title": "Fiscal Year 2027 Local Budget Act of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "TED, UNQUOTE. WHILE BILL 26-0403 ATTEMPTS TO RESOLVE LOGISTICAL PROBLEMS WITH STUDENT TRANSITION SUCH AS THE TIMELY SHARING OF DOCUMENTS IT ALSO ADDRESSES THE ISSUE OF ENSURING STUDENTS RECEIV",
+    "title": "Education Continuity for Students in the Care of D.C. Amendment Act of 2025",
+    "pool": "weak_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "RGETOWN UNIVERSITY. BILL 26-772 APPROXIMATELY 7426 SQUARE FEET OF 25TH STREET RUNNING BETWEEN WATER STREET AND THE POTOMAC RIVER BENEATH THE FRANCIS SCOTT KEY BRIDGE. THE BILL WOULD APPROVE T",
+    "title": "Closing of the Unimproved Portion of 35th Street N.W., Abutting Squares 1178 and 1179, S.O. 26-01008, Act of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "2 A.M. I INTRODUCED BILL 26-67 WITH THE SUPPORT OF COUNCIL MEMBERS LEWIS, GEORGE HENDERSON AND PARKER AS CO-PRODUCERS. THIS BILL ESTABLISHES COMPREHENSIVE PRIVACY PROTECTIONS GOVERNING THE C",
+    "title": "Contract No. CW117574 with Compost Crew, Inc. A Benefit Corporation Approval and Payment Authorization Emergency Act of 2025",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " WILL BE DISCUSSING BILL 26- 492, THE RAT ACT, INTRODUCED BY COUNCILMEMBER LEWIS GEORGE, AND BILL 26-707, WROTE EDUCATION AND MANAGEMENT YIELDS RESULTS, REMY AMENDMENT ACT, INTRODUCED BY MYSEL",
+    "title": "Rodent Abatement and Transparency (RAT) Amendment Act of 2025",
+    "pool": "weak_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "OWEVER, B26-259 AND B26-654 EXPAND THE VARIETY OF CANNABIS PRODUCTS AVAILABLE - INCLUDING PRODUCTS THAT CLOSELY RESEMBLE FOODS AND BEVERAGES - CREATING ADDITIONAL OPPORTUNITIES FOR ACCIDE",
+    "title": "Medical Cannabis Beverage Product Amendment Act of 2026",
+    "pool": "weak_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "RESOLUTION OF 2026, PR 26 540 AND THE REBALANCING EXPECTATIONS FOR NEIGHBORS, TENANTS AND LANDLORDS RENTAL AMENDMENT ACT OF 2025. DC LAW 2680. SINCE JOINING THE REFORM BOARD, WE'VE SEEN MAN",
+    "title": "District of Columbia Housing Authority Board of Commissioners Leroy Clay III Confirmation Resolution of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "S FOR PR 26-635 AND PR 26-638, WITH LEAVE FOR STAFF TO MAKE TECHNICAL, EDITORIAL AND CONFORMING CHANGES. IS THERE ANY DISCUSSION? I ALSO WANT TO NOTE WE'VE BEEN JOINED BY AT LARGE COUNCIL M",
+    "title": "Corrections Information Council Governing Board Natasha Dasher Confirmation Resolution of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "E STATED PURPOSE OF BILL 26-493 IS TO AMEND THE TENANT RECEIVERSHIP ACT TO INCLUDE VIOLATIONS OF THE AIR QUALITY AMENDMENT ACT OF 2013 AS GROUNDS FOR THE APPOINTMENT OF A RECEIVER AND TO CLAR",
+    "title": "Strengthening Tenant Receivership and Oversight for Neighborhood Growth (STRONG) Homes Amendment Act of 2025",
+    "pool": "weak_pool",
+    "llm_label": "supported"
+  },
+  {
+    "context": "CHRISTOPHER MURPHY, PR 26-538, CONFIRMING. DENISE BLACKSON, PR 26-540, CONFIRMING. LEROY CLAY, THE THIRD. PR 26-42, CONFIRMING. RAYMOND SKINNER AND PR 26-543, CONFIRMING. TERESA, THAT LOOKS",
+    "title": "District of Columbia Housing Authority Board of Commissioners Denise Blackson Confirmation Resolution of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "THE PERMANENT BILL, BILL 26-661. ALL THOSE IN FAVOR SAY AYE. ARE THERE ANY OPPOSED? HEARING NONE, THE AYES HAVE IT UNANIMOUSLY. YOU KNOW, AT EACH OF THESE BUDGET MEETINGS, VOTES, WE THINK EVE",
+    "title": "Fiscal Year 2027 Budget Support Act of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "Y ASK THAT YOU PASS BILL 26-0476, THANK YOU FOR YOUR TIME, CONSIDERATION AND YOUR CONTINUED SUPPORT FOR OUR NATION'S VETERANS.",
+    "title": "Disabled Veterans Complete Property Tax Exemption Amendment Act of 2025",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " MELVIN McLEAN. AND PR26-728 TAMIKA BRUCE. AS NOTE, CELESTE SANTIFER WAS WITHDRAWN AFTER THE COMMITTEE NOTICED THIS HEARING. THAT RESOLUTION WILL NOT BE CONSIDERED TODAY. THE RESOLUTION-- ",
+    "title": "Commission on Re-Entry and Returning Citizen Affairs Tamika Bruce Confirmation Resolution of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "IMONY IN SUPPORT OF PR26 -674. IS THERE A DISCUSSION OF THIS CONFIRMATION RESOLUTION? HEARING NONE. THE PROPOSED RESOLUTION OF 26-674 AND LEAVE FOR STAFF TO MAKE CHANGES. ALL THOSE IN FAVOR",
+    "title": "Alcoholic Beverage and Cannabis Board James Turner Confirmation Resolution of 2026",
+    "pool": "weak_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "ECIAL EDUCATION AND BILL 26-63. DOCTOR JACKSON, ARE YOU FIRST. DO YOU WANT TO BE FIRST? OKAY, PERFECT. THANK YOU. GOOD EVENING, CHAIRMAN MENDELSON AND COUNCIL MEMBERS. I AM DOCTOR KIM JACKSO",
+    "title": "Advancing Equity in Special Education Protocols Amendment Act of 2025",
     "pool": "weak_pool",
     "llm_label": "contradicted"
   },
@@ -540,6 +750,156 @@
     "llm_label": "contradicted"
   },
   {
+    "context": "TO TESTIFY TODAY ON BILL 26-684. I HAVE SUBMITTED MY WRITTEN TESTIMONY FOR THE RECORD. THIS EVENING, I WOULD LIKE TO BRIEFLY HIGHLIGHT WHAT I BELIEVE ARE THE FOUR PRINCIPLES THAT SHOULD GUIDE",
+    "title": "Autonomous Vehicle Deployment Authorization Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "O TAKE ACTION, PASS BILL 26-0619, RESPECTFULLY MOVE IT OUT OF THE COMMITTEE, AND SEND IT TO THE FULL COUNSEL FOR RAY -- FOR A VOTE. LET'S WORK TOGETHER TO MAKE OUR STREETS SAFER FOR EVERYONE. ",
+    "title": "Eric\u2019s ID Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "S PUBLIC HEARING ON BILL 26-684. I WANT TO THANK ALL OF OUR PUBLIC WITNESSES TODAY WHO HAD REALLY GREAT COMMENTS, QUESTIONS AND HELPED US FLESH OUT WHAT THE COMMITTEE WILL BE DOING. APPRECIAT",
+    "title": "Autonomous Vehicle Deployment Authorization Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "O THE NEXT MEASURE, BILL 26-3 98, INCREASING SUPPORT FOR CLOSE RELATIVE AND CAREGIVERS, 25.",
+    "title": "Rent Stabilized Housing Inflation Protection Continuation Temporary Amendment Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "COMMITTEE TO OPPOSE BILL 26- 0596. THANK YOU FOR ALLOWING ME TO SPEAK TODAY.",
+    "title": "Utility Rates and Ratemaking Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "AVE IT UNANIMOUSLY. BILL 26-5 61, COUNCILMEMBER PINTO?",
+    "title": "Residential Tranquility Congressional Review Emergency Amendment Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "NATION ACT OF 2026. BILL 26-231 WOULD OFFICIALLY DESIGNATE THE TRIANGLE PARK AND RESERVATION 160 AS HARMONY PARK. THE LOCATION IS NEAR THE BOUNDARY OF WARDS ONE, TWO AND FIVE. IT'S AN OFFICIA",
+    "title": "Contract No. CW108863 with La Cl\u00ednica del Pueblo, Inc. Approval and Payment Authorization Emergency Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "ORARY AMENDMENT ACT BILL 26-828. HOMELESS SERVICES CONTRACT ADJUSTMENT TEMPORARY AMENDMENT ACT. THAT'S BILL 26-851. AN ALTERNATIVE BREAKFAST SERVICE MODEL, TEMPORARY AMENDMENT ACT, WHICH IS B",
+    "title": "Porchfest Permitting Temporary Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "EPORT AND PRINT FOR PR 26-6 HUNDRED IN BLOCK WITH LEAVE FOR STAFF TO MAKE ANY TECHNICAL CHANGES. ALL IN FAVOR, PLEASE SAY AYE. AYE. GREAT. LET THE RECORD REFLECT THAT. THE AYES HAVE IT AN",
+    "title": "Working Conditions and Compensation Agreement between the District of Columbia Public Schools and the Washington Teachers\u2019 Union, Local #6 of the American Federation of Teachers Approval Emergency Declaration Resolution of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "THE VOTE WILL BE ON BILL 26-677. ALL THOSE IN FAVOR, SAY AYE. I I. ARE THERE ANY OPPOSED? MR. CHAIRMAN, PLEASE RECORD ME AS VOTING NO. SECRETARY WILL RECORD COUNCILMEMBER FRUMIN IS VOTING NO.",
+    "title": "Personal Delivery Device Weight Limit Emergency Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "ESE ARE INCLUDED IN BILL 26-661, THAT IS THE BSA. THE EMERGENCY BILL WILL MAKE THOSE TIME SENSITIVE PROVISIONS PRIOR TO OCTOBER 1. OTHER PROVISIONS WILL RETAIN THE APPLICABILITY DATE PROVIDED",
+    "title": "Fiscal Year 2027 Budget Support Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "ON THE DECLARATION. PR 26-646. ALL THOSE IN FAVOR, SAY AYE. I I. ARE THERE ANY OPPOSED? HEARING NONE, THE AYES HAVE IT UNANIMOUS. JUST FOR THE RECORD. SORRY. THE AYES HAVE IT UNANIMOUSLY. W",
+    "title": "Certified Business Enterprise Program Compliance and Enforcement Support Emergency Declaration Resolution of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "THE VOTE WILL BE ON BILL 26 365. BOTH THE PRINT AND REPORT WOULD LEAVE FOR STAFF. ALL THOSE IN FAVOR SAY AYE. AYE, AYE. ARE THERE ANY OPPOSED? HEARING NONE. THE AYES HAVE IT UNANIMOUSLY. MADA",
+    "title": "Lenora Baker Way Designation Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "AVE THE DECLARATION PR26-79 # BEFORE US. ALL THOSE IN FAVOR, SAY AYE.",
+    "title": "Commission on African Affairs Tiffany Lancaster Confirmation Resolution of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "S GOING TO FOCUS ON BILL 26-58. COMMONLY REFERRED TO AS THE BOTTLE BILL. SINCE THE ORIGINAL PUBLIC HEARING ON THE BILL WAS HEAD ON OCTOBER 1ST, 2025, AS WELL AS IN CONVERSATION OF STAKEHOLDE",
+    "title": "Recycling Refund and Litter Reduction Amendment Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "43, BILL 20 6-4 43, BILL 26 595, AND BILL 26, X602. I WANT TO THANK EVERYONE AGAIN WHO PROVIDED TESTIMONY. THE RECORD FOR TODAY'S HEARING IS GOING TO CLOSE ON APRIL 9TH, 2026, AND YOU CAN SUB",
+    "title": "Transparent Rates and Utility Expenses Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "IS ON THE AGENDA IS PR 26-815. ALL THOSE IN FAVOR, SAY I. I. I. ARE THERE ANY OPPOSED. THE AYES HAVE IT UNANIMOUSLY. MADAM SECRETARY, JUST AS A QUESTION. DO YOU GIVE IT A NEW NUMBER AS A BI",
+    "title": "Washington Metropolitan Area Transit Authority Fiscal Year 2027 to 2032 Dedicated Funding Grant Agreement Emergency Approval Resolution of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "HE UNDERLYING BILL, BILL 26-863. IS THERE A DISCUSSION? VOTE WILL BE ON 26-863. ALL THOSE IN FAVOR, SAY AYE. [CHORUS OF \"AYES\"]. ARE THERE ANY OPPOSED? HEARING NONE, THE AYES HAVE IT UNANIMOU",
+    "title": "Mayoral Transition Emergency Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "THE UNDERLYING BILL B26-566. THIS BILL WILL STREAMLINE OUR BALLOT ACCESS PROCESS BY ESTABLISHING A STRAIGHTFORWARD STANDARD FOR USE BY THE BOARD OF ELECTIONS WHEN EVALUATING BALLOT ACCESS",
+    "title": "Petition Administration Clarification Emergency Amendment Act of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " ON THE DECLARATION PR 26-514. ALL THOSE IN FAVOR SAY AYE. ARE THERE ANY OPPOSED? HEARING NONE, AYES HAVE IT UNANIMOUSLY. THE UNDERLYING BILL IS BILL 26-575. DISCUSSION? VOTES ON BILL 26-57",
+    "title": "Friends of Wangari Gardens Grant Emergency Declaration Resolution of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "OR CONSIDERATION IS BILL 26-22 FOR THE RESTRICTING EGREGIOUS SCALPING AGAINST LIVE ENTERTAINMENT OR RESALE AMENDMENT ACT OF 2025. THE D.C. MUSIC SCENE AND OUR LOCAL ENTERTAINMENT VENUES HAVE",
+    "title": "Living Donor Protection Amendment Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "RINT AND THAT'S FOR BILL 26 136. WE HAVE TO REMEMBER MY COMMITTEE HAS TO REMEMBER WE ALWAYS, WHEN WE PRESENT A BILL, WE HAVE THE PRINT THE DECLARATION AND THE BILL ITSELF. AND SO I'LL ASK. AN",
+    "title": "Special Election in the Office of Delegate Amendment Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "EPORT AND PRINT FOR BILL 26-444 FOR STAFF TO MAKE ANY CHANGES. ALL IN FAVOR SAY AYE.",
+    "title": "Food Policy Council Procurement Amendment Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " ON THE DECLARATION PR26-783. ALL THOSE IN FAVOR SAY AYE. ARE THERE ANY OPPOSED? HEARING NONE. THE AYES HAVE IT UNANIMOUSLY. WE HAVE THE UNDERLYING BILL, 26-767. COUNCILMEMBER LEWIS GEORGE",
+    "title": "Net Zero Continuity Emergency Declaration Resolution of 2026",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "UDENTS. IF ENACTED, BILL 26-0403 WOULD PLACE THE DISTRICT OF COLUMBIA AMONG FEW JURISDICTIONS THAT ADOPTED A COMPREHENSIVE STATUTORY FRAMEWORK TO ADDRESS THESE CHALLENGES. OVER ALL, BILL 26-04",
+    "title": "Education Continuity for Students in the Care of D.C. Amendment Act of 2025",
+    "pool": "no_context_pool",
+    "llm_label": "contradicted"
+  },
+  {
     "context": "PUBLIC WITNESSES ON BILL 26-596. THE UTILITY RATE RATES AND RATEMAKING AMENDMENT ACT OF 2026. THE COMMITTEE HAS ALSO CONVENED THIS HEARING TO BE ABLE TO DISCUSS ADDITIONAL POLICY SOLUTIONS TO",
     "title": "Personal Delivery Device Weight Limit Temporary Amendment Act of 2026",
     "pool": "synthetic_contradicted",
@@ -716,6 +1076,126 @@
   {
     "context": "VERALL ARRANGEMENT. BILL 26-740 WOULD DECLARE PORTIONS OF SITE D SURPLUS. THE PROPOSED GEORGETOWN UNIVERSITY BOATHOUSE WOULD PROVIDE A DEDICATED FACILITY FOR THE UNIVERSITY'S ROWING PROGRAM W",
     "title": "Public Charter School Board Maura Marino Confirmation Resolution of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "THE NEXT MEASURE IS BILL 26 586, NET ZERO MODIFICATION AND PRESERVATION TEMPORARY AMENDMENT ACT OF 2026. COUNCILMEMBER LOUIS. GEORGE, THANK YOU, CHAIRMAN. I REQUESTED THIS TEMPORARY BE TAKEN ",
+    "title": "Office of Human Rights Rulemaking Authority Amendment Act of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "OGRAMS ACT OF 2025, BILL 26 443, D.C. WATER BILLING AND DISCONNECTION MODERNIZATION AMENDMENT ACT OF 2025. HOPEFULLY, YOU'RE PICKING UP ON THE THEME BILL 20 6-5 95. THE TRANSPARENT RATES AND ",
+    "title": "Advancing Equity in Special Education Protocols Amendment Act of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "TESTIMONY REGARDING BILL 26-708. THAT IS THE COMBINED REPORTING AMENDMENT ACT OF 2026. THEN WE WILL HEAR FROM GOVERNMENT WITNESSES. WE HAVE ONE REPRESENTATIVE, THE CORPORATE TAX COUNSEL FROM ",
+    "title": "River East at Grandview Homeownership Relief and Restoration Amendment Act of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "THIS IS TO CONSIDER PR26-747, THE PUBLIC CHARTER SCHOOL BOARD AHNNA SMITH CONFIRMATION RESOLUTION OF 2026. THIS WAS INTRODUCED AT THE REQUEST OF THE MAYOR THREE WEEKS AGO, JUNE 17, 2026. A",
+    "title": "Prenatal and Postpartum Remote Patient Monitoring Clarification Amendment Act of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "O HEAR TESTIMONY ON B26-0479. THE YOUTH VILLAGES GRANT ESTABLISHMENT AMENDMENT ACT OF 2025, WHICH WAS INTRODUCED BY COUNCILMEMBER BROOKE PINTO AND CO-INTRODUCED BY MYSELF, COUNCILMEMBER NA",
+    "title": "Language Access Rulemaking Authority Emergency Declaration Resolution of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "R THE AGENDA. I HAD BILL 26 136, THE SPECIAL ELECTION, THE OFFICE OF DELEGATE AMENDMENT ACT, OF 2026. I JUST WANT TO MAKE SURE WE DIDN'T SKIP IT BY ACCIDENT. I SKIPPED IT BY ACCIDENT. WE'LL C",
+    "title": "Multiyear Contract No. DHCD-2025-50 with Jubilee Housing, Inc. Approval Emergency Declaration Resolution of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "T REASON, I SUPPORT B26-522. THIS LEGISLATION STRENGTHENS THE DISTRICT'S EXISTING MEDICAL CANNABIS PROGRAM AND IMPROVES PROTECTION FOR CHILDREN BY ENSURING THAT BUFFER ZONE REQUIREMENTS A",
+    "title": "Commission on Human Rights Joshua Blecher-Cohen Confirmation Resolution of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "RESOLUTION OF 2026. PR 26-665, JOEL CAST\u00d3N, RESOLUTION OF 2026. PR 26-710, REVEREND THOMAS BOWEN RESOLUTION OF 2026. PR 26-714, PRATIMA NARAYAN, RESOLUTION OF 2026. PR 26-715, JOSHUA BLECHE",
+    "title": "Medical Cannabis Conditional Licensure Extension Amendment Act of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "RINT AND REPORT FOR B26-545, THE RIVER EAST AT GRANDVIEW. HOME OWNERSHIP RELIEF AND RESTORATION AMENDMENT ACT OF 2026, WITH LEAVE FOR STAFF TO MAKE TECHNICAL AND CONFORMING CHANGES. ALL T",
+    "title": "Office of Human Rights Rulemaking Authority Amendment Act of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " OF THIS HEARING IS BILL 26-0403, ENTITLED EDUCATION CONTINUITY FOR STUDENTS IN THE CARE OF D.C. AMENDMENT ACT OF 2025. THE STATED PURPOSE IS TO REQUIRE THE OFFICE OF THE STATE SUPERINTENDENT ",
+    "title": "Duke District BID Grantmaking Temporary Amendment Act of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " PERMANENT MEASURE. BILL 26-494. IT DOES TWO MAIN THINGS THAT SHOULD BE PUT IN PLACE IMMEDIATELY. FIRST THE BILL MAKES SLIGHTLY EASIER FOR PEOPLE TO PRACTICE ACROSS STATE LINE AND KEEPING WIT",
+    "title": "Lenora Baker Way Designation Act of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " ITEM FOR MARKUP IS BILL 26-49. ENTITLED SEASONAL PRICING AND PRICE GOUGING AMENDMENT ACT OF 2026. AS INTRODUCED, THE BILL WOULD MAKE SEVERAL CHANGES TO THE DISTRICT'S PRICE GOUGING LAW INCL",
+    "title": "Reservoir District Tax Exemption Amendment Act of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "E NEXT BILL IS BILL B26-0564 - FOOD & FRIENDS PROPERTY TAX EXEMPTION AMENDMENT ACT OF 2026 -- THE NEXT BILL IS B26-0484 - FAIRNESS AND ACCURACY IN REAL PROPERTY TAX ASSESSMENTS AMENDMENT A",
+    "title": "Real Estate Commission Patrice Richardson Confirmation Resolution of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "ING ON B 26-594 AND B 26-621. THE TIME IS 10:09 A.M. TODAY. WE'LL CONSIDER TWO BILLS THAT I JUST MENTIONED, THE CONTRACTING AND PROCUREMENT REFORM AMENDMENT ACT OF 2026 AND THE PROCUREMENT",
+    "title": "Housing Production Trust Fund Board Stephen Glaude Confirmation Resolution of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "THE NEXT MEASURE IS BILL 26-689 WHICH IS ENTITLED THE CLOSING OF A PORTION OF A PUBLIC ALLEY IN SQUARE 785 ACT OF 2026. THIS BILL WAS INTRODUCED BY ME AT THE REQUEST OF MAYOR BOWSER ON MAY 11",
+    "title": "1333 M Street, SE Tax Abatement Amendment Act of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": " HEARING TO DISCUSS B 26-121, THE SAINT ELIZABETH'S EAST PARCEL 13TH EXTENSION AUTHORITY. ACT OF 2020 FIVE. 326-466, THE SAINT ELIZABETH'S EAST PARCEL 13TH AMENDMENT ACT OF 2025. B 26 -- 4",
+    "title": "Food & Friends Property Tax Exemption Temporary Amendment Act of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "Y TO SPEAK TODAY ON B 26 0525. WE AGREE THAT THE PROTECTION OF CONSUMER HEALTH DATA IS OF UTMOST IMPORTANCE, AND WE DO UNDERSTAND THE INTENT OF THE BILL. HOWEVER, WE ARE CONCERNED ABOUT THE",
+    "title": "Tree Preservation Enhancement Amendment Act of 2025",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "RESOLUTION OF 2026. PR26-0641, BOARD OF DIRECTORS OF THE DISTRICT OF COLUMBIA HOUSING FINANCE AGENCY CARRI ROBINSON CONFIRMATION RESOLUTION OF 2026. FIRST, THE MAYOR NOMINATED LAUREN PAIR F",
+    "title": "Methodist Home of the District of Columbia d/b/a Forest Hills of DC by Goodwin Living Revenue Bonds Project Approval Resolution of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "RESOLUTION OF 2025. PR 26-476 WASHINGTON CONVENTION SPORTS AUTHORITY BOARD OF DIRECTORS CONFIRMATION RESOLUTION OF 2025. I BELIEVE EACH OF THESE WAS INTRODUCED AT THE REQUEST OF THE MAYOR. ",
+    "title": "Volunteer Services Clarification Emergency Amendment Act of 2026",
+    "pool": "synthetic_contradicted",
+    "llm_label": "contradicted"
+  },
+  {
+    "context": "T THIS LEGISLATION. B 26 0495 THE CONDOMINIUM INSURANCE ACT IN A CONDO COMMUNITY WHERE THERE ARE UNITS ABOVE, BELOW AND NEXT TO YOU, OWNERS MUST REMAIN AWARE AND VIGILANT, VIGILANT BECAUSE ",
+    "title": "Utility Rates and Ratemaking Amendment Act of 2026",
     "pool": "synthetic_contradicted",
     "llm_label": "contradicted"
   }
