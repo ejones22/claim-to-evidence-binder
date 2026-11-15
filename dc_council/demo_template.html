@@ -1,0 +1,531 @@
+<title>Claim-to-Evidence Binder</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;800&display=swap">
+<style>
+/* Layout: one reading column; the examples and the per-meeting table get the full width. */
+:root {
+  --paper: #f3f5f6;
+  --surface: #ffffff;
+  --ink: #15212a;
+  --muted: #586a76;
+  --rule: #d6dee3;
+  --accent: #1d5ea8;
+  --accent-soft: #dce8f6;
+  --ok: #2b7a4b;
+  --ok-soft: #dcefe3;
+  --warn: #9a6200;
+  --warn-soft: #f6ead2;
+  --bad: #b02a22;
+  --bad-soft: #f7dfdc;
+  --none: #66737d;
+  --none-soft: #e6eaed;
+  --bar-forced: #8d9ba5;
+  --bar-same: #c4ced5;
+  --font-body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f161b; --surface: #172127; --ink: #e4eaee; --muted: #93a4af; --rule: #2a3741;
+    --accent: #7aaeea; --accent-soft: #1c3048;
+    --ok: #63c48f; --ok-soft: #173326; --warn: #e3ab4d; --warn-soft: #3a2c12;
+    --bad: #f1857b; --bad-soft: #3d1c1a; --none: #9aa7b0; --none-soft: #26323a;
+    --bar-forced: #6c7c87; --bar-same: #3e4c56;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f161b; --surface: #172127; --ink: #e4eaee; --muted: #93a4af; --rule: #2a3741;
+  --accent: #7aaeea; --accent-soft: #1c3048;
+  --ok: #63c48f; --ok-soft: #173326; --warn: #e3ab4d; --warn-soft: #3a2c12;
+  --bad: #f1857b; --bad-soft: #3d1c1a; --none: #9aa7b0; --none-soft: #26323a;
+  --bar-forced: #6c7c87; --bar-same: #3e4c56;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-block: 40px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 56px;
+}
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 2.9rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+h2 { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.25; }
+h3 { font-size: 1.02rem; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, tr:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+.eyebrow {
+  font-size: 0.74rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted);
+}
+.muted { color: var(--muted); }
+.mono { font-family: var(--font-mono); }
+.num { font-variant-numeric: tabular-nums; }
+section { display: grid; gap: 20px; min-width: 0; }
+.section-head { display: grid; gap: 8px; }
+
+/* header */
+header { display: grid; gap: 16px; }
+.lede { font-size: 1.12rem; color: var(--ink); }
+.stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+  margin-top: 8px;
+}
+.stat { padding: 14px 16px 14px 0; display: grid; gap: 2px; }
+.stat b { font-size: 1.6rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.stat span { font-size: 0.85rem; color: var(--muted); }
+
+/* chips */
+.chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.78rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; white-space: nowrap;
+}
+.chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.c-ok { color: var(--ok); background: var(--ok-soft); }
+.c-bad { color: var(--bad); background: var(--bad-soft); }
+.c-warn { color: var(--warn); background: var(--warn-soft); }
+.c-none { color: var(--none); background: var(--none-soft); }
+.docket {
+  font-family: var(--font-mono); font-size: 0.82rem; font-weight: 500;
+  border: 1px solid var(--rule); border-radius: 3px; padding: 1px 6px; background: var(--paper); white-space: nowrap;
+}
+
+/* example cards */
+.ex-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.ex-grid.lead { grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+.ex {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 8px;
+  padding: 18px; display: grid; gap: 14px; align-content: start; min-width: 0;
+}
+.ex-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.ex .why { font-size: 0.92rem; color: var(--muted); }
+.trail { display: grid; gap: 8px; }
+.trail-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.caption {
+  font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6;
+  background: var(--paper); border-left: 3px solid var(--rule); padding: 10px 12px; overflow-wrap: anywhere;
+}
+.caption mark { background: var(--accent-soft); color: var(--ink); padding: 0 2px; }
+.record { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; font-size: 0.95rem; }
+.verdicts { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; align-items: center; font-size: 0.85rem; border-top: 1px solid var(--rule); padding-top: 12px; }
+.verdicts dt { color: var(--muted); }
+.verdicts dd { margin: 0; }
+.ex-foot { font-size: 0.8rem; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* abstention chart */
+.chart { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 20px; display: grid; gap: 18px; min-width: 0; }
+.legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 0.82rem; color: var(--muted); }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 6px; }
+.model { display: grid; grid-template-columns: minmax(120px, 170px) 1fr; gap: 6px 16px; align-items: center; }
+.model-name { display: grid; gap: 2px; }
+.model-name b { font-family: var(--font-mono); font-size: 0.9rem; font-weight: 500; }
+.model-name span { font-size: 0.78rem; color: var(--muted); }
+.bars { display: grid; gap: 4px; min-width: 0; }
+.bar-row { display: grid; grid-template-columns: 1fr; position: relative; height: 20px; }
+.bar { height: 100%; border-radius: 0 3px 3px 0; min-width: 2px; }
+.bar-val { position: absolute; top: 0; font-size: 0.78rem; line-height: 20px; padding-left: 6px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.axis { display: grid; grid-template-columns: minmax(120px, 170px) 1fr; gap: 16px; }
+.ticks { position: relative; margin-right: 128px; height: 18px; border-top: 1px solid var(--rule); font-size: 0.72rem; color: var(--muted); }
+.ticks span { position: absolute; top: 2px; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
+.ticks span:first-child { transform: none; }
+.gridlines { position: absolute; inset: 0; pointer-events: none; }
+.plot { position: relative; margin-right: 128px; }
+.gridlines span { position: absolute; top: 0; bottom: 0; border-left: 1px dashed var(--rule); }
+.callout { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; display: grid; gap: 8px; }
+
+/* tables */
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; background: var(--surface); }
+td.r, th.r { text-align: right; font-variant-numeric: tabular-nums; }
+tbody tr:last-child td { border-bottom: 0; }
+th button { all: unset; cursor: pointer; }
+th button:hover { color: var(--ink); }
+th button[aria-sort]::after { content: " \2193"; }
+th button[aria-sort="ascending"]::after { content: " \2191"; }
+tr.meeting { cursor: pointer; }
+tr.meeting:hover td { background: var(--paper); }
+tr.meeting td:first-child { min-width: 260px; }
+.toggle { display: inline-block; width: 1em; color: var(--muted); font-size: 0.8rem; }
+.stack { display: flex; height: 10px; width: 120px; border-radius: 2px; overflow: hidden; background: var(--none-soft); margin-top: 5px; }
+.stack span { height: 100%; }
+td.r .stack { margin-left: auto; }
+.detail td { background: var(--paper); padding: 0; }
+.detail-list { display: grid; gap: 0; }
+.cite { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 4px 14px; padding: 10px 12px 10px 36px; border-top: 1px solid var(--rule); font-size: 0.85rem; }
+.cite:first-child { border-top: 0; }
+.cite .caption { font-size: 0.74rem; padding: 6px 10px; }
+.controls { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.controls input, .controls select {
+  font: inherit; font-size: 0.9rem; padding: 7px 10px; border: 1px solid var(--rule); border-radius: 6px;
+  background: var(--surface); color: var(--ink); min-width: 0;
+}
+.controls input { flex: 1 1 240px; }
+.key { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.85rem; color: var(--muted); align-items: center; }
+
+/* root causes */
+.rc { display: grid; gap: 10px; max-width: 720px; }
+.rc-row { display: grid; grid-template-columns: minmax(0, 1fr) 2.2em; gap: 4px 12px; align-items: center; font-size: 0.92rem; }
+.rc-bar { grid-column: 1 / -1; height: 8px; background: var(--none-soft); border-radius: 2px; overflow: hidden; }
+.rc-bar span { display: block; height: 100%; background: var(--bar-forced); }
+
+/* limits */
+.limits { display: grid; gap: 14px; padding: 0; margin: 0; list-style: none; max-width: 76ch; }
+.limits li { display: grid; gap: 2px; padding-left: 16px; border-left: 2px solid var(--rule); }
+footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 16px; display: grid; gap: 6px; }
+
+@media (max-width: 560px) {
+  .model, .axis { grid-template-columns: 1fr; }
+  .axis > div:first-child { display: none; }
+  .cite { grid-template-columns: 1fr; padding-left: 16px; }
+  .page { gap: 44px; padding-block: 28px 48px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .bar { transition: width 0.5s ease-out; }
+}
+</style>
+
+<div class="page">
+  <header>
+    <div class="eyebrow">Apart AI x Epistemics Sprint &middot; Track 2, Trust Infrastructure &middot; Nov 13&ndash;15, 2026</div>
+    <h1>Claim-to-Evidence Binder</h1>
+    <p class="lede">When someone at a DC Council meeting cites a bill by number, does that number point to a real legislative record, and does what they say match it? We checked every spoken citation in the meeting captions against the Council&rsquo;s LIMS records, then tested whether an LLM judge that may answer &ldquo;can&rsquo;t tell&rdquo; makes fewer mistakes than one forced to decide.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <section aria-labelledby="ex-h">
+    <div class="section-head">
+      <div class="eyebrow">Demo examples</div>
+      <h2 id="ex-h">A clean bind, a catch, and an abstention</h2>
+      <p class="muted">Each card follows one citation from the stenographer&rsquo;s caption to the official record, then shows what each checker decided. Captions are quoted exactly as captured, including their cut-off edges. Video links jump to an estimated moment, so expect to land near the citation, not on it.</p>
+    </div>
+    <div class="ex-grid lead" id="ex-lead"></div>
+  </section>
+
+  <section aria-labelledby="ab-h">
+    <div class="section-head">
+      <div class="eyebrow">Headline result</div>
+      <h2 id="ab-h">Letting the judge abstain cuts its error rate</h2>
+      <p class="muted" id="ab-sub"></p>
+    </div>
+    <div class="chart">
+      <div class="legend">
+        <span><i style="background: var(--bar-forced)"></i>Forced to answer, all cases</span>
+        <span><i style="background: var(--bar-same)"></i>Forced, only the cases the abstaining run answered</span>
+        <span><i style="background: var(--accent)"></i>Allowed to abstain, cases it answered</span>
+      </div>
+      <div id="ab-chart" style="display: grid; gap: 18px;"></div>
+    </div>
+    <div class="callout" id="ab-callout"></div>
+    <div class="ex-grid" id="ex-more"></div>
+  </section>
+
+  <section aria-labelledby="mt-h">
+    <div class="section-head">
+      <div class="eyebrow">Every meeting</div>
+      <h2 id="mt-h">How many citations bind, meeting by meeting</h2>
+      <p class="muted" id="mt-sub"></p>
+    </div>
+    <div class="key">
+      <span class="chip c-ok">Word match</span>
+      <span class="chip c-warn">Needs review</span>
+      <span class="chip c-none">Not in LIMS</span>
+    </div>
+    <div class="controls">
+      <label class="muted" for="mt-filter" style="position:absolute;left:-9999px">Filter meetings</label>
+      <input id="mt-filter" type="search" placeholder="Filter by meeting, committee or bill number (e.g. B26-0679)">
+      <label for="mt-min" class="muted" style="font-size:0.85rem">Show</label>
+      <select id="mt-min">
+        <option value="1">All meetings</option>
+        <option value="5" selected>5+ citations</option>
+        <option value="10">10+ citations</option>
+      </select>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col"><button data-sort="title">Meeting</button></th>
+            <th scope="col" class="r"><button data-sort="n" aria-sort="descending">Citations</button></th>
+            <th scope="col" class="r"><button data-sort="pResolved">Resolved</button></th>
+            <th scope="col" class="r"><button data-sort="pMatched">Matched</button></th>
+            <th scope="col" class="r"><button data-sort="pNone">Unresolved</button></th>
+          </tr>
+        </thead>
+        <tbody id="mt-body"></tbody>
+      </table>
+    </div>
+    <p class="muted" id="mt-count" style="font-size: 0.85rem"></p>
+  </section>
+
+  <section aria-labelledby="rc-h">
+    <div class="section-head">
+      <div class="eyebrow">The gaps</div>
+      <h2 id="rc-h">Why some cited numbers never resolve</h2>
+      <p class="muted" id="rc-sub"></p>
+    </div>
+    <div class="rc" id="rc"></div>
+  </section>
+
+  <section aria-labelledby="lim-h">
+    <div class="section-head">
+      <div class="eyebrow">Read before quoting these numbers</div>
+      <h2 id="lim-h">Limits</h2>
+    </div>
+    <ul class="limits" id="limits"></ul>
+  </section>
+
+  <footer>
+    <span>Every number and quote on this page is read from the committed results in <span class="mono">dc_council/</span> by <span class="mono">make_demo.py</span>. Rebuild with <span class="mono">python3 make_demo.py</span>.</span>
+    <span>Checks whether a citation matches its official record. It does not check whether what the speaker said is true.</span>
+  </footer>
+</div>
+
+<script id="demo-data" type="application/json">__DEMO_DATA__</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById("demo-data").textContent);
+  const pct = (x, d = 1) => (x * 100).toFixed(d) + "%";
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const transcriptUrl = (viewId, clipId) =>
+    `https://dc.granicus.com/TranscriptViewer.php?view_id=${encodeURIComponent(viewId)}&clip_id=${encodeURIComponent(clipId)}`;
+  const limsUrl = (id) => `https://lims.dccouncil.gov/Legislation/${encodeURIComponent(id)}`;
+  // entrytime seeks the Granicus player (checked live); start_sec is fetch_captions.py's proportional estimate
+  const videoUrl = (viewId, clipId, sec) =>
+    `https://dc.granicus.com/MediaPlayer.php?view_id=${encodeURIComponent(viewId)}&clip_id=${encodeURIComponent(clipId)}` + (sec ? `&entrytime=${Math.round(sec)}` : "");
+  const hms = (sec) => { const s = Math.round(sec), h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), r = s % 60; return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(r).padStart(2, "0"); };
+  const videoLink = (viewId, clipId, sec) => sec
+    ? `<a href="${videoUrl(viewId, clipId, sec)}" target="_blank" rel="noopener">Video at ~${hms(sec)} &#8599;</a>`
+    : `<a href="${videoUrl(viewId, clipId)}" target="_blank" rel="noopener">Video &#8599;</a>`;
+  const LABEL = {
+    supported: ["Supported", "c-ok"],
+    contradicted: ["Contradicted", "c-bad"],
+    unverifiable: ["Can’t tell", "c-none"],
+    uncertain: ["Uncertain", "c-none"],
+  };
+  const verdict = (l) => { const [t, c] = LABEL[l] || [l, "c-none"]; return `<span class="chip ${c}">${esc(t)}</span>`; };
+  const STATUS = { match: ["Word match", "c-ok"], review: ["Needs review", "c-warn"], none: ["Not in LIMS", "c-none"] };
+  const status = (s) => `<span class="chip ${STATUS[s][1]}">${STATUS[s][0]}</span>`;
+  const highlight = (context, citedAs) => {
+    const safe = esc(context);
+    const needle = esc(citedAs);
+    const i = safe.indexOf(needle);
+    return i < 0 ? safe : safe.slice(0, i) + "<mark>" + needle + "</mark>" + safe.slice(i + needle.length);
+  };
+
+  // ---- header stats
+  const T = D.totals;
+  const resolved = T.match + T.review;
+  document.getElementById("stats").innerHTML = [
+    [T.n.toLocaleString(), "spoken citations"],
+    [T.meetings, "meetings that cite legislation"],
+    [pct(resolved / T.n), `resolve to a LIMS record (${resolved})`],
+    [pct(T.match / resolved, 0), `of those match on words (${T.match}), a lower bound`],
+    [D.root_cause.n_distinct, "distinct numbers never resolve"],
+  ].map(([b, s]) => `<div class="stat"><b>${b}</b><span>${s}</span></div>`).join("");
+
+  // ---- example cards
+  const card = (e) => `
+    <article class="ex">
+      <div class="ex-top"><h3>${esc(e.heading)}</h3></div>
+      <p class="why">${esc(e.why)}</p>
+      <div class="trail">
+        <div class="trail-label">Said in the meeting</div>
+        <div class="caption">${highlight(e.context, e.cited_as)}</div>
+        <div class="trail-label">Official record it resolves to</div>
+        <div class="record"><a class="docket" href="${limsUrl(e.normalized)}" target="_blank" rel="noopener">${esc(e.normalized)} &#8599;</a><span>${esc(e.title)}</span></div>
+      </div>
+      <dl class="verdicts">
+        <dt>Word-overlap matcher</dt><dd>${e.matcher === "match" ? `<span class="chip c-ok">Match</span>` : `<span class="chip c-warn">No match</span>`} <span class="muted num" style="font-size:0.8rem">overlap ${Number(e.overlap).toFixed(2)}</span></dd>
+        <dt>LLM judge, forced</dt><dd>${verdict(e.forced)}</dd>
+        <dt>LLM judge, may abstain</dt><dd>${verdict(e.judge)}</dd>
+        <dt>Hand label (gold)</dt><dd>${verdict(e.gold)}</dd>
+      </dl>
+      <div class="ex-foot">
+        <span>${esc(e.meeting)}</span>
+        ${videoLink(e.view_id, e.clip_id, e.start_sec)}
+        <a href="${transcriptUrl(e.view_id, e.clip_id)}" target="_blank" rel="noopener">Transcript &#8599;</a>
+        <a href="${limsUrl(e.normalized)}" target="_blank" rel="noopener">LIMS record &#8599;</a>
+        <span class="mono">${esc(e.ref)}</span>
+      </div>
+    </article>`;
+  const lead = D.examples.filter((e) => e.lead);
+  const more = D.examples.filter((e) => !e.lead);
+  document.getElementById("ex-lead").innerHTML = lead.map(card).join("");
+  document.getElementById("ex-more").innerHTML = more.map(card).join("");
+
+  // ---- abstention chart (one shared 0-50% scale)
+  const SCALE_MAX = 0.5;
+  const maxVal = Math.max(...D.models.flatMap((m) => [m.forced_err, m.forced_same_err, m.abstain_err]));
+  if (maxVal > SCALE_MAX) console.warn("chart scale too small for", maxVal);
+  const w = (x) => (Math.min(x, SCALE_MAX) / SCALE_MAX) * 100;
+  const tickVals = [0, 0.1, 0.2, 0.3, 0.4, 0.5];
+  const grid = `<div class="gridlines">${tickVals.slice(1).map((t) => `<span style="left:${w(t)}%"></span>`).join("")}</div>`;
+  const bar = (x, color, label) => `
+    <div class="bar-row">
+      <div class="bar" style="width:${w(x)}%; background:${color}"></div>
+      <span class="bar-val" style="left:${w(x)}%">${label}</span>
+    </div>`;
+  document.getElementById("ab-chart").innerHTML = D.models.map((m) => `
+    <div class="model">
+      <div class="model-name">
+        <b>${esc(m.model)}</b>
+        <span>${m.n_cases} cases &middot; answers ${pct(m.coverage)} when allowed to abstain</span>
+      </div>
+      <div class="plot">${grid}<div class="bars">
+        ${bar(m.forced_err, "var(--bar-forced)", `${pct(m.forced_err)} <span class="muted">(${m.forced_errs}/${m.forced_n})</span>`)}
+        ${bar(m.forced_same_err, "var(--bar-same)", `${pct(m.forced_same_err)} <span class="muted">(${m.forced_same_errs}/${m.abstain_n})</span>`)}
+        ${bar(m.abstain_err, "var(--accent)", `<b>${pct(m.abstain_err)}</b> <span class="muted">(${m.abstain_errs}/${m.abstain_n})</span>`)}
+      </div></div>
+    </div>`).join("") + `
+    <div class="axis"><div></div><div class="ticks">${tickVals.map((t) => `<span style="left:${w(t)}%">${pct(t, 0)}</span>`).join("")}</div></div>
+    <div class="axis"><div></div><div class="muted" style="font-size:0.78rem">Error rate on the cases each system answered</div></div>`;
+
+  const m7 = D.models.find((m) => m.model === "qwen2.5:7b");
+  const sig = D.significance;
+  const small = D.models.find((m) => m.n_cases !== m7.n_cases);
+  document.getElementById("ab-sub").textContent =
+    `Same model, same prompts, same ${m7.n_cases} hand-labeled cases. The forced version must say supported or contradicted. ` +
+    `The abstaining version may also say “can’t tell”. Forced answers on cases a person labeled “can’t tell” count as errors, because the model claimed a certainty the evidence did not support.`;
+  document.getElementById("ab-callout").innerHTML = `
+    <p><b>Most of the drop comes from which cases the judge declines, not from better calls.</b>
+    For qwen2.5:7b, error falls from ${pct(m7.forced_err)} to ${pct(m7.abstain_err)}. But on the same ${m7.abstain_n} cases the abstaining run chose to answer,
+    the forced run is wrong only ${pct(m7.forced_same_err)} of the time. McNemar&rsquo;s exact test on those cases finds
+    ${sig.mcnemar.n_discordant} cases where the two runs disagree: ${sig.mcnemar.n10_abstain_right_forced_wrong} go to the abstaining run, ${sig.mcnemar.n01_abstain_wrong_forced_right} to the forced run (p = ${sig.mcnemar.p_value.toFixed(3)}). On the shared cases the difference is not significant.</p>
+    <p class="muted">Routing hard cases away from automatic judgment is still useful: it is what keeps a binder from confidently stamping evidence that isn&rsquo;t there.
+    ${small ? `The smallest model barely abstains (answers ${pct(small.coverage)}) and gains almost nothing. Note that ${esc(small.model)} ran on the earlier ${small.n_cases}-case version of the benchmark.` : ""}</p>`;
+
+  // ---- meetings table
+  const mtr = D.matcher;
+  document.getElementById("mt-sub").innerHTML =
+    `<b>Resolved</b>: the cited number is a real LIMS record. <b>Matched</b>: of the resolved citations, the share where at least 30% of the record title&rsquo;s significant words appear in the caption around it. <b>Unresolved</b>: no LIMS record has that number. ` +
+    `On the ${mtr.n}-case benchmark this word matcher is right ${pct(mtr.precision, 0)} of the time when it says &ldquo;match&rdquo;, but finds only ${pct(mtr.recall, 0)} of real matches. ` +
+    `So the matched share is a conservative lower bound, and &ldquo;needs review&rdquo; is often a real match described in other words. Click a meeting to see its citations.`;
+
+  const meetings = D.meetings.map((m) => ({ ...m, pResolved: (m.match + m.review) / m.n, pMatched: (m.match + m.review) ? m.match / (m.match + m.review) : -1, pNone: m.none / m.n, search: (m.title + " " + m.cites.map((c) => c.cited_as + " " + c.normalized + " " + (c.title || "")).join(" ")).toLowerCase() }));
+  let sortKey = "n", sortDir = -1;
+  const open = new Set();
+  const body = document.getElementById("mt-body");
+  const filterEl = document.getElementById("mt-filter");
+  const minEl = document.getElementById("mt-min");
+
+  const stack = (m) => `<div class="stack" aria-hidden="true">
+      <span style="width:${(m.match / m.n) * 100}%; background: var(--ok)"></span>
+      <span style="width:${(m.review / m.n) * 100}%; background: var(--warn)"></span>
+      <span style="width:${(m.none / m.n) * 100}%; background: var(--none)"></span></div>`;
+  const citeRow = (c, m) => `
+    <div class="cite">
+      <div style="display:grid; gap:4px; align-content:start">${status(c.status)}${c.status === "none" ? `<span class="docket" style="justify-self:start">${esc(c.normalized)}</span>` : `<a class="docket" style="justify-self:start" href="${limsUrl(c.normalized)}" target="_blank" rel="noopener">${esc(c.normalized)} &#8599;</a>`}${c.start_sec ? `<span style="font-size:0.78rem">${videoLink(m.view_id, m.clip_id, c.start_sec)}</span>` : ""}</div>
+      <div style="display:grid; gap:6px; min-width:0">
+        <div>${c.title ? esc(c.title) : `<span class="muted">No LIMS record for this number</span>`}${c.overlap != null ? ` <span class="muted num" style="font-size:0.78rem">&middot; overlap ${Number(c.overlap).toFixed(2)}</span>` : ""}</div>
+        ${c.context ? `<div class="caption">${highlight(c.context, c.cited_as)}</div>` : `<div class="muted" style="font-size:0.8rem">Spoken as <span class="mono">${esc(c.cited_as)}</span>; no surrounding caption is stored for unresolved numbers.</div>`}
+      </div>
+    </div>`;
+
+  function render() {
+    const q = filterEl.value.trim().toLowerCase();
+    const min = Number(minEl.value);
+    const rows = meetings
+      .filter((m) => m.n >= min && (!q || m.search.includes(q)))
+      .sort((a, b) => {
+        const x = a[sortKey], y = b[sortKey];
+        if (typeof x === "string") return sortDir * x.localeCompare(y);
+        return sortDir * (x - y) || b.n - a.n;
+      });
+    body.innerHTML = rows.map((m) => {
+      const isOpen = open.has(m.clip_id);
+      return `
+      <tr class="meeting" data-id="${esc(m.clip_id)}" tabindex="0" aria-expanded="${isOpen}">
+        <td><span class="toggle">${isOpen ? "▾" : "▸"}</span>${esc(m.title)}
+          <div style="padding-left:1em; font-size:0.8rem"><a href="${transcriptUrl(m.view_id, m.clip_id)}" target="_blank" rel="noopener">Transcript &#8599;</a> <span class="muted mono">clip ${esc(m.clip_id)}</span></div></td>
+        <td class="r">${m.n}${stack(m)}</td>
+        <td class="r">${pct(m.pResolved, 0)} <span class="muted">(${m.match + m.review})</span></td>
+        <td class="r"><b>${m.pMatched < 0 ? "–" : pct(m.pMatched, 0)}</b> <span class="muted">(${m.match})</span></td>
+        <td class="r">${pct(m.pNone, 0)} <span class="muted">(${m.none})</span></td>
+      </tr>${isOpen ? `<tr class="detail"><td colspan="5"><div class="detail-list">${m.cites.map((c) => citeRow(c, m)).join("")}</div></td></tr>` : ""}`;
+    }).join("") || `<tr><td colspan="5" class="muted">No meetings match this filter.</td></tr>`;
+    const nCites = rows.reduce((s, m) => s + m.n, 0);
+    const nMatch = rows.reduce((s, m) => s + m.match, 0);
+    const nRes = rows.reduce((s, m) => s + m.match + m.review, 0);
+    document.getElementById("mt-count").textContent =
+      `Showing ${rows.length} of ${meetings.length} meetings · ${nCites} citations · ${nCites ? pct(nRes / nCites) : "–"} resolved · ${nRes ? pct(nMatch / nRes) : "–"} of resolved matched`;
+  }
+  const toggle = (tr) => {
+    const id = tr.dataset.id;
+    open.has(id) ? open.delete(id) : open.add(id);
+    render();
+    const again = body.querySelector(`tr[data-id="${CSS.escape(id)}"]`);
+    if (again) again.focus();
+  };
+  body.addEventListener("click", (ev) => {
+    if (ev.target.closest("a")) return;
+    const tr = ev.target.closest("tr.meeting");
+    if (tr) toggle(tr);
+  });
+  body.addEventListener("keydown", (ev) => {
+    const tr = ev.target.closest("tr.meeting");
+    if (tr && (ev.key === "Enter" || ev.key === " ")) { ev.preventDefault(); toggle(tr); }
+  });
+  document.querySelectorAll("th button").forEach((b) => b.addEventListener("click", () => {
+    const k = b.dataset.sort;
+    sortDir = k === sortKey ? -sortDir : (k === "title" ? 1 : -1);
+    sortKey = k;
+    document.querySelectorAll("th button").forEach((o) => o.removeAttribute("aria-sort"));
+    b.setAttribute("aria-sort", sortDir === 1 ? "ascending" : "descending");
+    render();
+  }));
+  filterEl.addEventListener("input", () => {
+    // a bill-number search should reach small meetings too
+    if (filterEl.value.trim()) minEl.value = "1";
+    render();
+  });
+  minEl.addEventListener("change", render);
+  render();
+
+  // ---- root causes
+  const RC = D.root_cause;
+  document.getElementById("rc-sub").innerHTML =
+    `${RC.n_distinct} distinct cited numbers (${RC.n_occurrences} mentions) never matched a LIMS record. Each one is assigned a likely cause below. ` +
+    `${RC.period_20_resolved} of the &ldquo;period 20&rdquo; numbers and ${RC.garbled_resolved} of the garbled ones were matched to the real period-26 bill by reading what was said around them.`;
+  const rcMax = Math.max(...RC.by_category.map((c) => c.n));
+  document.getElementById("rc").innerHTML = RC.by_category.map((c) => `
+    <div class="rc-row"><span>${esc(c.label)}</span><span class="r num" style="text-align:right"><b>${c.n}</b></span>
+      <div class="rc-bar"><span style="width:${(c.n / rcMax) * 100}%"></span></div></div>`).join("");
+
+  // ---- limits
+  const hn = D.hard_neg;
+  const tax = D.taxonomy.categories;
+  const nOverconf = tax.C_overconfident_on_empty_content.n;
+  document.getElementById("limits").innerHTML = [
+    ["One labeler so far.", `Gold labels come from one person. A blind ${D.n_blind}-case sample for a second labeler is ready (<span class="mono">ivan_review_form.txt</span>); until it comes back, &ldquo;hand-labeled&rdquo; is not the same as independently validated.`],
+    ["Possible label leakage.", `Gold labels were re-checked where the LLM disagreed. That can tilt the benchmark toward the LLM. The blind second labeling is the check on this.`],
+    ["The word matcher is easy to fool within a category.", `When the wrong record is from the same category (another confirmation resolution, not a random bill), its false-accept rate rises from ${pct(hn.deterministic_matcher.false_accept_rate_easy_random_swap)} to ${pct(hn.deterministic_matcher.false_accept_rate_hard_same_category_swap)}. Shared boilerplate words inflate the score. The LLM judge accepted ${pct(hn["llm_judge_qwen2.5_7b"].false_accept_rate_hard_same_category_swap_n50, 0)} of ${D.n_hard_neg_llm} such swaps.`],
+    ["Abstention is not a guarantee.", `In ${nOverconf} of its errors the abstaining judge called a bare procedural vote &ldquo;contradicted&rdquo; instead of saying it can&rsquo;t tell.`],
+    ["Older council periods can&rsquo;t be checked.", `${(RC.by_category.find((c) => c.key === "plausible_old_period") || { n: 0 }).n} of the ${RC.n_distinct} unresolved numbers plausibly cite bills from earlier council periods that our LIMS snapshot doesn&rsquo;t cover. They may be correct, but they can&rsquo;t be bound here.`],
+    ["Video times are estimates.", `Granicus captions carry no per-line timing, so each citation&rsquo;s time is estimated from its position in the caption text. ${T.no_timestamp} of ${T.n} citations have no estimate and link to the start of the video.`],
+    ["Small samples.", `${mtr.n} benchmark cases, ${D.n_hard_neg_llm} hard negatives for the LLM judge, ${D.n_blind} cases for the second labeler. Three local models suggest a pattern; they don&rsquo;t establish a scaling law.`],
+    ["This is not fact-checking.", `A bound citation means the speaker described the record they named. It says nothing about whether their claims about it are true.`],
+  ].map(([h, t]) => `<li><b>${h}</b><span class="muted">${t}</span></li>`).join("");
+})();
+</script>
