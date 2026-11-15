@@ -54,6 +54,24 @@ citation itself resolves correctly -- this is the same leading-digit caption
 substitution documented below in "Root-cause rigor", here corrupting a content
 detail rather than the citation number. See `error_taxonomy.json` category G.
 
+**Sensitivity bound on the "supported" bias** (`sensitivity_strict_supported.py`):
+rater2's standard -- the transcript must actually confirm a measure's specific
+content, not just name it alongside siblings -- was applied by hand to the rest
+of the "supported" pools the 30-case sample was drawn from (95 cases total: 53
+supported_pool + 32 weak_pool + 10 no_context_pool overrides). 11 more cases fail
+it, on top of the 9 the independent review already found, moving 20/95 (21%) of
+"supported" gold labels to unverifiable/contradicted. Re-scoring the headline
+abstention result under this stricter gold: the abstaining qwen2.5:7b judge's
+error rate on its 120 covered answers rises from 13.3% to 21.7% (same cases, same
+coverage -- 10 of them were "supported" calls that no longer are), and the forced
+judge's rises from 41.5% to 46.0%. **The core finding survives**: abstaining still
+cuts error to less than half of forced (21.7% vs. 46.0%, vs. 13.3% vs. 41.5%
+originally) -- the absolute error levels this report should be read with are
+closer to the stricter numbers, but the comparative claim (abstention helps, by
+roughly half) is not an artifact of the labeling bias. This bound was applied by
+one person, not independently reviewed itself -- treat it as a bound, not a
+replacement gold standard.
+
 **Secondary exploration (`earnings_calls_exploratory/`):** an earlier, smaller pass
 at the same idea applied to a different domain -- checking numeric claims on
 corporate earnings calls against SEC XBRL filings. Kept for context, not part of
@@ -80,6 +98,7 @@ in `dc_council/` below is new work from this weekend, with one exception called 
 | `reconcile_root_causes.py` | New (final root-cause breakdown of unresolved citations) |
 | `error_taxonomy.json` | New (qualitative breakdown of the abstaining judge's remaining mistakes) |
 | `rater2_review_form.txt`, `parse_rater2_review_form.py`, `score_rater2_review.py` | New (independent inter-rater review materials, parser and scorer) |
+| `sensitivity_strict_supported.py` | New (sensitivity bound: re-scores the headline result after relabeling "supported" cases that fail rater2's stricter standard) |
 | `regenerate_from_backup.py` | New (one-off migration script, kept for provenance) |
 | `*.json`, `*.jsonl`, `*.png` | New (this sprint's generated results and figures) |
 

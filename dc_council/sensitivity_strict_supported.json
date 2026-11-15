@@ -1,0 +1,27 @@
+{
+  "n_relabeled": 20,
+  "relabeled_from_rater2_review": 9,
+  "relabeled_new_this_pass": 11,
+  "cases": {
+    "supported_pool#8": "unverifiable",
+    "weak_pool#37": "unverifiable",
+    "weak_pool#16": "unverifiable",
+    "weak_pool#5": "unverifiable",
+    "weak_pool#14": "unverifiable",
+    "weak_pool#2": "unverifiable",
+    "weak_pool#27": "contradicted",
+    "no_context_pool#44": "unverifiable",
+    "no_context_pool#12": "unverifiable",
+    "weak_pool#4": "unverifiable",
+    "weak_pool#7": "unverifiable",
+    "weak_pool#8": "unverifiable",
+    "weak_pool#9": "unverifiable",
+    "weak_pool#11": "unverifiable",
+    "weak_pool#23": "unverifiable",
+    "weak_pool#25": "unverifiable",
+    "weak_pool#29": "unverifiable",
+    "weak_pool#35": "unverifiable",
+    "no_context_pool#7": "unverifiable",
+    "no_context_pool#15": "unverifiable"
+  }
+}
