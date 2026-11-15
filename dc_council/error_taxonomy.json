@@ -33,7 +33,13 @@
       "n": 1,
       "description": "The one case where the LLM called a synthetic negative 'supported' is not a model mistake: the randomly swapped title coincidentally matches an ADJACENT citation's content that's genuinely present in the same context window (multiple citations read in sequence). Confirmed in isolation -- only 1 of 50 synthetic negatives has this property, and it's exactly this one.",
       "examples": ["synthetic_contradicted#24 (Paul Goldstein, Board of Zoning Adjustment)"]
+    },
+    "G_digit_garbled_in_content_not_citation_id": {
+      "n": 1,
+      "source": "Found via the independent rater2 review (score_rater2_review.py), not a qwen2.5:7b run -- the original gold label called this case 'supported', rater2 called it 'contradicted'.",
+      "description": "The citation itself (B26-0772) resolves correctly to its real LIMS record. But the transcript's DESCRIPTION of it names the wrong street number -- '25th Street' spoken/captioned vs. the official title's '35th Street' -- confirmed by the surrounding geography (Water Street, the Potomac River, the Francis Scott Key Bridge: the Georgetown waterfront, where 35th St ends, not 25th) and by a related record on the same squares (PR26-0805) that also says '35th Street'. Same single-leading-digit substitution mechanism already documented elsewhere in this project for citation NUMBERS (see 'Root-cause rigor' in the README) -- here it corrupts a content detail instead, so it reads as a genuine content mismatch even though the citation resolution itself is sound. Worth distinguishing from a true 'bound to the wrong record' error when reporting this case.",
+      "examples": ["weak_pool#27 (B26-0772, 35th Street vs. transcribed 25th Street)"]
     }
   },
-  "takeaway": "Roughly 70% of errors (A+B) are the model being too conservative/literal on cases that were actually fine -- consistent with and reinforcing the project's overall finding that this approach fails safe. About 19% (C) are a genuinely concerning overconfidence failure worth flagging prominently, not burying in the aggregate error rate. One error is a defensible edge case, one is a transcription artifact, and one isn't a real error at all."
+  "takeaway": "Roughly 70% of errors (A+B) are the model being too conservative/literal on cases that were actually fine -- consistent with and reinforcing the project's overall finding that this approach fails safe. About 19% (C) are a genuinely concerning overconfidence failure worth flagging prominently, not burying in the aggregate error rate. One error is a defensible edge case, one is a transcription artifact, and one isn't a real error at all. A separate case (G), surfaced by the independent rater review rather than by any judge run, shows the same digit-substitution caption artifact can corrupt a citation's DESCRIPTION rather than its ID -- a caption-pipeline failure mode, not an evaluation-pipeline one."
 }

@@ -47,6 +47,12 @@ labeling said "supported" and the second reviewer said "unverifiable" (8) or
 "contradicted" (1), so the original gold labels are more generous toward
 "supported" than an independent reader. Kappa is 0.44 (20/29) if the one case with
 an original "uncertain" label is excluded instead of being treated as "unverifiable".
+One disagreement (`weak_pool#27`) isn't just a borderline call: the transcript names
+the wrong street ("25th Street" vs. the official title's "35th Street" for B26-0772),
+confirmed against LIMS and a related record (PR26-0805) on the same squares. The
+citation itself resolves correctly -- this is the same leading-digit caption
+substitution documented below in "Root-cause rigor", here corrupting a content
+detail rather than the citation number. See `error_taxonomy.json` category G.
 
 **Secondary exploration (`earnings_calls_exploratory/`):** an earlier, smaller pass
 at the same idea applied to a different domain -- checking numeric claims on
