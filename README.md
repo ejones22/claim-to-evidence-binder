@@ -4,7 +4,22 @@ Does a spoken claim in a public meeting actually bind to the official record, or
 letting an automated verifier abstain on weak evidence make a real difference to how
 often it's wrong? Built over the AI x Epistemics Research Sprint (Nov 13-15, 2026).
 
-**Primary result (`dc_council/`):** across 302 real DC Council meetings, we score
+**Headline finding: the "best judge" on an LLM-judge leaderboard can be an artifact of
+a hidden gold-label bias, not a property of the models.** We built the citation-binding
+benchmark below, scored 7 judges on it (three local, two Claude models, a hosted
+decision model, and a third-party API), and got a clean leaderboard where Claude
+Sonnet 5.5 and a 397B hosted model narrowly beat Claude Haiku 5.5. Then an independent
+second rater blind-labeled a held-out sample and found the *gold labels themselves* were
+biased toward "supported" -- never the reverse. Applying that now-explicit standard to
+the rest of the benchmark by hand and re-scoring every judge's already-collected output
+(no re-running, no new API calls) **inverts the ranking**: Claude Haiku 5.5 goes from
+third to clearly first, at roughly 1/20th the cost of the models that had "beaten" it.
+Every judge gets worse under the corrected labels -- the ranking changes because they
+get worse by different amounts. See Figure 3 and "Inter-rater check" below. We think
+this generalizes: an LLM-judge benchmark's leaderboard is only as trustworthy as its
+gold labels, and that's checkable with a small blind re-rating, not just assumed.
+
+**Testbed (`dc_council/`):** across 302 real DC Council meetings, we score
 whether a spoken bill/resolution citation (a) resolves to a real legislative record
 and (b) is actually discussed consistently with what that record says. On a
 200-case hand-reviewed benchmark, an LLM judge allowed to abstain on weak evidence
@@ -193,6 +208,8 @@ by the same amount, and the ranking changes:
 | Claude Sonnet 5.5 | 8.4% | 18.1% |
 | Jev 1.13.0 | 12.3% | 21.0% |
 | legacy qwen2.5:7b | 13.0% | 23.2% |
+
+(plotted as `figure3_ranking_inversion.png`, `make_figures.py`)
 
 **Claude Haiku 5.5 moves from third to clearly first** once the correction is
 applied, on both the full-200 and held-out-test views -- it absorbs the
