@@ -99,6 +99,8 @@ in `dc_council/` below is new work from this weekend, with one exception called 
 | `error_taxonomy.json` | New (qualitative breakdown of the abstaining judge's remaining mistakes) |
 | `rater2_review_form.txt`, `parse_rater2_review_form.py`, `score_rater2_review.py` | New (independent inter-rater review materials, parser and scorer) |
 | `sensitivity_strict_supported.py` | New (sensitivity bound: re-scores the headline result after relabeling "supported" cases that fail rater2's stricter standard) |
+| `sensitivity_all_judges.py` | New (applies the same correction to every judge's already-collected outputs, all 200 cases) |
+| `datapipeline/05b_sensitivity_strict_gold.py` | New (same correction, restricted to the held-out test split) |
 | `regenerate_from_backup.py` | New (one-off migration script, kept for provenance) |
 | `*.json`, `*.jsonl`, `*.png` | New (this sprint's generated results and figures) |
 
@@ -174,6 +176,35 @@ agreement with gold of any judge (84.5%). On the held-out test split
 (`datapipeline/results/leaderboard.md`) it is 8.4% vs Haiku's 8.9% -- within
 noise -- at about 20x the cost ($0.13 for the 200-case batch vs Haiku's $0.007;
 $0.00107 vs $0.00006 per correct answer on test).
+
+**This Sonnet-over-Haiku edge doesn't survive the "supported"-label sensitivity
+check above, and neither does Adaption's qwen3.5-397b leading the test-split
+leaderboard.** `sensitivity_all_judges.py` (all 200) and
+`datapipeline/05b_sensitivity_strict_gold.py` (held-out test split) rescore every
+hosted and local judge's *already-collected* outputs -- no re-run, no new API
+calls -- against the stricter gold. Every judge's error rate rises (the bias
+affects all of them, since they were scored against the same labels), but not
+by the same amount, and the ranking changes:
+
+| judge (test split) | original error | strict error |
+|---|---|---|
+| Claude Haiku 5.5 | 8.9% | **13.9%** |
+| Adaption qwen3.5-397b | 8.2% | 16.5% |
+| Claude Sonnet 5.5 | 8.4% | 18.1% |
+| Jev 1.13.0 | 12.3% | 21.0% |
+| legacy qwen2.5:7b | 13.0% | 23.2% |
+
+**Claude Haiku 5.5 moves from third to clearly first** once the correction is
+applied, on both the full-200 and held-out-test views -- it absorbs the
+relabeling better than every other judge tested, at roughly 1/20th Sonnet's cost
+and well under Adaption's. Read as: the original leaderboard's ranking of the
+*best* judges (Sonnet/qwen3.5-397b/Haiku, all within ~1 point of each other) was
+partly an artifact of which judge happened to call the mislabeled "supported"
+cases "unverifiable" more often -- Haiku did that more than Sonnet did, which
+originally looked like over-caution and under the corrected standard looks like
+being right. The result that abstention beats forced-answer, and that capability
+beats raw size, both still hold; which specific hosted judge is "best" does not,
+without this correction.
 
 ## Reproducing the results
 

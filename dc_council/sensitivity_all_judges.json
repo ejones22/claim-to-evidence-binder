@@ -1,0 +1,44 @@
+[
+  {
+    "judge": "qwen2.5:3b (local)",
+    "n": 120,
+    "answered": 116,
+    "orig_selective_error": 0.46551724137931033,
+    "strict_selective_error": 0.4827586206896552
+  },
+  {
+    "judge": "qwen2.5:7b (local)",
+    "n": 200,
+    "answered": 120,
+    "orig_selective_error": 0.13333333333333333,
+    "strict_selective_error": 0.21666666666666667
+  },
+  {
+    "judge": "qwen3.5:9b (local)",
+    "n": 200,
+    "answered": 148,
+    "orig_selective_error": 0.1554054054054054,
+    "strict_selective_error": 0.21621621621621623
+  },
+  {
+    "judge": "Jev 1.13.0 (hosted)",
+    "n": 200,
+    "answered": 131,
+    "orig_selective_error": 0.1297709923664122,
+    "strict_selective_error": 0.1984732824427481
+  },
+  {
+    "judge": "Claude Haiku 5.5",
+    "n": 200,
+    "answered": 129,
+    "orig_selective_error": 0.07751937984496124,
+    "strict_selective_error": 0.12403100775193798
+  },
+  {
+    "judge": "Claude Sonnet 5.5",
+    "n": 200,
+    "answered": 139,
+    "orig_selective_error": 0.06474820143884892,
+    "strict_selective_error": 0.1366906474820144
+  }
+]
