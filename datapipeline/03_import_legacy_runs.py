@@ -54,7 +54,10 @@ def main():
                 "case_id": case_id, "judge": name, "backend": "legacy",
                 "model": judge["model"], "mode": judge["mode"],
                 "label": r["llm_label"], "probabilities": None, "raw": None,
-                "prompt_sha": None, "latency_s": None, "usage": None,
+                # only the hosted dc_council judges record per-case usage
+                # ({"input_tokens", "output_tokens"}); None for older runs and local
+                # models, which 05_evaluate.row_cost then prices another way
+                "prompt_sha": None, "latency_s": None, "usage": r.get("usage"),
                 "timestamp": None, "source_file": f"dc_council/{judge['file']}",
             })
 

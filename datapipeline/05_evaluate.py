@@ -47,7 +47,55 @@ def rows_for(run, gold, ids):
     return [{**r, "gold": gold[r["case_id"]]} for r in run if r["case_id"] in ids]
 
 
-def score(rows, n_expected, split, reference_rows):
+def row_cost(row, judge):
+    """(USD, basis) for one call. basis: billed (provider-reported cost),
+    tokens (row usage x config.PRICES), run_average (judge's run total
+    spread evenly), local ($0), or (None, None) when it can't be known."""
+    # order matters: a provider-reported cost beats a computed one, and a
+    # real per-call usage beats the run average
+    usage = row.get("usage") or {}
+    if usage.get("cost") is not None:
+        return usage["cost"], "billed"
+    price = config.PRICES.get(judge["model"])
+    if price is None:
+        # unpriced model: free if it runs locally, otherwise unknown
+        return (0.0, "local") if judge["backend"] in config.LOCAL_BACKENDS else (None, None)
+    if price.get("local"):
+        return 0.0, "local"
+    if usage.get("input_tokens") is not None:
+        return (usage["input_tokens"] * price["input"]
+                + (usage.get("output_tokens") or 0) * price["output"]) / 1e6, "tokens"
+    # the Jev run predates per-call usage logging, so spread its known run
+    # total (config.JUDGES run_total_usage) evenly over its cases
+    run = judge.get("run_total_usage")
+    if run:
+        total = (run["input_tokens"] * price["input"] + run["output_tokens"] * price["output"]) / 1e6
+        return total / run["cases"], "run_average"
+    return None, None
+
+
+def cost_summary(rows, judge):
+    """
+    Cost fields for score(): total USD, $ per 1k cases, $ per correct
+    answer (correct = committed and not wrong), and the basis label(s)
+    joined with "+". All None if any row's cost is unknown, so a partial
+    total is never shown as if it were complete.
+    """
+    costs = [row_cost(r, judge) for r in rows]
+    if any(c is None for c, _ in costs):
+        return {"cost_usd": None, "cost_per_1k_cases": None, "cost_per_correct_answer": None,
+                "cost_basis": None}
+    total = sum(c for c, _ in costs)
+    correct = sum(1 for r in rows if metrics.is_covered(r) and not metrics.is_wrong(r))
+    return {
+        "cost_usd": total,
+        "cost_per_1k_cases": total / len(rows) * 1000,
+        "cost_per_correct_answer": total / correct if correct else float("nan"),
+        "cost_basis": "+".join(sorted({b for _, b in costs})),
+    }
+
+
+def score(rows, n_expected, split, reference_rows, judge):
     if not rows:
         return {"n": 0, "missing": n_expected}
     precision, recall = metrics.precision_recall_supported(rows)
@@ -61,6 +109,7 @@ def score(rows, n_expected, split, reference_rows):
         "precision_supported": precision,
         "recall_supported": recall,
         "parse_errors": sum(1 for r in rows if r["label"] == "parse_error"),
+        **cost_summary(rows, judge),
     }
     if split in CI_SPLITS:
         out["selective_error_ci95"] = metrics.bootstrap_selective_error(
@@ -116,6 +165,17 @@ def pct(x):
     return "–" if x is None or (isinstance(x, float) and math.isnan(x)) else f"{x:.1%}"
 
 
+def money(x, basis=None):
+    """Format a USD amount for the leaderboard: "–" if unknown, "$0 (local)" for local models,
+    more decimals under a cent, and a † suffix when any of it is a run average."""
+    if x is None or (isinstance(x, float) and math.isnan(x)):
+        return "–"
+    if basis == "local":
+        return "$0 (local)"
+    txt = f"${x:.5f}" if x < 0.01 else f"${x:.3f}"
+    return txt + ("†" if basis and "run_average" in basis else "")
+
+
 def ci(m):
     lo_hi = m.get("selective_error_ci95")
     return "" if not lo_hi or any(math.isnan(v) for v in lo_hi) else f" [{lo_hi[0]:.0%}, {lo_hi[1]:.0%}]"
@@ -126,8 +186,9 @@ def split_table(results, split):
     entries.sort(key=lambda e: (math.isnan(e[1]["selective_error"]), e[1]["selective_error"]))
     lines = [
         "| judge | n (missing) | coverage | selective error [95% CI] | forced error | "
-        "P(sup) | R(sup) | parse err | McNemar p vs ref (ref-wins/judge-wins) |",
-        "|---|---|---|---|---|---|---|---|---|",
+        "P(sup) | R(sup) | parse err | McNemar p vs ref (ref-wins/judge-wins) | "
+        "$ / 1k cases | $ / correct answer |",
+        "|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     for name, m in entries:
         mc = m.get("mcnemar_vs_reference")
@@ -142,7 +203,10 @@ def split_table(results, split):
             f"| {name} | {m['n']} ({m['missing']}) | {pct(m['coverage'])} | "
             f"{pct(m['selective_error'])}{ci(m)} | {pct(m['forced_error'])} | "
             f"{pct(m['precision_supported'])} | {pct(m['recall_supported'])} | "
-            f"{m['parse_errors']} | {p} |")
+            f"{m['parse_errors']} | {p} | "
+            # last two columns: cost per 1k cases / per correct answer (see cost_summary)
+            f"{money(m.get('cost_per_1k_cases'), m.get('cost_basis'))} | "
+            f"{money(m.get('cost_per_correct_answer'), m.get('cost_basis'))} |")
     return "\n".join(lines)
 
 
@@ -158,6 +222,11 @@ def write_leaderboard(results, split_sizes):
         "- **selective error**: wrong ÷ committed. The headline metric -- always read it next to coverage.",
         "- **forced error**: wrong ÷ all, counting gold-unverifiable as wrong for any committed answer",
         "- **missing**: split cases this run has no result for (partial runs are not imputed)",
+        "- **$ / 1k cases**: what judging 1,000 cases costs; **$ / correct answer**: total cost ÷ "
+        "committed answers that were right. From the provider's billed cost per call where it "
+        "reports one, else per-call tokens × config.PRICES. † = run total spread evenly "
+        "(no per-call usage logged). Local models are $0 -- hardware/electricity not counted. "
+        "– = no usage data.",
         "",
         "## Test (held out -- the number to report)",
         "",
@@ -229,7 +298,7 @@ def main():
             ref_rows = None
             if reference and name != config.REFERENCE_JUDGE:
                 ref_rows = rows_for(reference, gold, ids[split])
-            entry["splits"][split] = score(rows, len(ids[split]), split, ref_rows)
+            entry["splits"][split] = score(rows, len(ids[split]), split, ref_rows, judge)
         has_probs = run and all(r.get("probabilities") for r in run)
         if judge["mode"] == "forced" and has_probs:
             entry["thresholded"] = thresholded(run, gold, ids, reference_val_coverage)

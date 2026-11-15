@@ -285,6 +285,24 @@ for runs that cover it), using `gold_3way`:
 | `parse_errors` | count | - |
 | `selective_error_ci95` | bootstrap, 10,000 resamples, seed 0 | `significance_test.bootstrap_error_rate` |
 | `mcnemar_p` vs reference | exact binomial on discordant pairs, over cases both judges cover | `significance_test` |
+| `cost_usd` | summed cost of every answered case in the split (see below) | - |
+| `cost_per_1k_cases` | `cost_usd` ÷ `n` × 1,000 | - |
+| `cost_per_correct_answer` | `cost_usd` ÷ covered answers that match gold (the cost of each committed, correct answer) | - |
+| `cost_basis` | where the per-call costs came from: `billed`, `tokens`, `run_average`, `local`, or several joined by `+` | - |
+
+Cost of one call, first rule that applies:
+
+1. **`billed`**: the row's `usage.cost`, when the provider reports it (Adaption).
+2. **`local`**: $0 for models marked `local` in `config.PRICES` and for the
+   `ollama` / `ollama_decision` backends. Hardware and electricity aren't counted.
+3. **`tokens`**: the row's `usage.input_tokens` / `output_tokens` × the model's
+   USD-per-1M-token prices in `config.PRICES` (e.g. Claude Haiku 5.5 at batch prices).
+4. **`run_average`**: for runs logged before per-call usage existed, the judge's
+   `run_total_usage` in `config.JUDGES` × prices, spread evenly over its cases.
+   Marked † on the leaderboard (currently only the Jev run).
+
+If any call in a split has no cost by these rules, all four cost fields are
+`None` (shown as –), never a partial sum.
 
 For `forced`-mode runs where every row has probabilities (decision
 models), also:
@@ -298,7 +316,8 @@ Outputs:
 
 - `results/metrics.json` (everything)
 - `results/leaderboard.md` (one table per split, sorted by selective error
-  on test, with coverage beside it)
+  on test, with coverage beside it and $ / 1k cases and $ / correct answer
+  at the end of each row)
 
 The McNemar test runs without scipy: `binomtest` on discordant pairs is a
 two-sided sum of `math.comb` terms. That's one less dependency, and the

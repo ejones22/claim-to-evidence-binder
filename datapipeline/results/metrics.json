@@ -15,7 +15,11 @@
           "accuracy_3way": 0.7317073170731707,
           "precision_supported": 1.0,
           "recall_supported": 0.631578947368421,
-          "parse_errors": 0
+          "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local"
         },
         "val": {
           "n": 40,
@@ -26,7 +30,11 @@
           "accuracy_3way": 0.725,
           "precision_supported": 1.0,
           "recall_supported": 0.5789473684210527,
-          "parse_errors": 0
+          "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local"
         },
         "test": {
           "n": 119,
@@ -38,6 +46,10 @@
           "precision_supported": 0.9722222222222222,
           "recall_supported": 0.6140350877192983,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.057971014492753624,
             0.21428571428571427
@@ -53,6 +65,10 @@
           "precision_supported": 0.9830508474576272,
           "recall_supported": 0.6105263157894737,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.075,
             0.19672131147540983
@@ -79,6 +95,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.631578947368421,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 0,
             "n01": 0,
@@ -95,6 +115,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.5789473684210527,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 0,
             "n01": 1,
@@ -111,6 +135,10 @@
           "precision_supported": 0.9444444444444444,
           "recall_supported": 0.5964912280701754,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.33613445378151263,
             0.5126050420168067
@@ -131,6 +159,10 @@
           "precision_supported": 0.9661016949152542,
           "recall_supported": 0.6,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.35,
             0.485
@@ -162,6 +194,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.36363636363636365,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 0,
             "n01": 4,
@@ -178,6 +214,10 @@
           "precision_supported": 0.8888888888888888,
           "recall_supported": 0.5714285714285714,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 1,
             "n01": 2,
@@ -194,6 +234,10 @@
           "precision_supported": 0.9333333333333333,
           "recall_supported": 0.3888888888888889,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.3787878787878788,
             0.6212121212121212
@@ -214,6 +258,10 @@
           "precision_supported": 0.9285714285714286,
           "recall_supported": 0.4262295081967213,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.3739130434782609,
             0.5565217391304348
@@ -245,6 +293,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.6363636363636364,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 0,
             "n01": 2,
@@ -261,6 +313,10 @@
           "precision_supported": 0.8888888888888888,
           "recall_supported": 0.5714285714285714,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 1,
             "n01": 2,
@@ -277,6 +333,10 @@
           "precision_supported": 0.9230769230769231,
           "recall_supported": 0.3333333333333333,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.43661971830985913,
             0.6619718309859155
@@ -297,6 +357,10 @@
           "precision_supported": 0.9310344827586207,
           "recall_supported": 0.4426229508196721,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.38333333333333336,
             0.5666666666666667
@@ -328,6 +392,10 @@
           "precision_supported": 0.9411764705882353,
           "recall_supported": 0.8421052631578947,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 1,
             "n01": 1,
@@ -344,6 +412,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.7894736842105263,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 2,
             "n01": 0,
@@ -360,6 +432,10 @@
           "precision_supported": 0.95,
           "recall_supported": 0.6666666666666666,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.10752688172043011,
             0.2716049382716049
@@ -380,6 +456,10 @@
           "precision_supported": 0.9583333333333334,
           "recall_supported": 0.7263157894736842,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.09933774834437085,
             0.21621621621621623
@@ -411,6 +491,10 @@
           "precision_supported": 0.9375,
           "recall_supported": 0.7894736842105263,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 1,
             "n01": 2,
@@ -427,6 +511,10 @@
           "precision_supported": 0.9411764705882353,
           "recall_supported": 0.8421052631578947,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 2,
             "n01": 0,
@@ -443,6 +531,10 @@
           "precision_supported": 0.9166666666666666,
           "recall_supported": 0.7719298245614035,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.25210084033613445,
             0.42016806722689076
@@ -463,6 +555,10 @@
           "precision_supported": 0.9259259259259259,
           "recall_supported": 0.7894736842105263,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.265,
             0.395
@@ -471,6 +567,303 @@
             "n10": 7,
             "n01": 9,
             "p_value": 0.803619384765625
+          }
+        },
+        "stress": {
+          "n": 0,
+          "missing": 100
+        }
+      }
+    },
+    "jev/jev-1.13.0/abstain": {
+      "backend": "legacy",
+      "model": "jev-1.13.0",
+      "mode": "abstain",
+      "splits": {
+        "train": {
+          "n": 41,
+          "missing": 0,
+          "coverage": 0.7073170731707317,
+          "selective_error": 0.1724137931034483,
+          "forced_error": 0.24390243902439024,
+          "accuracy_3way": 0.7560975609756098,
+          "precision_supported": 0.9230769230769231,
+          "recall_supported": 0.631578947368421,
+          "parse_errors": 0,
+          "cost_usd": 0.014495500800000002,
+          "cost_per_1k_cases": 0.35354880000000005,
+          "cost_per_correct_answer": 0.0006039792000000001,
+          "cost_basis": "run_average",
+          "mcnemar_vs_reference": {
+            "n10": 1,
+            "n01": 1,
+            "p_value": 1.0
+          }
+        },
+        "val": {
+          "n": 40,
+          "missing": 0,
+          "coverage": 0.525,
+          "selective_error": 0.09523809523809523,
+          "forced_error": 0.3,
+          "accuracy_3way": 0.7,
+          "precision_supported": 1.0,
+          "recall_supported": 0.47368421052631576,
+          "parse_errors": 0,
+          "cost_usd": 0.014141952000000001,
+          "cost_per_1k_cases": 0.35354880000000005,
+          "cost_per_correct_answer": 0.0007443132631578948,
+          "cost_basis": "run_average",
+          "mcnemar_vs_reference": {
+            "n10": 1,
+            "n01": 1,
+            "p_value": 1.0
+          }
+        },
+        "test": {
+          "n": 119,
+          "missing": 0,
+          "coverage": 0.680672268907563,
+          "selective_error": 0.12345679012345678,
+          "forced_error": 0.24369747899159663,
+          "accuracy_3way": 0.7563025210084033,
+          "precision_supported": 0.926829268292683,
+          "recall_supported": 0.6666666666666666,
+          "parse_errors": 0,
+          "cost_usd": 0.042072307200000006,
+          "cost_per_1k_cases": 0.35354880000000005,
+          "cost_per_correct_answer": 0.0005925677070422536,
+          "cost_basis": "run_average",
+          "selective_error_ci95": [
+            0.0547945205479452,
+            0.20224719101123595
+          ],
+          "mcnemar_vs_reference": {
+            "n10": 5,
+            "n01": 0,
+            "p_value": 0.0625
+          }
+        },
+        "all": {
+          "n": 200,
+          "missing": 0,
+          "coverage": 0.655,
+          "selective_error": 0.1297709923664122,
+          "forced_error": 0.255,
+          "accuracy_3way": 0.745,
+          "precision_supported": 0.9365079365079365,
+          "recall_supported": 0.6210526315789474,
+          "parse_errors": 0,
+          "cost_usd": 0.07070976000000001,
+          "cost_per_1k_cases": 0.35354880000000005,
+          "cost_per_correct_answer": 0.000620261052631579,
+          "cost_basis": "run_average",
+          "selective_error_ci95": [
+            0.07575757575757576,
+            0.1893939393939394
+          ],
+          "mcnemar_vs_reference": {
+            "n10": 7,
+            "n01": 2,
+            "p_value": 0.1796875
+          }
+        },
+        "stress": {
+          "n": 0,
+          "missing": 100
+        }
+      }
+    },
+    "anthropic/claude-haiku-5-5/abstain": {
+      "backend": "legacy",
+      "model": "claude-haiku-5-5",
+      "mode": "abstain",
+      "splits": {
+        "train": {
+          "n": 41,
+          "missing": 0,
+          "coverage": 0.6585365853658537,
+          "selective_error": 0.1111111111111111,
+          "forced_error": 0.24390243902439024,
+          "accuracy_3way": 0.7560975609756098,
+          "precision_supported": 0.9230769230769231,
+          "recall_supported": 0.631578947368421,
+          "parse_errors": 0,
+          "cost_usd": 0.0016612,
+          "cost_per_1k_cases": 0.04051707317073171,
+          "cost_per_correct_answer": 6.921666666666666e-05,
+          "cost_basis": "tokens",
+          "mcnemar_vs_reference": {
+            "n10": 1,
+            "n01": 1,
+            "p_value": 1.0
+          }
+        },
+        "val": {
+          "n": 40,
+          "missing": 0,
+          "coverage": 0.575,
+          "selective_error": 0.0,
+          "forced_error": 0.2,
+          "accuracy_3way": 0.8,
+          "precision_supported": 1.0,
+          "recall_supported": 0.6842105263157895,
+          "parse_errors": 0,
+          "cost_usd": 0.0012997500000000001,
+          "cost_per_1k_cases": 0.03249375,
+          "cost_per_correct_answer": 5.65108695652174e-05,
+          "cost_basis": "tokens",
+          "mcnemar_vs_reference": {
+            "n10": 1,
+            "n01": 0,
+            "p_value": 1.0
+          }
+        },
+        "test": {
+          "n": 119,
+          "missing": 0,
+          "coverage": 0.6638655462184874,
+          "selective_error": 0.08860759493670886,
+          "forced_error": 0.21008403361344538,
+          "accuracy_3way": 0.7899159663865546,
+          "precision_supported": 0.9523809523809523,
+          "recall_supported": 0.7017543859649122,
+          "parse_errors": 0,
+          "cost_usd": 0.0040831,
+          "cost_per_1k_cases": 0.034311764705882354,
+          "cost_per_correct_answer": 5.670972222222222e-05,
+          "cost_basis": "tokens",
+          "selective_error_ci95": [
+            0.02857142857142857,
+            0.15584415584415584
+          ],
+          "mcnemar_vs_reference": {
+            "n10": 6,
+            "n01": 0,
+            "p_value": 0.03125
+          }
+        },
+        "all": {
+          "n": 200,
+          "missing": 0,
+          "coverage": 0.645,
+          "selective_error": 0.07751937984496124,
+          "forced_error": 0.215,
+          "accuracy_3way": 0.785,
+          "precision_supported": 0.9558823529411765,
+          "recall_supported": 0.6842105263157895,
+          "parse_errors": 0,
+          "cost_usd": 0.0070440500000000005,
+          "cost_per_1k_cases": 0.03522025,
+          "cost_per_correct_answer": 5.91936974789916e-05,
+          "cost_basis": "tokens",
+          "selective_error_ci95": [
+            0.034482758620689655,
+            0.12698412698412698
+          ],
+          "mcnemar_vs_reference": {
+            "n10": 8,
+            "n01": 1,
+            "p_value": 0.0390625
+          }
+        },
+        "stress": {
+          "n": 0,
+          "missing": 100
+        }
+      }
+    },
+    "anthropic/claude-sonnet-5-5/abstain": {
+      "backend": "legacy",
+      "model": "claude-sonnet-5-5",
+      "mode": "abstain",
+      "splits": {
+        "train": {
+          "n": 41,
+          "missing": 0,
+          "coverage": 0.7317073170731707,
+          "selective_error": 0.06666666666666667,
+          "forced_error": 0.14634146341463414,
+          "accuracy_3way": 0.8536585365853658,
+          "precision_supported": 0.9375,
+          "recall_supported": 0.7894736842105263,
+          "parse_errors": 0,
+          "cost_usd": 0.024704,
+          "cost_per_1k_cases": 0.6025365853658536,
+          "cost_per_correct_answer": 0.0008822857142857142,
+          "cost_basis": "tokens",
+          "mcnemar_vs_reference": {
+            "n10": 1,
+            "n01": 0,
+            "p_value": 1.0
+          }
+        },
+        "val": {
+          "n": 40,
+          "missing": 0,
+          "coverage": 0.65,
+          "selective_error": 0.0,
+          "forced_error": 0.125,
+          "accuracy_3way": 0.875,
+          "precision_supported": 1.0,
+          "recall_supported": 0.7894736842105263,
+          "parse_errors": 0,
+          "cost_usd": 0.028485,
+          "cost_per_1k_cases": 0.712125,
+          "cost_per_correct_answer": 0.001095576923076923,
+          "cost_basis": "tokens",
+          "mcnemar_vs_reference": {
+            "n10": 3,
+            "n01": 0,
+            "p_value": 0.25
+          }
+        },
+        "test": {
+          "n": 119,
+          "missing": 0,
+          "coverage": 0.6974789915966386,
+          "selective_error": 0.08433734939759036,
+          "forced_error": 0.16806722689075632,
+          "accuracy_3way": 0.8319327731092436,
+          "precision_supported": 0.9574468085106383,
+          "recall_supported": 0.7894736842105263,
+          "parse_errors": 0,
+          "cost_usd": 0.081127,
+          "cost_per_1k_cases": 0.6817394957983194,
+          "cost_per_correct_answer": 0.0010674605263157895,
+          "cost_basis": "tokens",
+          "selective_error_ci95": [
+            0.028169014084507043,
+            0.14893617021276595
+          ],
+          "mcnemar_vs_reference": {
+            "n10": 5,
+            "n01": 0,
+            "p_value": 0.0625
+          }
+        },
+        "all": {
+          "n": 200,
+          "missing": 0,
+          "coverage": 0.695,
+          "selective_error": 0.06474820143884892,
+          "forced_error": 0.155,
+          "accuracy_3way": 0.845,
+          "precision_supported": 0.9615384615384616,
+          "recall_supported": 0.7894736842105263,
+          "parse_errors": 0,
+          "cost_usd": 0.134316,
+          "cost_per_1k_cases": 0.67158,
+          "cost_per_correct_answer": 0.0010332,
+          "cost_basis": "tokens",
+          "selective_error_ci95": [
+            0.027972027972027972,
+            0.10948905109489052
+          ],
+          "mcnemar_vs_reference": {
+            "n10": 9,
+            "n01": 0,
+            "p_value": 0.00390625
           }
         },
         "stress": {
@@ -494,6 +887,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.631578947368421,
           "parse_errors": 0,
+          "cost_usd": 0.00632625,
+          "cost_per_1k_cases": 0.1542987804878049,
+          "cost_per_correct_answer": 0.00025305,
+          "cost_basis": "billed",
           "mcnemar_vs_reference": {
             "n10": 1,
             "n01": 0,
@@ -510,6 +907,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.7894736842105263,
           "parse_errors": 0,
+          "cost_usd": 0.0061289000000000005,
+          "cost_per_1k_cases": 0.1532225,
+          "cost_per_correct_answer": 0.000245156,
+          "cost_basis": "billed",
           "mcnemar_vs_reference": {
             "n10": 3,
             "n01": 0,
@@ -526,6 +927,10 @@
           "precision_supported": 0.9574468085106383,
           "recall_supported": 0.7894736842105263,
           "parse_errors": 0,
+          "cost_usd": 0.01851135,
+          "cost_per_1k_cases": 0.15555756302521007,
+          "cost_per_correct_answer": 0.00023732499999999998,
+          "cost_basis": "billed",
           "selective_error_ci95": [
             0.02702702702702703,
             0.14634146341463414
@@ -546,6 +951,10 @@
           "precision_supported": 0.972972972972973,
           "recall_supported": 0.7578947368421053,
           "parse_errors": 0,
+          "cost_usd": 0.0309665,
+          "cost_per_1k_cases": 0.15483249999999998,
+          "cost_per_correct_answer": 0.00024192578125,
+          "cost_basis": "billed",
           "selective_error_ci95": [
             0.028368794326241134,
             0.11016949152542373
@@ -566,6 +975,10 @@
           "precision_supported": 0.0,
           "recall_supported": NaN,
           "parse_errors": 0,
+          "cost_usd": 0.01603465,
+          "cost_per_1k_cases": 0.16034650000000003,
+          "cost_per_correct_answer": 0.00018644941860465118,
+          "cost_basis": "billed",
           "selective_error_ci95": [
             0.0,
             0.07608695652173914
@@ -593,6 +1006,10 @@
           "precision_supported": 0.8571428571428571,
           "recall_supported": 0.9473684210526315,
           "parse_errors": 0,
+          "cost_usd": 0.005604250000000001,
+          "cost_per_1k_cases": 0.1366890243902439,
+          "cost_per_correct_answer": 0.00018078225806451615,
+          "cost_basis": "billed",
           "mcnemar_vs_reference": {
             "n10": 1,
             "n01": 0,
@@ -609,6 +1026,10 @@
           "precision_supported": 0.782608695652174,
           "recall_supported": 0.9473684210526315,
           "parse_errors": 0,
+          "cost_usd": 0.0054374,
+          "cost_per_1k_cases": 0.135935,
+          "cost_per_correct_answer": 0.00018124666666666667,
+          "cost_basis": "billed",
           "mcnemar_vs_reference": {
             "n10": 3,
             "n01": 0,
@@ -625,6 +1046,10 @@
           "precision_supported": 0.8833333333333333,
           "recall_supported": 0.9298245614035088,
           "parse_errors": 0,
+          "cost_usd": 0.01653035,
+          "cost_per_1k_cases": 0.13891050420168066,
+          "cost_per_correct_answer": 0.00018784488636363635,
+          "cost_basis": "billed",
           "selective_error_ci95": [
             0.18487394957983194,
             0.3445378151260504
@@ -645,6 +1070,10 @@
           "precision_supported": 0.8557692307692307,
           "recall_supported": 0.9368421052631579,
           "parse_errors": 0,
+          "cost_usd": 0.027572000000000003,
+          "cost_per_1k_cases": 0.13786,
+          "cost_per_correct_answer": 0.00018504697986577182,
+          "cost_basis": "billed",
           "selective_error_ci95": [
             0.195,
             0.315
@@ -665,6 +1094,10 @@
           "precision_supported": 0.0,
           "recall_supported": NaN,
           "parse_errors": 0,
+          "cost_usd": 0.01439165,
+          "cost_per_1k_cases": 0.14391650000000003,
+          "cost_per_correct_answer": 0.00015310265957446808,
+          "cost_basis": "billed",
           "selective_error_ci95": [
             0.02,
             0.11
@@ -692,6 +1125,10 @@
           "precision_supported": 0.9,
           "recall_supported": 0.47368421052631576,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 0,
             "n01": 1,
@@ -708,6 +1145,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.47368421052631576,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 2,
             "n01": 0,
@@ -724,6 +1165,10 @@
           "precision_supported": 0.9655172413793104,
           "recall_supported": 0.49122807017543857,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.08823529411764706,
             0.2608695652173913
@@ -744,6 +1189,10 @@
           "precision_supported": 0.9583333333333334,
           "recall_supported": 0.4842105263157895,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.07407407407407407,
             0.2
@@ -764,6 +1213,10 @@
           "precision_supported": 0.0,
           "recall_supported": NaN,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.0,
             0.060240963855421686
@@ -791,6 +1244,10 @@
           "precision_supported": 0.9285714285714286,
           "recall_supported": 0.6842105263157895,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 0,
             "n01": 2,
@@ -807,6 +1264,10 @@
           "precision_supported": 1.0,
           "recall_supported": 0.7368421052631579,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "mcnemar_vs_reference": {
             "n10": 2,
             "n01": 1,
@@ -823,6 +1284,10 @@
           "precision_supported": 0.9743589743589743,
           "recall_supported": 0.6666666666666666,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.3025210084033613,
             0.4789915966386555
@@ -843,6 +1308,10 @@
           "precision_supported": 0.9701492537313433,
           "recall_supported": 0.6842105263157895,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.315,
             0.445
@@ -863,6 +1332,10 @@
           "precision_supported": 0.0,
           "recall_supported": NaN,
           "parse_errors": 0,
+          "cost_usd": 0.0,
+          "cost_per_1k_cases": 0.0,
+          "cost_per_correct_answer": 0.0,
+          "cost_basis": "local",
           "selective_error_ci95": [
             0.0,
             0.05

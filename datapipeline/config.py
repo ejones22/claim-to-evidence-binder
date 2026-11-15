@@ -88,6 +88,21 @@ JUDGES = {
                                   "file": "llm_judge_results_qwen3.5-9b.json"},
     "legacy/qwen3.5:9b/forced": {"backend": "legacy", "model": "qwen3.5:9b", "mode": "forced",
                                  "file": "llm_forced_results_qwen3.5-9b.json"},
+    # hosted judges run from dc_council/ (jev_judge.py via the jevmodel.org
+    # reseller, claude_batch_judge.py via Anthropic's Message Batches API),
+    # imported the same way as the legacy runs
+    # the Jev run predates per-case usage logging; its exact total (from the
+    # run's own output: 99,028 tokens for cases 0-184 + 8,108 for 185-199)
+    # is spread evenly over its cases for cost reporting
+    "jev/jev-1.13.0/abstain": {"backend": "legacy", "model": "jev-1.13.0", "mode": "abstain",
+                               "file": "jev_judge_results.json",
+                               "run_total_usage": {"input_tokens": 107136, "output_tokens": 0, "cases": 200}},
+    # the Claude runs have per-case usage in their results files, so their
+    # cost comes from tokens x PRICES (batch prices), not a run average
+    "anthropic/claude-haiku-5-5/abstain": {"backend": "legacy", "model": "claude-haiku-5-5", "mode": "abstain",
+                                           "file": "claude_haiku_judge_results.json"},
+    "anthropic/claude-sonnet-5-5/abstain": {"backend": "legacy", "model": "claude-sonnet-5-5", "mode": "abstain",
+                                            "file": "claude_sonnet_judge_results.json"},
 
     # --- local Ollama, generative (same call as the legacy scripts) ---
     "ollama/qwen2.5:7b/abstain": {"backend": "ollama", "model": "qwen2.5:7b", "mode": "abstain"},
@@ -139,6 +154,24 @@ JUDGES = {
                                            "mode": "forced"},
     "decision/tev1:4b/forced": {"backend": "ollama_decision", "model": "tev1:4b", "mode": "forced"},
 }
+
+
+# USD per 1M tokens, for cost per task in 05_evaluate.py. A row's own
+# billed cost (Adaption returns usage.cost) wins over this table. Local
+# models are $0: hardware and electricity aren't counted.
+# Keyed by judge "model". {"local": True} marks a free local model;
+# otherwise "input" / "output" are USD per 1M tokens.
+PRICES = {
+    "claude-haiku-5-5": {"input": 0.05, "output": 0.25},  # Message Batches (50% of $0.10/$0.50)
+    "claude-sonnet-5-5": {"input": 1.00, "output": 5.00},  # Message Batches (50% of $2/$10)
+    "jev-1.13.0": {"input": 0.66, "output": 0.0},  # jevmodel.org token pack; output free
+    "qwen2.5:7b": {"local": True},
+    "qwen2.5:3b": {"local": True},
+    "qwen3.5:9b": {"local": True},
+}
+# backends that run on the user's machine: a model with no PRICES entry on
+# one of these is costed at $0 instead of "unknown"
+LOCAL_BACKENDS = {"ollama", "ollama_decision"}
 
 
 def run_path(judge_name):
