@@ -1,0 +1,95 @@
+{
+  "n_shared": 48,
+  "shared_case_ids": [
+    "no_context-004",
+    "no_context-008",
+    "no_context-020",
+    "no_context-036",
+    "no_context-048",
+    "no_context-050",
+    "supported-004",
+    "supported-005",
+    "supported-006",
+    "supported-015",
+    "supported-016",
+    "supported-019",
+    "supported-021",
+    "supported-024",
+    "supported-027",
+    "supported-032",
+    "supported-035",
+    "supported-036",
+    "supported-043",
+    "supported-045",
+    "supported-047",
+    "supported-050",
+    "supported-053",
+    "supported-054",
+    "synthetic_contradicted-006",
+    "synthetic_contradicted-010",
+    "synthetic_contradicted-013",
+    "synthetic_contradicted-016",
+    "synthetic_contradicted-017",
+    "synthetic_contradicted-021",
+    "synthetic_contradicted-026",
+    "synthetic_contradicted-028",
+    "synthetic_contradicted-029",
+    "synthetic_contradicted-030",
+    "synthetic_contradicted-033",
+    "synthetic_contradicted-034",
+    "synthetic_contradicted-035",
+    "synthetic_contradicted-038",
+    "synthetic_contradicted-043",
+    "synthetic_contradicted-044",
+    "synthetic_contradicted-046",
+    "synthetic_contradicted-049",
+    "weak-005",
+    "weak-008",
+    "weak-016",
+    "weak-018",
+    "weak-019",
+    "weak-021"
+  ],
+  "results": {
+    "legacy__qwen2.5:7b__abstain": {
+      "n": 48,
+      "orig_error": 0.125,
+      "strict_error": 0.1875
+    },
+    "legacy__qwen3.5:9b__abstain": {
+      "n": 48,
+      "orig_error": 0.16666666666666666,
+      "strict_error": 0.1875
+    },
+    "jev__jev-1.13.0__abstain": {
+      "n": 48,
+      "orig_error": 0.020833333333333332,
+      "strict_error": 0.08333333333333333
+    },
+    "adaption__qwen3.5-397b__abstain": {
+      "n": 48,
+      "orig_error": 0.020833333333333332,
+      "strict_error": 0.08333333333333333
+    },
+    "anthropic__claude-haiku-5-5__abstain": {
+      "n": 48,
+      "orig_error": 0.020833333333333332,
+      "strict_error": 0.08333333333333333
+    },
+    "anthropic__claude-sonnet-5-5__abstain": {
+      "n": 48,
+      "orig_error": 0.020833333333333332,
+      "strict_error": 0.08333333333333333
+    },
+    "decision__d3:4b-q8_0__abstain": {
+      "n": 48,
+      "orig_error": 0.10416666666666667,
+      "strict_error": 0.16666666666666666
+    }
+  },
+  "mcnemar_haiku_vs_sonnet_strict": {
+    "n10": 0,
+    "n01": 0,
+    "p_value": null
+  }
+}

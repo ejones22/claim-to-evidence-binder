@@ -116,6 +116,7 @@ in `dc_council/` below is new work from this weekend, with one exception called 
 | `sensitivity_strict_supported.py` | New (sensitivity bound: re-scores the headline result after relabeling "supported" cases that fail rater2's stricter standard) |
 | `sensitivity_all_judges.py` | New (applies the same correction to every judge's already-collected outputs, all 200 cases) |
 | `datapipeline/05b_sensitivity_strict_gold.py` | New (same correction, restricted to the held-out test split) |
+| `datapipeline/05c_shared_cases_comparison.py` | New (coverage-matched comparison: every judge on exactly the same answered cases) |
 | `regenerate_from_backup.py` | New (one-off migration script, kept for provenance) |
 | `*.json`, `*.jsonl`, `*.png` | New (this sprint's generated results and figures) |
 
@@ -222,6 +223,23 @@ originally looked like over-caution and under the corrected standard looks like
 being right. The result that abstention beats forced-answer, and that capability
 beats raw size, both still hold; which specific hosted judge is "best" does not,
 without this correction.
+
+**A coverage-matched comparison goes further: among the capable judges, there may be
+no real quality difference at all.** `05c_shared_cases_comparison.py` restricts every
+judge to the 48 test-split cases ALL seven judges actually committed to (removing
+coverage differences from the comparison entirely, not just relabeling). On exactly
+those 48 cases, Jev, Adaption's qwen3.5-397b, Claude Haiku 5.5, and Claude Sonnet 5.5
+are tied -- 2.1% error under the original gold, 8.3% under the strict gold, and
+Haiku vs. Sonnet make identical calls on every single one (0 discordant pairs,
+McNemar's undefined). The two local models are clearly worse on this same shared set
+(12.5%/16.7%). So there's a genuine capability cliff between local and hosted-tier
+models, but no detectable difference *among* the hosted-tier judges -- the entire
+apparent ranking between them, in both the original and corrected leaderboards, comes
+from which additional, harder cases each one chooses to answer, not from judging
+those cases better or worse. This is the same shape as the project's headline finding
+(abstention helps mostly via routing, not sharper reasoning, p=0.125) recurring one
+level up: selection effects, not judgment quality, appear to dominate this kind of
+evaluation at every level examined so far.
 
 ## Reproducing the results
 
