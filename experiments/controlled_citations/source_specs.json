@@ -1,0 +1,17 @@
+[
+  ["appointments_housing_trust", "test", "supported-036", "would confirm Sasha-Gaye Angus to the Housing Production Trust Fund Board", "supported-006", "would confirm Stacie Birenbach to the Housing Production Trust Fund Board"],
+  ["appointments_real_estate", "development", "supported-011", "would confirm Carol Calomiris to the Real Estate Commission", "supported-029", "would confirm Elizabeth Blakeslee to the Real Estate Commission"],
+  ["appointments_housing_authority", "test", "supported-021", "would confirm Denise Blackson to the District of Columbia Housing Authority Board of Commissioners", "supported-048", "would confirm Raymond Skinner to the District of Columbia Housing Authority Board of Commissioners"],
+  ["park_designations", "test", "supported-019", "would designate a park as Green’s Court Park", "supported-015", "would designate a park as Harmony Park"],
+  ["commemorative_designations", "test", "supported-035", "would symbolically designate a street as Dr. William Keelan Collins, Sr. Way", "supported-054", "would designate a basketball court as Rodney Wright Basketball Court"],
+  ["revenue_bonds", "test", "supported-004", "would approve a revenue bonds project for Friendship Public Charter School, Inc.", "supported-014", "would approve a revenue bonds project for PRG Wonder Plaza Properties Inc."],
+  ["utility_assistance", "development", "supported-017", "would provide automatic enrollment in utility affordability programs", "supported-042", "would provide protection against utility disconnection"],
+  ["cannabis_products", "test", "weak-002", "would establish a craft preparation endorsement for medical cannabis retailers", "weak-030", "would amend rules for medical cannabis beverage products"],
+  ["rodent_policy", "test", "supported-024", "would amend rodent abatement and transparency requirements", "weak-005", "would amend rodent education and management provisions"],
+  ["water_billing", "test", "weak-007", "would improve tenant access to water bills", "weak-014", "would modernize DC Water billing and disconnection provisions"],
+  ["environment_energy", "development", "supported-025", "would strengthen air pollution permitting requirements", "supported-022", "would amend renewable interconnection and distribution provisions"],
+  ["property_tax", "test", "supported-045", "would amend tax sale provisions to address equity", "supported-039", "would amend real property tax assessments to improve fairness and accuracy"],
+  ["housing_protection", "test", "weak-033", "would amend tenant receivership provisions and strengthen oversight of homes", "supported-023", "would protect against eviction during extreme heat"],
+  ["healthcare", "test", "supported-008", "would streamline Medicaid credentialing", "supported-050", "would clarify prenatal and postpartum remote patient monitoring provisions"],
+  ["roads_and_alleys", "test", "supported-007", "would close portions of a public alley in Square 571", "supported-009", "would clarify restoration of covenanted roads and alleys by the District government"]
+]

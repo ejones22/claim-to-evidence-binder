@@ -322,6 +322,10 @@ instead). Without that flag the same run would take 3+ hours.
 
 ## Limitations and Dual-Use / Ethical Considerations
 
+### Pending controlled experiment
+
+[`experiments/controlled_citations/`](experiments/controlled_citations/) adds a separate, not-yet-run diagnostic: 30 source measures, 90 explicitly constructed cases, independent Emma/Vivianne review packets, frozen baseline and evidence-attribution prompts, and paired analysis. Human labels and model outcomes are pending; these assets do not add empirical results to the findings above. The experiment README provides the review-first workflow and reproducible commands.
+
 See the full report for the required Limitations and Dual-Use / Ethical
 Considerations appendix. In short: this measures whether a citation exists and is
 discussed consistently with its official record -- it does not and cannot verify
