@@ -1,0 +1,14 @@
+You are checking whether a snippet of spoken meeting transcript actually describes the legislation it names, or just mentions its number.
+
+TRANSCRIPT SNIPPET:
+"{context}"
+
+CANDIDATE BILL/RESOLUTION TITLE:
+"{title}"
+
+Does the transcript snippet's description of what this bill/resolution is about match the candidate title? Answer with exactly one word:
+SUPPORTED -- the snippet describes content consistent with this title (even if it uses different words, paraphrases, or needs some background knowledge to see).
+CONTRADICTED -- the snippet clearly describes something else, not this title.
+UNVERIFIABLE -- the snippet gives no real description to check (e.g. it's just a procedural vote, a name read aloud, or background about something else).
+
+Answer:

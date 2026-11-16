@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "source_commit": "31f4afe58c2d3a18b22fc07339860fb9127f697e",
+  "construction": "assistant-authored synthetic contexts grounded in real benchmark identifiers and titles; not transcript quotations",
+  "sources": 30,
+  "cases": 90,
+  "pairs": 15,
+  "development_sources": 6,
+  "test_sources": 24,
+  "review_status": "pending",
+  "benchmark_sha256": "6cd80fa9ad06dfc1c5454ffcb56342c7c3056869b25b7cf53a657c562c38584e",
+  "source_specs_sha256": "71f4f85df9fb5c6317ed6a3808feaee445146765a5699983676e121a10af8e6d",
+  "files": {
+    "cases.jsonl": "564794df9c1d5669a7f7fc5c372578acdc59d4195f478ec6ad12df57a15b1c30",
+    "prompts/baseline.txt": "9ddc01519507cf69db35a99e1f6c58e2848c53758a5d68845291aecbba56e4bb",
+    "review/emma.csv": "aa28aac8f882fbc8d24ce7f0f361e91c1fcd38e8b8eef6be07664093d23783c7",
+    "review/emma.txt": "126479a7222123c5509d742697195f48b2f5f4c9286e2e89d2b521db277b4149",
+    "review/vivianne.csv": "d8f94d50121f1139ba7a742ca6029d13c09da271c4847a1610fcbb2f603d0945",
+    "review/vivianne.txt": "7c15c1d0ecacc897ee8906a9288c7392e48f18234433fb167772432df457dbc2",
+    "review_map.json": "0dcc527272046938359422dd11fd4803f23505e0aa5bde4663844a648fed5991",
+    "sources.json": "73c7b6f58630eaef170f6e5cf8316348dd4427812c75f8eee8ae93122b75bffc"
+  },
+  "prompts": {
+    "baseline": "9ddc01519507cf69db35a99e1f6c58e2848c53758a5d68845291aecbba56e4bb",
+    "intervention": "b2fefd6f6caf5a350cdb0d62d34e5ec8a99b31dded14e68faee118dd4b8c5fa5"
+  }
+}
