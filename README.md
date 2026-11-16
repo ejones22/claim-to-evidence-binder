@@ -87,7 +87,7 @@ roughly half) is not an artifact of the labeling bias. This bound was applied by
 one person, not independently reviewed itself -- treat it as a bound, not a
 replacement gold standard.
 
-**Stronger independent audit (in progress):** `build_stronger_audit_sample.py`
+**Stronger independent audit (complete, two reviewers):** `build_stronger_audit_sample.py`
 addresses two gaps in the above: the original rater2 review excluded originally-
 contradicted cases entirely and was a single 30-case sample, and the strict
 relabeling just above was one person's pass, never independently checked. It draws
@@ -98,13 +98,33 @@ supported/unverifiable ones, none previously reviewed) and
 as a separate targeted check, never pooled with the random-sample agreement rate).
 Both use a two-field schema per case -- FIELD 1: does the transcript address this
 same measure at all; FIELD 2: does it actually confirm this measure's specific
-content, as opposed to just naming it -- plus an overall 3-way label, so the result
-can report not just agreement but *which kind* of apparent "supported" case turns
-out to be topic-adjacent rather than content-confirmed. `score_stronger_audit.py`
-scores a filled-in form against its answer key (kept out of the repo, like the
-original `my_labels_for_ivan_sample.json`, to preserve blindness) and reports raw
-agreement, kappa, the FIELD 1/FIELD 2 breakdown, and -- with two filled forms --
-inter-rater agreement between reviewers. Results pending independent review.
+content, as opposed to just naming it -- plus an overall 3-way label. Two
+reviewers (blind, independent, no access to each other's answers or the keys)
+completed both samples; `score_stronger_audit.py` scores each against the answer
+key and, given both filled forms, the two reviewers against each other.
+
+Diagnostic sample (20 cases, checks whether the one-person strict relabeling
+holds up): reviewer 1 agreed with the relabeling on 18/20 (90%), reviewer 2 on
+17/20 (85%); the two reviewers agreed with each other on 17/20 (85%). Both
+reviewers, independently, missed the same case (`weak_27`, the 25th/35th Street
+mismatch) -- it needs outside geographic knowledge to catch, which is itself a
+data point for why a deterministic record check, not a careful human skim, has
+to be the first line of defense.
+
+Fresh sample (60 cases, the real agreement estimate): reviewer 1 agreed with the
+original gold on 34/60 (56.7%, kappa=0.38); reviewer 2 on 40/60 (66.7%,
+kappa=0.50). The number that matters most -- genuine two-person independent
+agreement -- is **41/60 (68.3%, kappa=0.45)**, moderate on the standard scale:
+a real but unsurprising ceiling for a task this subjective, not a red flag.
+More importantly, both reviewers' disagreements with the original gold point the
+same direction: 16 of reviewer 2's 20 disagreements (80%) and the large majority
+of reviewer 1's call "unverifiable" or "contradicted" where the original gold
+says "supported," essentially never the reverse. That makes four independent
+checks now -- the original rater2 review (9/30), the strict relabeling pass,
+and these two fresh reviewers -- all finding the same one-directional bias in
+the original "supported" label, at increasing scale. That convergence, more
+than any single number, is why we treat the ranking-inversion finding above as
+real rather than an artifact of one reviewer's idiosyncrasy.
 
 **Secondary exploration (`earnings_calls_exploratory/`):** an earlier, smaller pass
 at the same idea applied to a different domain -- checking numeric claims on

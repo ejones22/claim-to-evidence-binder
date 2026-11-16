@@ -59,12 +59,20 @@ def main():
     if len(answers) != len(key):
         raise SystemExit(f"form has {len(answers)} cases, answer key has {len(key)} -- can't match by order")
     for n, (a, g) in enumerate(zip(answers, key), start=1):
-        a_snip, g_snip = a["context"][:40].strip(), g["context"][:40].strip()
+        a_snip, g_snip = a["context"].strip()[:40], g["context"].strip()[:40]
         if a_snip != g_snip:
             raise SystemExit(f"CASE {n}: context mismatch between form and answer key "
                               f"({a_snip!r} vs {g_snip!r}) -- order doesn't line up, stopping")
     paired = list(zip(answers, key))
-    gold = [g["gold_3way"] for _, g in paired]
+    # the diagnostic sample's answer key carries a "strict_relabel" field --
+    # that correction, not the original (already-known-biased) gold_3way,
+    # is the actual target this sample checks an independent reviewer against
+    has_strict = all("strict_relabel" in g for _, g in paired)
+    gold_field = "strict_relabel" if has_strict else "gold_3way"
+    if has_strict:
+        print("(scoring against the strict relabeling, not the original gold -- "
+              "that's what this diagnostic sample checks)\n")
+    gold = [g[gold_field] for _, g in paired]
     overall = [a["overall"].lower() for a, _ in paired]
 
     agree = sum(1 for o, g in zip(overall, gold) if o == g)
@@ -76,7 +84,7 @@ def main():
     combo = {}
     for a, g in paired:
         key_combo = (a["f1"], a["f2"])
-        combo.setdefault(key_combo, []).append(g["gold_3way"])
+        combo.setdefault(key_combo, []).append(g[gold_field])
     for (f1, f2), golds in sorted(combo.items()):
         from collections import Counter
         print(f"  F1={f1:<10} F2={f2:<10} n={len(golds):<3} gold breakdown={dict(Counter(golds))}")
@@ -88,15 +96,16 @@ def main():
 
     print("\nDisagreements with gold (real case id from the answer key, not the form's redacted id):")
     for a, g in paired:
-        if a["overall"].lower() != g["gold_3way"]:
-            print(f"  {g['id']}: reviewer={a['overall']} (F1={a['f1']} F2={a['f2']})  gold={g['gold_3way']}")
+        if a["overall"].lower() != g[gold_field]:
+            print(f"  {g['id']}: reviewer={a['overall']} (F1={a['f1']} F2={a['f2']})  gold={g[gold_field]}"
+                  + (f"  [original gold_3way: {g['gold_3way']}]" if has_strict else ""))
 
     if second_path:
         second = parse_form(second_path)
         if len(second) != len(key):
             raise SystemExit(f"second form has {len(second)} cases, answer key has {len(key)} -- can't match by order")
         for n, (b, g) in enumerate(zip(second, key), start=1):
-            if b["context"][:40].strip() != g["context"][:40].strip():
+            if b["context"].strip()[:40] != g["context"].strip()[:40]:
                 raise SystemExit(f"second form, CASE {n}: context mismatch -- order doesn't line up, stopping")
         a1 = [x["overall"].lower() for x, _ in paired]
         a2 = [b["overall"].lower() for b in second]
