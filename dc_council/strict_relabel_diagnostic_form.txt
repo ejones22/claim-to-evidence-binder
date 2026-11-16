@@ -1,0 +1,190 @@
+INDEPENDENT LABEL REVIEW -- STRICT-RELABEL DIAGNOSTIC (20 cases) -- checking one person's relabeling pass
+======================================================================
+
+For each case: read the CONTEXT (what was actually said in the meeting)
+and the OFFICIAL TITLE (the real legislative record it's being checked
+against). Answer two separate questions, then give one overall label.
+
+FIELD 1 -- TOPIC MATCH: is the transcript clearly talking about this same
+  specific bill/resolution (not a different one, not something else
+  entirely)?
+    Write: YES / NO / CANT_TELL
+
+FIELD 2 -- CONTENT CONFIRMED: setting the bill number aside, does the
+  transcript actually describe what THIS measure does or says -- not just
+  name it, read it off a list with others, or make a generic remark that
+  would apply equally to a different, similar bill?
+    Write: YES / NO / CANT_TELL
+
+OVERALL LABEL -- given your two answers above:
+  SUPPORTED     if FIELD 1 = YES and FIELD 2 = YES
+  CONTRADICTED  if FIELD 1 = NO
+  UNVERIFIABLE  if FIELD 1 = YES but FIELD 2 = NO, or if FIELD 1 = CANT_TELL
+  (if your own judgment disagrees with this mapping for some case, go with
+  your own judgment on OVERALL LABEL and leave FIELD 1 / FIELD 2 as you
+  answered them -- the mapping is a guide, not a rule)
+
+Don't overthink it -- go with your first honest read. Send this file back
+with the blanks filled in.
+
+----------------------------------------------------------------------
+CASE 1 (id: redacted_5)
+CONTEXT:  RELIEF TO TENANTS. BILL 26-493 ADDRESSES MANY GAPS AND DEFICIENCIES. STRENGTHENING THE ABILITY OF THE DISTRICT THROUGH THE OFFICE OF THE ATTORNEY GENERAL TO SECURE AND PROVIDE RELIEF. THE BI
+OFFICIAL TITLE: Strengthening Tenant Receivership and Oversight for Neighborhood Growth (STRONG) Homes Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 2 (id: redacted_1)
+CONTEXT: N PAGE 5, NUMBER 9. PR26-736. BUNDLE DISPOSITION RESOLUTION FOR 2026. COUNCILMEMBER FRUMIN.
+OFFICIAL TITLE: Hill East Phase II Bundle 2 Disposition Term Sheet Amendment Approval Resolution of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 3 (id: redacted_11)
+CONTEXT: K YOU. I INTRODUCED BILL 26-523 ON DECEMBER 1, 20 25, ALONG WITH COUNCILMEMBERS ALLEN, BONDS, FOR MEN, PARKER, -- FRUMIN, PARKER, WHITE. IF A PROVIDER WANTS TO SERVE PATIENTS IN THE MEDICAID 
+OFFICIAL TITLE: Streamlining Medicaid Credentialing Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 4 (id: redacted_19)
+CONTEXT: NCES. AND WE DO SEE BILL 26 443 AS A POTENTIAL AVENUE THERE. UNLIKE THE PRIOR BILL, IT ONLY RELATES TO DELINQUENT WATER BILLS. WE THEREFORE SEE IT AS A PROMISING APPROACH. AND IN ADDITION TO 
+OFFICIAL TITLE: DC Water Billing and Disconnection Modernization Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 5 (id: redacted_19)
+CONTEXT: DIOCESE IN FAVOR OF BILL 26-641 I THANK YOU FOR THIS OPPORTUNITY TO OFFER A FEW WORDS OF MY OWN. MY NAME IS REV. EJIGOU CAN I THE PASTOR OF OUR LADY OF PERPETUAL HELP AND WAS PREVIOUSLY THE P
+OFFICIAL TITLE: Archdiocese of Washington Parish Real Property, Deed Recordation, and Transfer Tax Exemption Amendment Act of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 6 (id: redacted_16)
+CONTEXT: LINGNESS TO LISTEN. B26-545 IS MEASURED, TARGETED, AND TIME-LIMITED. BUT FOR DISPLACED HOMEOWNERS, IT REPRESENTS THE DIFFERENCE BETWEEN SURVIVING DISPLACEMENT AND RECOVERING FROM IT. I UR
+OFFICIAL TITLE: River East at Grandview Homeownership Relief and Restoration Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 7 (id: redacted_5)
+CONTEXT: RGETOWN UNIVERSITY. BILL 26-772 APPROXIMATELY 7426 SQUARE FEET OF 25TH STREET RUNNING BETWEEN WATER STREET AND THE POTOMAC RIVER BENEATH THE FRANCIS SCOTT KEY BRIDGE. THE BILL WOULD APPROVE T
+OFFICIAL TITLE: Closing of the Unimproved Portion of 35th Street N.W., Abutting Squares 1178 and 1179, S.O. 26-01008, Act of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 8 (id: redacted_18)
+CONTEXT: BUDGET ACT OF 2026, BILL 26-659. THIS IS A FINAL READING AND I'LL NOTE NOW, AND IF I REMEMBER, FOR EACH OF THE BUDGET BILLS, I'M MOVING THESE WITH LEAVE FOR STAFF TO MAKE TECHNICAL CONFORMING
+OFFICIAL TITLE: Fiscal Year 2027 Local Budget Act of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 9 (id: redacted_8)
+CONTEXT:  IS THE RESALE ACT, BILL 26-224, RESTRICTING AGREE JUST THANK YOU, CHAIRMAN. I HAVE ALREADY SPOKEN TO THE BILL TODAY SO FOR THE PURPOSES OF THE LEGISLATIVE MEETING I THANK YOU PAIRED WE HAVE 
+OFFICIAL TITLE: Restricting Egregious Scalping Against Live Entertainment (RESALE) Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 10 (id: redacted_16)
+CONTEXT:  WILL BE DISCUSSING BILL 26- 492, THE RAT ACT, INTRODUCED BY COUNCILMEMBER LEWIS GEORGE, AND BILL 26-707, WROTE EDUCATION AND MANAGEMENT YIELDS RESULTS, REMY AMENDMENT ACT, INTRODUCED BY MYSEL
+OFFICIAL TITLE: Rodent Abatement and Transparency (RAT) Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 11 (id: redacted_19)
+CONTEXT: TINGUISH BETWEEN IS BILL 26 105 AND BILL 26 443. SO WHEN WE TALK ABOUT SPECIFICALLY THE WATER UTILITY AND I, YOU KNOW, MAYBE I'M SAYING THIS BECAUSE I AUTHORED BILL 26 443, BUT IT SOUNDS LIKE
+OFFICIAL TITLE: Improving Tenant Access to Water Bills Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 12 (id: redacted_5)
+CONTEXT: THE PERMANENT BILL, BILL 26-661. ALL THOSE IN FAVOR SAY AYE. ARE THERE ANY OPPOSED? HEARING NONE, THE AYES HAVE IT UNANIMOUSLY. YOU KNOW, AT EACH OF THESE BUDGET MEETINGS, VOTES, WE THINK EVE
+OFFICIAL TITLE: Fiscal Year 2027 Budget Support Act of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 13 (id: redacted_20)
+CONTEXT: ENT OF CORRECTIONS. PR26-764. COUNCILMEMBER PINTO.
+OFFICIAL TITLE: Special Education for Young Adults in the Custody of the Department of Corrections Emergency Declaration Resolution of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 14 (id: redacted_17)
+CONTEXT: ENT ACT OF 2025 AND B26-0707. BOTH MEASURES ATTEMPT TO IMPROVE HOW WE AS A GOVERNMENT HELP PREVENT AND MANAGE RODENT INFESTATIONS. I APPRECIATE THAT MANY OF OUR WITNESSES ARE HERE TO ADVOC
+OFFICIAL TITLE: Rodent Education and Management Yields ("REMY") Results Amendment Act of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 15 (id: redacted_10)
+CONTEXT: BILITY ACT OF 2026, BILL 26-427, REPORTING, THE COMMITTEE ON HEALTH.
+OFFICIAL TITLE: Cybersecurity and Accountability Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 16 (id: redacted_3)
+CONTEXT: S GOING TO FOCUS ON BILL 26-58. COMMONLY REFERRED TO AS THE BOTTLE BILL. SINCE THE ORIGINAL PUBLIC HEARING ON THE BILL WAS HEAD ON OCTOBER 1ST, 2025, AS WELL AS IN CONVERSATION OF STAKEHOLDE
+OFFICIAL TITLE: Recycling Refund and Litter Reduction Amendment Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 17 (id: redacted_14)
+CONTEXT: RTUNITY TO SPEAK ON BILL 26-0684. WE BELIEVE AUTONOMOUS VEHICLES BRING TREMENDOUS SOCIETAL BENEFITS AND PROVIDE ACCESS TO TRANSPORTATION FOR THOSE WITH DISABILITIES OR THOSE WHO CAN DRIVE THEM
+OFFICIAL TITLE: Autonomous Vehicle Deployment Authorization Amendment Act of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 18 (id: redacted_6)
+CONTEXT: ONS. THESE HOWEVER, B26-259 AND B26-654 EXPAND THE VARIETY OF CANNABIS PRODUCTS AVAILABLE - INCLUDING PRODUCTS THAT CLOSELY RESEMBLE FOODS AND BEVERAGES - CREATING ADDITIONAL OPPORTUNITIE
+OFFICIAL TITLE: Medical Cannabis Retailer Craft Preparation Endorsement Act of 2025
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 19 (id: redacted_5)
+CONTEXT: E COUNCIL CONSIDERS BILL 26-0684, WE ENCOURAGE CONTINUED ATTENTION TO HOW EMERGING TECHNOLOGIES INCLUDING AUTONOMOUS VEHICLES CAN COMPLEMENT EXISTING OPTIONS AND EXPAND ACCESS TO EDUCATION, EM
+OFFICIAL TITLE: Autonomous Vehicle Deployment Authorization Amendment Act of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------
+CASE 20 (id: redacted_19)
+CONTEXT:  MELVIN McLEAN. AND PR26-728 TAMIKA BRUCE. AS NOTE, CELESTE SANTIFER WAS WITHDRAWN AFTER THE COMMITTEE NOTICED THIS HEARING. THAT RESOLUTION WILL NOT BE CONSIDERED TODAY. THE RESOLUTION-- 
+OFFICIAL TITLE: Commission on Re-Entry and Returning Citizen Affairs Tamika Bruce Confirmation Resolution of 2026
+FIELD 1 (TOPIC MATCH): 
+FIELD 2 (CONTENT CONFIRMED): 
+OVERALL LABEL: 
+
+----------------------------------------------------------------------

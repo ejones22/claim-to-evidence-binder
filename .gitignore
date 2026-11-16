@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .DS_Store
 .env
+
+# answer keys for blind independent-review materials -- must stay out of
+# the repo so a reviewer reading it can't see the labels they're checking
+dc_council/stronger_audit_answer_key.json
+dc_council/strict_relabel_diagnostic_answer_key.json
+dc_council/my_labels_for_ivan_sample.json

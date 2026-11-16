@@ -87,6 +87,25 @@ roughly half) is not an artifact of the labeling bias. This bound was applied by
 one person, not independently reviewed itself -- treat it as a bound, not a
 replacement gold standard.
 
+**Stronger independent audit (in progress):** `build_stronger_audit_sample.py`
+addresses two gaps in the above: the original rater2 review excluded originally-
+contradicted cases entirely and was a single 30-case sample, and the strict
+relabeling just above was one person's pass, never independently checked. It draws
+TWO separate blind samples -- `stronger_audit_form.txt` (60 fresh natural cases:
+all 11 remaining natural "contradicted" cases, plus a stratified sample of
+supported/unverifiable ones, none previously reviewed) and
+`strict_relabel_diagnostic_form.txt` (the 20 cases the strict relabeling touched,
+as a separate targeted check, never pooled with the random-sample agreement rate).
+Both use a two-field schema per case -- FIELD 1: does the transcript address this
+same measure at all; FIELD 2: does it actually confirm this measure's specific
+content, as opposed to just naming it -- plus an overall 3-way label, so the result
+can report not just agreement but *which kind* of apparent "supported" case turns
+out to be topic-adjacent rather than content-confirmed. `score_stronger_audit.py`
+scores a filled-in form against its answer key (kept out of the repo, like the
+original `my_labels_for_ivan_sample.json`, to preserve blindness) and reports raw
+agreement, kappa, the FIELD 1/FIELD 2 breakdown, and -- with two filled forms --
+inter-rater agreement between reviewers. Results pending independent review.
+
 **Secondary exploration (`earnings_calls_exploratory/`):** an earlier, smaller pass
 at the same idea applied to a different domain -- checking numeric claims on
 corporate earnings calls against SEC XBRL filings. Kept for context, not part of
@@ -114,6 +133,7 @@ in `dc_council/` below is new work from this weekend, with one exception called 
 | `error_taxonomy.json` | New (qualitative breakdown of the abstaining judge's remaining mistakes) |
 | `rater2_review_form.txt`, `parse_rater2_review_form.py`, `score_rater2_review.py` | New (independent inter-rater review materials, parser and scorer) |
 | `sensitivity_strict_supported.py` | New (sensitivity bound: re-scores the headline result after relabeling "supported" cases that fail rater2's stricter standard) |
+| `build_stronger_audit_sample.py`, `make_stronger_audit_forms.py`, `score_stronger_audit.py` | New (stronger independent audit: fresh 60-case sample + 20-case relabeling diagnostic, two-field schema) |
 | `sensitivity_all_judges.py` | New (applies the same correction to every judge's already-collected outputs, all 200 cases) |
 | `datapipeline/05b_sensitivity_strict_gold.py` | New (same correction, restricted to the held-out test split) |
 | `datapipeline/05c_shared_cases_comparison.py` | New (coverage-matched comparison: every judge on exactly the same answered cases) |
